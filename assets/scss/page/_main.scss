@@ -1,6 +1,97 @@
+.header{
+    width: 100%;
+    background-color: hsla(0,0%,100%,.64);
+    position: absolute;
+    top: 0;left: 0;
+}
+.header .nav{float: right;}
+.header .nav::after{content: '';clear: both;display: block;}
+.nav_list .nav_item{
+    padding: 20px;
+    display: inline-block;
+}
+.nav_list .nav_item .link_sc{
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+}
+.main_title{
+    font-family: $font-c;
+    font-size: 300px;
+    font-weight: 700;
+    letter-spacing: 30px;
+    color: #fff;
+    position: absolute; 
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+}
 .group-row1{
     display: flex;
+    overflow: hidden;
 }
 .group-row1 .main_bg{
     width: calc(100% / 3);
+}
+.group-row1 .main_bg > img{
+    max-width: 101%;
+}
+.intro_txt{
+    padding-left: 33.3%;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin: 120px 0;
+}
+.architectuur_area {
+    display: flex;
+    position: relative;
+}
+.architectuur_area .architectuur_txt{
+    width: 50%;
+    height: 540px;
+    margin-top: 60px;
+    padding: 40px 110px 40px 80px;
+    background-color: #2b201a;
+}
+.architectuur_area .architectuur_txt .sc_title{
+    font-size: 2em;
+    font-family: $font-c;
+    line-height: 1.6em;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color:rgba(216,203,188,.9);
+    margin: 20px auto 25px auto;
+}
+.architectuur_area .architectuur_txt .sc_txt{
+    margin-bottom: 30px;
+    color: #d8d8d8;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+.architectuur_area .architectuur_img{
+    overflow: hidden;
+    width: 50%;
+}
+.slide1{
+    height: 100%;
+    background: url(../images//arc01.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide2{
+    height: 100%;
+    background: url(../images//arc02.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide3{
+    height: 100%;
+    background: url(../images//arc03.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

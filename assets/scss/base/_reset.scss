@@ -12,14 +12,16 @@ ul,ol{list-style: none;}
     @세팅구역
 */
 body {
+    width: 100%;
     font-size: 15px;
     font-family: $font-m;
     color: $color-black;
-    letter-spacing: -0.025em;
+    line-height: 1.4em;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-width: 1300px;
+    position: relative;
 }
 
 .hidden,
@@ -37,7 +39,9 @@ a {
         text-decoration: none;
     }
 }
-
+b{
+    font-weight: bold;
+}
 button {
     border: 0;
     background-color: transparent;

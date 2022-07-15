@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="./assets/js/index.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="nav">
-            <div class="wrap">
-                <ul class="nav-list">
-                    <li class="nav-list"><a href="" class="link-Architectuur">Architectuur</a></li>
-                    <li class="nav-list"><a href="" class="link-Interieur">Interieur</a></li>
-                    <li class="nav-list"><a href="" class="link-Locatie">Locatie</a></li>
-                    <li class="nav-list"><a href="" class="link-Appartementen">Appartementen</a></li>
-                    <li class="nav-list"><a href="" class="link-Contact">Contact</a></li>
+        <div class="wrap">
+                <div class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="" class="link_sc btn_Architectuur">Architectuur</a></li>
+                    <li class="nav_item"><a href="" class="link_sc btn_Interieur">Interieur</a></li>
+                    <li class="nav_item"><a href="" class="link_sc btn_Locatie">Locatie</a></li>
+                    <li class="nav_item"><a href="" class="link_sc btn_Appartementen">Appartementen</a></li>
+                    <li class="nav_item"><a href="" class="link_sc btn_Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -40,12 +44,10 @@
                 </div>
             </div>
             <div class="intro_txt">
-                <div class="wrap">
-                    <div class="intro_txt_box">
-                        Boutique nieuwbouwproject<br>
-                        met hoogwaardige architectuur<br>
-                        op een unieke locatie
-                    </div>
+                <div class="intro_txt_box">
+                    Boutique nieuwbouwproject<br>
+                    met hoogwaardige architectuur<br>
+                    op een unieke locatie
                 </div>
             </div>
         </section>
@@ -63,20 +65,26 @@
                         Met de signatuur van <b>BRITSOM PHILIPS architects.</b>
                     </p>
                 </div>
-                <div class="architectuur_img">
-                    <img src="./assets/images/arc01.jpg" alt="">
+                <div class="architectuur_img swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="architectuur_slide swiper-slide slide1"></div>
+                        <div class="architectuur_slide swiper-slide slide2"></div>
+                        <div class="architectuur_slide swiper-slide slide3"></div>
+                    </div>
                 </div>
                 <div class="btn-nav">
-                    <a href="" class="btn-bullet active"></a>
-                    <a href="" class="btn-bullet"></a>
-                    <a href="" class="btn-bullet"></a>
+                    <a href=".slide1" class="btn-bullet"></a>
+                    <a href=".slide2" class="btn-bullet"></a>
+                    <a href=".slide3" class="btn-bullet"></a>
                 </div>
             </div>
             <div class="architect_area">
                 <div class="wrap">
                     <div class="row-line"></div>
+                </div>    
+                <div class="wrap">
                     <div class="architect_img">
-                        <img src="./assets/images/architect.jpg" alt="">
+                        <img src="./assets/images/architect.jpg" alt="architect">
                         <strong>Alexander van Britsom & Sofie Philips</strong>
                         <p class="sc_txt">
                             BRITSOM PHILIPS architects
@@ -128,11 +136,25 @@
                     <h4 class="title">DE KOUTER</h4>
                     <span class="sub">100 meter</span>
                     <div class="row-line"></div>
-                    
+                    <div class="group-col1">
+                        <div>ROCA</div>
+                        <div>
+                            <img src="./assets/images/front_view01.jpg" alt="">
+                            <img src="./assets/images/front_view02.jpg" alt="">
+                            <img src="./assets/images/front_view03.jpg" alt="">
+                            <img src="./assets/images/front_view04.jpg" alt="">
+                            <img src="./assets/images/front_view05.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="sc_Appartementen"></section>
+        <section class="sc_Appartementen">
+            <h2 class="sc_title">APPARTEMENTEN</h2>
+            <div class="floor">
+                <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="wrap">
