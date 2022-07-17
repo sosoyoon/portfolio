@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="./assets/js/index.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="wrap">
-                <div class="nav">
+            <div class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="" class="link_sc btn_Architectuur">Architectuur</a></li>
                     <li class="nav_item"><a href="" class="link_sc btn_Interieur">Interieur</a></li>
@@ -29,7 +25,7 @@
         <section class="sc_intro">
             <div class="intro_main">
                 <h1 class="main_title">ROCA</h1>
-                <div class="group-row1">
+                <div class="group_row1">
                     <div class="main_bg">
                         <img src="./assets/images/main01.jpg" alt="">
                     </div>
@@ -65,80 +61,107 @@
                         Met de signatuur van <b>BRITSOM PHILIPS architects.</b>
                     </p>
                 </div>
-                <div class="architectuur_img swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="architectuur_slide swiper-slide slide1"></div>
-                        <div class="architectuur_slide swiper-slide slide2"></div>
-                        <div class="architectuur_slide swiper-slide slide3"></div>
+                    <div class="architectuur_img swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="architectuur_slide slide1 swiper-slide"></div>
+                            <div class="architectuur_slide slide2 swiper-slide"></div>
+                            <div class="architectuur_slide slide3 swiper-slide"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="btn-nav">
-                    <a href=".slide1" class="btn-bullet"></a>
-                    <a href=".slide2" class="btn-bullet"></a>
-                    <a href=".slide3" class="btn-bullet"></a>
+                    <div class="btn_nav swiper-pagination">
+                        <a href=".slide1" class="btn_bullet"></a>
+                        <a href=".slide2" class="btn_bullet"></a>
+                        <a href=".slide3" class="btn_bullet"></a>
+                    </div>
                 </div>
             </div>
             <div class="architect_area">
                 <div class="wrap">
-                    <div class="row-line"></div>
+                    <div class="line_box">
+                        <div class="row_line"></div>
+                    </div>
                 </div>    
                 <div class="wrap">
                     <div class="architect_img">
-                        <img src="./assets/images/architect.jpg" alt="architect">
-                        <strong>Alexander van Britsom & Sofie Philips</strong>
-                        <p class="sc_txt">
-                            BRITSOM PHILIPS architects
-                        </p>
+                        <div class="architect_img_box">
+                            <img src="./assets/images/architect.jpg" alt="architect">
+                            <strong>Alexander van Britsom & Sofie Philips</strong>
+                            <p class="sc_txt">
+                                BRITSOM PHILIPS architects
+                            </p>
+                        </div>
                     </div>
                     <div class="architect_txt">
-                        De geschrankte gevelvlakken in natuursteen, in combinatie met minimal windows zorgen voor een grotere lichtinval, versterken het waterzicht en zorgen voor een monolitisch visueel geheel.
+                        <span class="quotemark">"</span>
+                        <p class="architect_txt_box">
+                            De geschrankte gevelvlakken in natuursteen, in combinatie met minimal windows zorgen voor een grotere lichtinval, versterken het waterzicht en zorgen voor een monolitisch visueel geheel.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="sc_interieur">
-            <h2 class="sc_title">INTERIEUR</h2>
-            <h3 class="sc_subtitle">Kwalitatieve materialen, uitgepuurde details, strakke accenten.</h3>
-            <div class="interieur_img">
-                <img src="./assets/images/interieur01.jpg" alt="">
-                <img src="./assets/images/interieur02.jpg" alt="">
-                <img src="./assets/images/interieur03.jpg" alt="">
+            <div class="wrap">
+                <h2 class="sc_title">INTERIEUR</h2>
+                <h3 class="sc_subtitle">Kwalitatieve materialen, uitgepuurde details, strakke accenten.</h3>
             </div>
-            <div class="interieur_img">
-                <img src="./assets/images/interieur04.jpg" alt="">
-                <img src="./assets/images/interieur05.jpg" alt="">
-                <img src="./assets/images/interieur06.jpg" alt="">
+            <div class="interieur_box">
+                <div class="interieur_img"><img src="./assets/images/interieur01.jpg" alt=""></div>
+                <div class="interieur_img"><img src="./assets/images/interieur02.jpg" alt=""></div>
+                <div class="interieur_img"><img src="./assets/images/interieur03.jpg" alt=""></div>
+            </div>
+            <div class="interieur_box">
+                <div class="interieur_img"><img src="./assets/images/interieur04.jpg" alt=""></div>
+                <div class="interieur_img"><img src="./assets/images/interieur05.jpg" alt=""></div>
+                <div class="interieur_img"><img src="./assets/images/interieur06.jpg" alt=""></div>
             </div>
         </section>
         <section class="sc_locatie">
-            <h2 class="sc_title">LOCATIE</h2>
-            <h3 class="sc_subtitle">Het ROCA project is gelegen in de Walpoortstraat, op een kruispunt van kunst, cultuur en winkels.</h3>
-            <div class="locatie-area">
-                <div class="locatie-img">
-                    <img src="./assets/images/interieur01.jpg" alt="">
+            <div class="wrap">
+                <div class="inner_wrap">
+                    <h2 class="sc_title">LOCATIE</h2>
+                    <h3 class="sc_subtitle">Het ROCA project is gelegen in de Walpoortstraat, op een kruispunt van kunst, cultuur en winkels.</h3>
                 </div>
+            </div>
+            <div class="locatie_area">
+                <img src="./assets/images/locatie.jpg" alt="">
                 <div class="wrap">
                     <h4 class="title">DE KROOK</h4>
                     <span class="sub">100 meter</span>
-                    <div class="row-line"></div>
-                    <p class="locatie_txt">
-                        Van de iconische nieuwe stadsbibliotheek De Krook over het culture instituut De Minard schouwburg tot en met de vaste waarde van de Kouter. ROCA nestelt zich in het hart van Gent.
-                    </p>
-                    <img src="./assets/images/deminard.jpeg" alt="">
-                    <div class="col-line"></div>
-                    <h4 class="title">DE MINARD</h4>
-                    <span class="sub">100 meter</span>
-                    <div class="row-line"></div>
-                    <p class="locatie_txt">
-                        De betere winkelwandelstraten bevinden zich op een steenworp. Kortedagsteeg, Brabantdam en de Sint-Pietersnieuwstraat.
-                    </p>
+                    <div class="group_row2">
+                        <div class="line_box">
+                            <div class="row_line"></div>
+                        </div>
+                    </div>
+                    <div class="group_col1">
+                        <p class="locatie_txt">
+                            Van de iconische nieuwe stadsbibliotheek De Krook over het culture instituut De Minard schouwburg tot en met de vaste waarde van de Kouter. ROCA nestelt zich in het hart van Gent.
+                        </p>
+                        <div class="locatie_img"><img src="./assets/images/deminard.jpeg" alt=""></div>
+                        <div class="col_line"></div>
+                    </div>
+                    <div class="inner_wrap">
+                        <div class="locatie_tit">
+                            <h4 class="title">DE MINARD</h4>
+                            <span class="sub">100 meter</span>
+                        </div>
+                        <p class="locatie_txt">
+                            De betere winkelwandelstraten bevinden zich op een steenworp. Kortedagsteeg, Brabantdam en de Sint-Pietersnieuwstraat.
+                        </p>
+                    </div>
                     <img src="./assets/images/dekouter.jpg" alt="">
                     <h4 class="title">DE KOUTER</h4>
                     <span class="sub">100 meter</span>
-                    <div class="row-line"></div>
-                    <div class="group-col1">
-                        <div>ROCA</div>
-                        <div>
+                    <div class="group_row2">
+                        <div class="line_box">
+                            <div class="row_line"></div>
+                        </div>
+                    </div>
+                    <div class="group_col2">
+                        <div class="front_txt">
+                            <div class="front_bg">ROCA</div>
+                        </div>
+                        <div class="front_view">
                             <img src="./assets/images/front_view01.jpg" alt="">
                             <img src="./assets/images/front_view02.jpg" alt="">
                             <img src="./assets/images/front_view03.jpg" alt="">
@@ -149,17 +172,120 @@
                 </div>
             </div>
         </section>
-        <section class="sc_Appartementen">
+        <section class="sc_appartementen">
             <h2 class="sc_title">APPARTEMENTEN</h2>
-            <div class="floor">
-                <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+            <div class="wrap">
+                <div class="floor_plan">
+                    <div class="floor_imgbox">
+                        <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+                        <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+                        <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+                        <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+                        <img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/613c7db58ec0600d269768b0_floorplan-path-rotation-tweak.svg" alt="">
+                    </div>
+                    <div class="floor_txtbox">
+                        <a href="" class="link-floor">4.1</a>
+                        <a href="" class="link-floor">3.1</a>
+                        <a href="" class="link-floor">2.1</a>
+                        <a href="" class="link-floor">1.1</a>
+                        <a href="" class="link-floor">0.1</a>
+                    </div>
+                </div>
+                <table class="floor_table">
+                    <tr class="table_header">
+                        <th>NIVEAU</th>
+                        <th>TYPE</th>
+                        <th>OPPERVLAKTE</th>
+                        <th>TERRAS</th>
+                        <th>SLPK</th>
+                        <th>PLAN</th>
+                    </tr>
+                    <tr class="floor_0">
+                        <td class="niveau">0.1</td>
+                        <td class="type">Handelspand</td>
+                        <td class="oppervlakte">140 m²</td>
+                        <td class="terras">-</td>
+                        <td class="slpk">-</td>
+                        <td class="plan">
+                            <a href="" class="btn-download"><div class="download_img"><img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/61377abec2e0c019f8c64b8e_long-arrow-down-solid-white.svg" alt=""></div></a>
+                        </td>
+                    </tr>
+                    <tr class="floor_1">
+                        <td class="niveau">1.1</td>
+                        <td class="type">
+                            Appartement <span>VERKOCHT</span></td>
+                        <td class="oppervlakte">135 m²</td>
+                        <td class="terras">15 m²</td>
+                        <td class="slpk">3</td>
+                        <td class="plan">
+                            <a href="" class="btn-download"><div class="download_img"><img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/61377abec2e0c019f8c64b8e_long-arrow-down-solid-white.svg" alt=""></div></a>
+                        </td>
+                    </tr>
+                    <tr class="floor_2">
+                        <td class="niveau">2.1</td>
+                        <td class="type">
+                            Appartement <span>VERKOCHT</span></td>
+                        <td class="oppervlakte">118 m²</td>
+                        <td class="terras">15 m²</td>
+                        <td class="slpk">2</td>
+                        <td class="plan">
+                            <a href="" class="btn-download"><div class="download_img"><img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/61377abec2e0c019f8c64b8e_long-arrow-down-solid-white.svg" alt=""></div></a>
+                        </td>
+                    </tr>
+                    <tr class="floor_3">
+                        <td class="niveau">3.1</td>
+                        <td class="type">
+                            Appartement <span>VERKOCHT</span></td>
+                        <td class="oppervlakte">118 m²</td>
+                        <td class="terras">15 m²</td>
+                        <td class="slpk">2</td>
+                        <td class="plan">
+                            <a href="" class="btn-download"><div class="download_img"><img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/61377abec2e0c019f8c64b8e_long-arrow-down-solid-white.svg" alt=""></div></a>
+                        </td>
+                    </tr>
+                    <tr class="floor_4">
+                        <td class="niveau">4.1</td>
+                        <td class="type">
+                            Penthouse <span>VERKOCHT</span></td>
+                        <td class="oppervlakte">113 m²</td>
+                        <td class="terras">8 m²</td>
+                        <td class="slpk">2</td>
+                        <td class="plan">
+                            <a href="" class="btn-download"><div class="download_img"><img src="https://uploads-ssl.webflow.com/612731131c3162062201951b/61377abec2e0c019f8c64b8e_long-arrow-down-solid-white.svg" alt=""></div></a>
+                        </td>
+                    </tr>
+                    <caption>Mogelijkheid tot aankoop <span>6% BTW</span> op de constructie. Onder voorwaarden.</caption>
+                </table>
+                
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="wrap">
-
+            <div class="info">
+                <h2 class="info_title">Krijg alle informatie over ROCA</h2>
+                <form action="" method="get" class="info_form">
+                    <label for="name">NAAM :</label>
+                    <input type="text" class="info_filed" name="name" id="name" placeholder="voornaam en naam">
+                    <label for="email">EMAIL ADRES :</label>
+                    <input type="text" class="info_filed" name="email" id="email" placeholder="e-mail adres">
+                    <label for="number">GSM NUMBER :</label>
+                    <input type="text" class="info_filed" name="number" id="number" placeholder="bijv. 0485 12 34 56">
+                    <input type="submit" value="Verzenden" class="btn_submit">
+                </form>
+            </div>
+            <div class="contact">
+                <img src="./assets/images/logo.jpg" alt="">
+                <a href="mailto:info@carloeggermont.be">info@carloeggermont.be</a>
+                <a href="tel:+32 473 81 62 14">+32 473 81 62 14</a>
+            </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./assets/css/swiper.css"
+    />
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

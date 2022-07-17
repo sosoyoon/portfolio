@@ -20,7 +20,6 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 1300px;
     position: relative;
 }
 
@@ -31,6 +30,7 @@ body {
 
 
 a {
+    display: block;
     color: inherit;
     cursor: pointer;
     text-decoration: none;
@@ -39,7 +39,7 @@ a {
         text-decoration: none;
     }
 }
-b{
+b, strong {
     font-weight: bold;
 }
 button {
