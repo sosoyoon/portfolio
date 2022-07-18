@@ -10,3 +10,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+$(function(){
+  $('.main_bg > img').fadeIn(2000);
+})
