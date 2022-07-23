@@ -1,31 +1,34 @@
 // 공통된 text양식
 .sc_title{
+    font-family: $font-en;
     margin-bottom: 0;
     color: #2b201a;
     text-align: center;
-    font-family: $font-c;
-    font-size: 2em;
-    line-height: 1.6em;
+    font-size: 30px;
+    line-height: 48px;
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-.wrap .sc_subtitle{
-    font-size: 1em;
-    line-height: 1.4em;
-    font-weight: 400;
-    text-align: center;
-}
+
 .title{
-    font-family: $font-c;
+    font-family: $font-en;
+    font-size: 27px;
+    color: #2b201a;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 2px;
     margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.8em;
-    line-height: 30px;
-    font-weight: 700;
 }
+
 .sub{
     color: #949494;
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: 600;
+}
+
+.desc{
+    line-height: 21px;
+    font-weight: 400;
+    text-align: left;
 }
