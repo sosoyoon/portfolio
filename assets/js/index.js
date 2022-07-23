@@ -55,7 +55,6 @@ $('[data-fade]').each(function(i,e){ // i = > 인덱스, e = > 엘리먼트
         trigger:e,
         start:"top 80%", //[트리거기준 윈도우기준]
         end:"bottom top", //[트리거기준 윈도우기준]
-        markers:true,
       },
     
       opacity: 0,
@@ -63,24 +62,52 @@ $('[data-fade]').each(function(i,e){ // i = > 인덱스, e = > 엘리먼트
     })
 })
 
+$('[data-scale]').each(function(i,e){ // i = > 인덱스, e = > 엘리먼트
+  gsap.from(e, 0.8,{
+      scrollTrigger:{
+        trigger:e,
+        start:"top 80%", //[트리거기준 윈도우기준]
+        end:"bottom top", //[트리거기준 윈도우기준]
+      },
+    
+      opacity: 0,
+      x: 100,
+      y: 0,
+      scale: 0.6
+    })
+})
+
+
 $('[data-div]').each(function(i,e){ 
   
   position = $(this).data('div');
 
   left = (position == 'left') ? -10 : 0
   right = (position == 'right') ? 10 : 0
-  bottom = (position == 'bottom') ? 10 : 0
+  bottom = (position == 'bottom') ? 5 : 0
 
   gsap.from(e, 0.6,{
       scrollTrigger:{
         trigger:e,
         start:"top 80%", 
         end:"bottom top", 
-        markers:true,
       },
     
       opacity: 0,
       xPercent: (left + right),
       yPercent: bottom,
+    })
+})
+
+$('[data-floor]').each(function(i,e){ 
+  gsap.from(e, 0.8,{
+      scrollTrigger:{
+        trigger:e,
+        start:"top 80%", 
+        end:"bottom top", 
+      },
+    
+      opacity: 0,
+      y: 100,
     })
 })

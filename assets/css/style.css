@@ -484,8 +484,8 @@ textarea::-webkit-outer-spin-button {
   padding: 0 20px;
 }
 .sc_architectuur .group_info .info_area .desc_wrap .desc {
-  font-size: 1.6em;
-  line-height: 1.4em;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .sc_interieur .desc {
