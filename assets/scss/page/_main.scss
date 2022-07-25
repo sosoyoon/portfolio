@@ -1,0 +1,267 @@
+.container{
+    section+section{
+        margin-top: 50px;
+    }
+}
+.sc_banner{
+    .banner_text{
+        position: absolute;
+        top: 0px;
+        right: 50%;
+        margin-left: 80px;
+        width: 560px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: left;
+        color: rgb(31, 31, 31);
+        .banner_brand{
+            margin-bottom: 44px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .banner_title{
+            font-size: 65px;
+            font-weight: 100;
+            line-height: 74px;
+            letter-spacing: -1px;
+        }
+        .banner_desc{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 28px;
+            letter-spacing: -1px;
+        }
+    }
+}
+.sc_issue{
+    .group01{
+        position: relative;
+        overflow: visible;
+        .goods{
+            width: 23.0435%;
+            display: inline-block;
+            color: rgb(31, 31, 31);
+            position: relative;
+            .goods_text{
+                padding: 22px 18px 25px 6px;
+            }
+        }
+    }
+
+}
+.sc_new{
+    .group02{
+        display: flex;
+        flex-wrap: wrap;
+        .product{
+            width: 16.6667%;
+            position: relative;
+            letter-spacing: -0.2px;
+            padding: 0 6px 60px;
+            box-sizing: border-box;
+        }
+    }
+}
+.sc_event{
+    position: relative;
+    &.event01{
+        .link_event{
+            width: 100%;
+            color: #1f1f1f;
+            text-align: center;
+            background: url('../images/event01.jpg') 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+    }
+    &.event02{
+        .link_event{
+            width: 100%;
+            color: #FFF;
+            text-align: center;
+            background: url('../images/event02.jpg') 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 300px;
+            position: relative;
+            .event_text{
+                text-align: left;
+                max-width: 700px;
+                position: absolute;
+                top: 50%;
+                left: 15%;
+                transform: translateY(-50%);
+                button{
+                    border: 1px solid #FFF;
+                }
+            }
+        }
+    }
+}
+.sc_plan{
+    .plan_area{
+        display: flex;
+        flex-wrap: wrap;
+        .plan_box{
+            width: calc(50% - 16px);
+            display: flex;
+            &:nth-child(n+3){
+                margin-top: 30px;
+            }
+            .link_plan{
+                width: 48.6726%;
+                display: inline-block;
+                box-sizing: border-box;
+            }
+            .plan_cont{
+                display: inline-flex;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                width: 51.3274%;
+                padding: 20px 36px 0;
+                box-sizing: border-box;
+                .group04{
+                    width: 100%;
+                    .goods{
+                        padding:0px 8px 24px;
+                        .product_text{
+                            .product_name{
+                                line-height: 15px;
+                                font-size: 12px;
+                                font-weight: 300;
+                                @include elipsMulti(
+                                    1,18
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sc_edit{
+    .edit_area{
+        display: flex;
+        flex-wrap: wrap;
+        .edit_box{
+            width: calc((100% - 48px) / 4);
+            &+.edit_box{
+                margin-left: 16px;
+            }
+            .edit_tab{
+                .tab{
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                }
+            }
+            .edit_img{
+                display: flex;
+                padding: 20px 0;
+                box-sizing: border-box;
+                .link_edit{
+                    width: 58px;height: 58px;
+                    &+.link_edit{
+                        margin-left: 8px;
+                    }
+                }
+                .active{
+                    border: 1px solid rgb(255 126 0);
+                }
+            }
+            .goods_text{
+                margin-bottom: 25px;
+                .goods_desc{
+                    @include elipsMulti(
+                        4, 20
+                    )
+                }
+            }
+        }
+    }
+}
+.sc_rookie{
+    .rokkie_area{
+        display: flex;
+        flex-wrap: wrap;
+        background: rgb(242, 242, 242);
+        .rokkie_box{
+            padding: 41px 45px;
+            width: 312px;
+            box-sizing: border-box;
+            .goods_title{
+                @include elipsMulti(
+                    2, 27
+                )
+            }
+            .goods_desc{
+                margin-bottom: 30px;
+            }
+        }
+        .group06{
+            width: calc(100% - 312px);
+            padding-bottom: 70px;
+            .goods{
+                width: 16.2074%;
+                padding: 0px 8px;
+            }
+        }
+    }
+}
+.sc_chance{
+    .chance_area{
+        display: flex;
+        flex-wrap: wrap;
+        .chance_box{
+            width: calc((100% - 48px) / 4);
+            &+.chance_box{
+                margin-left: 16px;
+            }
+            .goods_text{
+                padding: 22px 18px 25px 6px;
+                }
+            .goods_text{
+                margin-bottom: 25px;
+                .goods_desc{
+                    @include elipsMulti(
+                        4, 20
+                    )
+                }
+            }
+            .goods_brand{
+                margin-bottom: 40px;
+            }
+            .group07{
+                .goods{
+                    padding: 0px 2px 40px;
+                    .product_text{
+                        margin-top: 13px;
+                        .product_name{
+                            font-size: 12px;
+                            font-weight: 300;
+                            margin: 0px 0px 5px;
+                            @include elipsMulti(
+                                1, 15
+                            )
+                        }
+                        .product_price{
+                            line-height: 16px;
+                            font-size: 12px;
+                            font-weight: 300;
+                            color: rgb(137, 137, 137);
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
