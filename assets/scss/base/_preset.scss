@@ -29,31 +29,58 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.text_box{
+    color: rgb(31, 31, 31);
+    padding: 22px 18px 25px 6px;
+}
 .goods{
     padding: 0px 8px 54px;
 }
-.goods_profile{
+.link_profile{
     display: flex;
     align-items: center;
-    .profile_img{
+    .thumb{
         width: 35px;height: 35px;
         border-radius: 50%;
         overflow: hidden;
         margin-right: 10px;
     }
 }
-.over-next, .over-prev{
+.swiper-button-next::after, .swiper-button-prev::after{
     display: none;
 }
-.swiper:hover .over-next, .swiper:hover .over-prev {
-    display:block;
+.swiper-button-prev{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-left-arrow-2.4b080a8fad7384efe5cdc80316ff1bcd.png) 50% 50% no-repeat;
+    left: 6px;
     top: 30%;
-}    
-.swiper-button-next.over-next.small-next, .swiper-button-prev.over-prev.small-prev{
-    top: 40%;
-    &::after{
-        --swiper-navigation-size: 22px;
-    }
+}
+.swiper-button-next{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-right-arrow-2.2cd54fd32bc25a5ac8a2d2a59db99f91.png) 50% 50% no-repeat;
+    right: 6px;
+    top: 30%;
+}
+.banner_prev{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-left-arrow-1-black.5a9b25d839b7f905b527ce83d721b3b8.svg) 50% 50% no-repeat;
+    left: 10px;
+    top: 50%;
+}
+.banner_next{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-right-arrow-1-black.fadfeef5e0ad10c98ef39aff091efda1.svg) 50% 50% no-repeat;
+    right: 10px;
+    top: 50%;
+}
+.issue_prev{
+    left: -34px;
+}
+.issue_next{
+    right: -34px;
+}
+.swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev, .swiper:hover .issue_prev, .swiper:hover .issue_next {
+    display: block;
 }
 .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
     height: 1px;
@@ -63,12 +90,15 @@
     width: auto;
     margin: 0px 8px;
 }
-:root {
-    --swiper-theme-color: #333;
-}
-.btn_box{
+
+.content{
+    position: relative;
     display: flex;
-    .btn_new{
+    
+}
+.tab_box{
+    display: flex;
+    .btn_cate{
         display: inline-block;
         line-height: 18px;
         font-size: 15px;
@@ -76,7 +106,7 @@
         letter-spacing: -1px;
         color: rgb(170, 170, 170);
         margin-bottom: 30px;
-        & + .btn_new{
+        & + .btn_cate{
             margin-left: 36px;
         }
         &.active{
@@ -84,3 +114,23 @@
         }
     }
 }
+
+.group_cont{
+    display: none;
+    position: relative;
+    letter-spacing: -0.2px;
+    padding: 0 6px;
+    box-sizing: border-box;
+    &.active{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
