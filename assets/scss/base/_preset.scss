@@ -1,0 +1,32 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.inner{
+    width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    &::after{content: '';clear: both;display: block;}
+}
+.video{
+    width: 1208px;
+    margin: 0 auto;
+}
+.btn_reference{
+    display: inline-block;
+    &:hover{
+        color: #2997ff;
+    }
+}
+sup a{
+    font-size: 20px;
+    display: inline-block;
+    &:hover{
+        color: #2997ff;
+    }
+}

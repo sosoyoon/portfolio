@@ -1,0 +1,53 @@
+.pro_area{
+    margin-top: 50px; 
+    .inner{
+        margin-top: -152px;
+    .text_box{
+            text-align: center;
+            .desc{
+                padding: 0 40px;
+            }
+        }      
+    }
+    .m2_box{
+        margin-top: 58px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .desc{
+            font-size: 40px;
+            color: #d2d2d7;
+            font-weight: 500;
+        }
+        img{
+            width: 94px;
+            height: 94px;
+        }
+    }
+    .price_box{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .price{
+            &::after{
+                content: "|";
+                margin: 0 30px;
+            }
+        }
+        .link_event{
+            &::after{
+                content: "";
+                font-family: "sf-pro-icons";
+                color: inherit;
+                display: inline-block;
+                font-style: normal;
+                font-weight: inherit;
+                font-size: inherit;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
