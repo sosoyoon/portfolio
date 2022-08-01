@@ -1,28 +1,39 @@
+.sc_title{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+.sc_sub{
+    font-size: 80px;
+    font-weight: 700;
+}
+.sc_desc{
+    color: #A1A1A6;
+    font-size: 28px;
+    font-weight: 500;
+}
 .title{
     font-size: 21px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.sub{
+    font-size: 32px;
+    color: #fff;
     font-weight: 600;
 }
 .desc{
-    font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
+    color: #f5f5f7;
 }
-.text_box{
-    .title{
-        font-size: 40px;
-        color: #fff;
-    }
-    .sub{
-        font-size: 96px;
-        font-weight: 700;
-        background: radial-gradient(#eff1ff, #000);
-        background-size: 100% 200%;
-        background-position: 50% 100%;
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-    .desc{
-        color: #d2d2d7;
-        font-size: 32px;
-        font-weight: 500;
-    }
+p.desc{
+    font-size: 32px;
+}
+span.desc{
+    font-size: 19px;
+}
+.caption{
+    font-size: 12px;
+    color: #fff;
 }

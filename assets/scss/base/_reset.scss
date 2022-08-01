@@ -14,15 +14,16 @@ ul,ol{list-style: none;}
 body {
     width: 100%;
     min-width: 320px;
-    font-size: 28px;
+    font-size: 17px;
     font-family: $font-kr;
     color: $color-gray;
-    line-height: 1.4;
+    line-height: 1.2;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     background: #000;
+    word-break: keep-all;
 }
 
 .hidden,

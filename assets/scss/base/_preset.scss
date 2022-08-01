@@ -5,8 +5,16 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
-.inner{
+.inner01{
     width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    &::after{content: '';clear: both;display: block;}
+}
+.inner02{
+    max-width: 1390px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -17,16 +25,33 @@
     width: 1208px;
     margin: 0 auto;
 }
+.img_box{
+    margin: 0 auto;
+}
 .btn_reference{
     display: inline-block;
     &:hover{
         color: #2997ff;
     }
 }
-sup a{
-    font-size: 20px;
+sup {
+    font-size: smaller;
+    vertical-align: super;
+    line-height: 0;
+    a{
     display: inline-block;
-    &:hover{
-        color: #2997ff;
+        &:hover{
+            color: #2997ff;
+        }
     }
+}
+.m8{
+    margin: 38px auto 98px auto;
+    color: #8686b8;
+}
+.desc_gray{
+    color: #d2d2d7;
+}
+.sub_gray{
+    color: #A1A1A6;
 }

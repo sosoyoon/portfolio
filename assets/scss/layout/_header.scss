@@ -31,15 +31,17 @@
     background: url('https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg') 0 50% no-repeat;
     background-size: 15px;
 }
-.group_flex{
+.header_center{
     background: #1d1d1fb8;
     line-height: 52px;
     overflow: hidden;
     border-bottom: 1px solid #FFFFFF3d;
     &::after{content: '';clear: both;display: block;}
-    .inner{
-        .title{
+    .inner01{
+        .nav_title{
             float: left;
+            font-size: 21px;
+            font-weight: 600;
         }
         .nav_list{
             float: right;
@@ -75,6 +77,10 @@
     background: #1d1d1f;
     line-height: 54px;
     text-align: center;
+    .nav_desc{
+        font-size: 14px;
+        font-weight: 400;
+    }
     .btn_shopping{
         color: #2997ff;
         display: inline-block;
