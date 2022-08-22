@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MacBook Pro 13</title>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/overview.built.css">
 </head>
 <body>
     <header class="header">
         <div class="nav_area">
-            <div class="inner01">
+            <div class="nav_inner">
                 <ul class="nav_list">
-                    <li class="nav_item">
-                        <h1 class="logo"><a href=""><span class="blind">apple</span><img src="https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt=""></a></h1>
-                    </li>
+                    <a href="" class="link_main"><span class="blind">apple</span><img src="https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt=""></a>
                     <li class="nav_item"><a href="" class="nav_link">스토어</a></li>
                     <li class="nav_item"><a href="" class="nav_link">Mac</a></li>
                     <li class="nav_item"><a href="" class="nav_link">iPad</a></li>
@@ -43,18 +41,20 @@
             </div>
         </div>
         <div class="header_center">
-            <div class="inner01">
-                <h2 class="nav_title"><a href="">MacBook Pro 13</a></h2>
-                <ul class="nav_list">
-                    <li class="nav_item">개요</li>
-                    <li class="nav_item"><a href="" class="nav_link">Mac을 선택하는 이유</a></li>
-                    <li class="nav_item"><a href="" class="nav_link">제품사양</a></li>
-                    <button><a href="" class="btn_buy">구입하기</a></button>
-                </ul>
+            <div class="nav_inner">
+                <h1><a href="" class="link_pro13">MacBook Pro 13</a></h1>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_item">개요</li>
+                        <li class="nav_item"><a href="" class="nav_link">Mac을 선택하는 이유</a></li>
+                        <li class="nav_item"><a href="" class="nav_link">제품사양</a></li>
+                    </ul>
+                    <button class="btn_blue"><a href="" class="link_buy">구입하기</a></button>
+                </nav>
             </div>
         </div>
         <div class="header_bottom">
-            <p class="nav_desc">MacBook Pro 13을 Apple 교육 할인 스토어에서 최저 1,655,000원에 구입할 수 있습니다.<a href="" class="btn_reference">*</a><a href="" class="btn_shopping">쇼핑하기&gt;</a></p>
+            <p class="nav_desc">MacBook Pro 13을 Apple 교육 할인 스토어에서 최저 1,655,000원에 구입할 수 있습니다.<a href="#reference1" class="btn_reference">*</a><a href="" class="btn_shopping btn_arrow">쇼핑하기</a></p>
         </div>
     </header>
     <main class="container">
@@ -67,26 +67,27 @@
                 </div>
                 <div class="inner01">
                     <div class="text_box">
-                        <h2 class="sc_title">MacBook Pro</h2>
-                        <h3 class="sc_sub">거침없이 프로.</h3>
+                        <h1 class="sc_title">MacBook Pro</h1>
+                        <h2 class="sc_sub">거침없이 프로.</h2>
                         <p class="sc_desc">
-                            새롭게 선보이는 M2 칩의 힘으로 MacBook Pro 13의 성능이<br>다시 한번 도약합니다. 여전히 콤팩트한 디자인은 유지한 채<br>최대 20시간의 배터리 사용 시간을 제공하고,<sup><a href="">1</a></sup> 액티브 쿨링 시스템이<br>향상된 성능을 지속적으로 발휘할 수 있게 해주죠. 여기에 선명한<br>Retina 디스플레이, FaceTime HD 카메라, 스튜디오급 마이크까지.<br>그야말로 Apple 최고의 휴대성을 자랑하는 프로용 노트북입니다.
+                            새롭게 선보이는 M2 칩의 힘으로 MacBook Pro 13의 성능이<br>다시 한번 도약합니다. 여전히 콤팩트한 디자인은 유지한 채<br>최대 20시간의 배터리 사용 시간을 제공하고,<sup><a href="#reference2">1</a></sup> 액티브 쿨링 시스템이<br>향상된 성능을 지속적으로 발휘할 수 있게 해주죠. 여기에 선명한<br>Retina 디스플레이, FaceTime HD 카메라, 스튜디오급 마이크까지.<br>그야말로 Apple 최고의 휴대성을 자랑하는 프로용 노트북입니다.
                         </p>
                     </div>
                     <div class="m2_box">
-                        <span class="sc_desc">막강한 성능의</span>
+                        <p class="sc_desc">막강한 성능의</p>
                         <img src="./assets/images/m2.jpg" alt="">
                     </div>
                     <div class="price_box">
-                        <span class="price">₩1,790,000부터</span>
-                        <a href="" class="link_event">이벤트 시청하기 ></a>
+                        <p class="price">₩1,790,000부터</p>
+                        <a href="" class="link_event btn_arrow">이벤트 시청하기</a>
                     </div>
                 </div>
             </div>
             <div class="memory_area">
                 <div class="inner01">
                     <div class="group_row01">
-                        <h3 class="sc_sub">레벨 업.</h3>
+                        <!-- aria-label로 적어도 됨->찾아보기 -->
+                        <h2 class="sc_sub">레벨 업.</h2>
                         <div class="img_box">
                             <img src="./assets/images/m2_large.jpg" alt="">
                         </div>
@@ -100,26 +101,26 @@
                     </div>
                     <div class="chip_box">
                         <div class="text_box">
-                            <span class="desc">최대</span>
-                            <p class="title">1.4배</p>
+                            <em class="desc">최대</em>
+                            <h3 class="title">1.4배</h3>
                             <span class="desc">
                                 더 빠른 속도<br>
-                                (M1 모델 대비<sup><a href="">2</a></sup>)
+                                (M1 모델 대비<sup><a href="#reference3">2</a></sup>)
                             </span>
                         </div>
                         <div class="text_box">
-                            <span class="desc">최대</span>
-                            <p class="title">6배</p>
+                            <em class="desc">최대</em>
+                            <h3 class="title">6배</h4>
                             <span class="desc">
                                 더 빠른 속도<br>
-                                (Intel 모델 대비<sup><a href="">2</a></sup>)
+                                (Intel 모델 대비<sup><a href="#reference3">2</a></sup>)
                             </span>
                         </div>
                         <div class="text_box">
-                            <span class="desc">최대</span>
-                            <p class="title">20시간</p>
+                            <em class="desc">최대</em>
+                            <h3 class="title">20시간</h3>
                             <span class="desc">
-                                배터리 사용 시간<sup><a href="">1</a></sup>
+                                배터리 사용 시간<sup><a href="#reference2">1</a></sup>
                             </span>
                         </div>
                     </div>
@@ -129,98 +130,275 @@
                 </div>
             </div>
         </section>
-        <section class="sc_capacity">
+        <!-- section안에 section으로 구성해보기 -->
+        <section class="sc_spec">
             <div class="inner02">
-                <div class="group_flex01">
-                    <h3 class="title">성능</h3>
-                    <div class="col_left">
-                        <p class="sub">
-                            더 많은 파워를 노트북에 선사하는 M2.
-                        </p>
-                    </div>
-                    <div class="col_right">
-                        <div class="Comparison">
-                            <p class="desc">M1 칩 탑재 MacBook Pro 13과 비교</p>
-                            <!-- 탭메뉴 연결하기 -->
-                            <p class="desc m8">
-                                <a href="" class="btn_graph active">동영상 편집</a>
-                                / <a href="" class="btn_graph">ProRes 동영상 트랜스코딩</a>
-                                / <a href="" class="btn_graph">장면 편집 감지</a>
-                                / <a href="" class="btn_graph">사진 스티칭</a>
-                                / <a href="" class="btn_graph">이미지 프로세싱</a>
-                                / <a href="" class="btn_graph">게임 성능</a>
-                                / <a href="" class="btn_graph">이미지 업스케일링</a>
-                            </p>
-                            <div class="graph_box">
-                                <p class="desc">더 빠른 동영상 편집 성능<sup><a href="">2</a></sup></p>
-                                <div class="graph">
-                                    <div class="graph_left">
-                                        <div class="bar_m2"></div>
-                                        <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
-                                        <div class="bar_m1"></div>
-                                        <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                <section class="group_flex01 comparison">
+                    <h2 class="title">성능</h2>
+                    <div class="cont_box">
+                        <div class="col_left">
+                            <h3 class="sub">
+                                더 많은 파워를 노트북에 선사하는 M2.
+                            </h3>
+                        </div>
+                        <div class="col_right">
+                            <div class="graph_area">
+                                <p class="desc">M1 칩 탑재 MacBook Pro 13과 비교</p>
+                                <p class="desc m8">
+                                    <a data-target="#m1_tab1" href="" class="btn_graph active">동영상 편집</a>
+                                    / <a href="" data-target="#m1_tab2"class="btn_graph">ProRes 동영상 트랜스코딩</a>
+                                    / <a href="" data-target="#m1_tab3" class="btn_graph">장면 편집 감지</a>
+                                    / <a href="" data-target="#m1_tab4" class="btn_graph">사진 스티칭</a>
+                                    / <a href="" data-target="#m1_tab5" class="btn_graph">이미지 프로세싱</a>
+                                    / <a href="" data-target="#m1_tab6" class="btn_graph">게임 성능</a>
+                                    / <a href="" data-target="#m1_tab7" class="btn_graph">이미지 업스케일링</a>
+                                </p>
+                                <div class="graph_box active" id="m1_tab1">
+                                    <p class="desc">더 빠른 동영상 편집 성능<sup><a href="#reference3">2</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
                                     </div>
-                                    <div class="graph_right">
-                                        1.4배
+                                </div>
+                                <div class="graph_box" id="m1_tab2">
+                                    <p class="desc">더 빠른 동영상 트랜스코딩 성능<sup><a href="#reference7">6</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            2.9배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="m1_tab3">
+                                    <p class="desc">더 빠른 장면 편집 감지<sup><a href="#reference8">7</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.6배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="m1_tab4">
+                                    <p class="desc">더 빠른 사진 스티칭 성능<sup><a href="#reference9">8</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="m1_tab5">
+                                    <p class="desc">더 빠른 이미지 프로세싱 성능<sup><a href="#reference10">9</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="m1_tab6">
+                                    <p class="desc">더 빠른 게임 성능<sup><a href="#reference11">10</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="m1_tab7">
+                                    <p class="desc">더 빠른 이미지 업스케일링 성능<sup><a href="#reference12">11</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.2배
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graph_area">
+                                <p class="desc">Intel 기반 MacBook Pro 13과 비교</p>
+                                <p class="desc m8">
+                                    <a data-target="#intel_tab1" href="" class="btn_graph active">동영상 편집</a>
+                                    / <a href="" data-target="#intel_tab2" class="btn_graph">ProRes 동영상 트랜스코딩</a>
+                                    / <a href="" data-target="#intel_tab3" class="btn_graph">장면 편집 감지</a>
+                                    / <a href="" data-target="#intel_tab4" class="btn_graph">사진 스티칭</a>
+                                    / <a href="" data-target="#intel_tab5" class="btn_graph">이미지 프로세싱</a>
+                                    / <a href="" data-target="#intel_tab6" class="btn_graph">게임 성능</a>
+                                    / <a href="" data-target="#intel_tab7" class="btn_graph">이미지 업스케일링</a>
+                                </p>
+                                <div class="graph_box active" id="intel_tab1">
+                                    <p class="desc">더 빠른 동영상 편집 성능<sup><a href="#reference3">2</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            6배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab2">
+                                    <p class="desc">더 빠른 동영상 트랜스코딩 성능<sup><a href="#reference7">6</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            2.9배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab3">
+                                    <p class="desc">더 빠른 장면 편집 감지<sup><a href="#reference8">7</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.6배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab4">
+                                    <p class="desc">더 빠른 사진 스티칭 성능<sup><a href="#reference9">8</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab5">
+                                    <p class="desc">더 빠른 이미지 프로세싱 성능<sup><a href="#reference10">9</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab6">
+                                    <p class="desc">더 빠른 게임 성능<sup><a href="#reference11">10</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.4배
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graph_box" id="intel_tab7">
+                                    <p class="desc">더 빠른 이미지 업스케일링 성능<sup><a href="#reference12">11</a></sup></p>
+                                    <div class="graph">
+                                        <div class="graph_left">
+                                            <div class="bar_m2"></div>
+                                            <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
+                                            <div class="bar_m1"></div>
+                                            <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
+                                        </div>
+                                        <div class="graph_right">
+                                            1.2배
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="Comparison">
-                            <p class="desc">Intel 기반 MacBook Pro 13과 비교</p>
-                            <!-- 탭메뉴 연결하기 -->
-                            <p class="desc m8">
-                                <a href="" class="btn_graph active">동영상 편집</a>
-                                / <a href="" class="btn_graph">ProRes 동영상 트랜스코딩</a>
-                                / <a href="" class="btn_graph">장면 편집 감지</a>
-                                / <a href="" class="btn_graph">사진 스티칭</a>
-                                / <a href="" class="btn_graph">이미지 프로세싱</a>
-                                / <a href="" class="btn_graph">게임 성능</a>
-                                / <a href="" class="btn_graph">이미지 업스케일링</a>
-                            </p>
-                            <div class="graph_box">
-                                <p class="desc">더 빠른 동영상 편집 성능<sup><a href="">2</a></sup></p>
-                                <div class="graph">
-                                    <div class="graph_left">
-                                        <div class="bar_m2"></div>
-                                        <span class="desc">M2 칩 탑재 MacBook Pro 13</span>
-                                        <div class="bar_m1"></div>
-                                        <span class="desc">M1 칩 탑재 MacBook Pro 13</span>
-                                    </div>
-                                    <div class="graph_right">
-                                        6배
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="group_flex02">
+                </section>
+                <section class="group_flex02 capacity">
                     <div class="flex_70">
-                        <h3 class="title">열 효율</h3>
-                        <div class="video_box">
+                        <h2 class="title">열 효율</h2>
+                        <div class="video_box cooling">
                             <video autoplay="" muted="" class="video">
                                 <source src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/thermal/large_2x.mp4" type="video/mp4">
                             </video>
                         </div>
-                        <p class="desc">
-                            액티브 쿨링으로 빠른 처리 속도를 유지합니다. <span class="desc_gray">첨단 열 관리 시스템과 Apple Silicon의 효율성 덕분에 프로급 성능을 작업 내내 유지할 수 있는 MacBook Pro. 높은 CPU 및 GPU 성능을 필요로 하는 작업을 몇 시간 동안 계속 실행해도 거뜬하죠.</span>
-                        </p>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <p class="desc">
+                                    액티브 쿨링으로 빠른 처리 속도를 유지합니다. 첨단 열 관리 시스템과 Apple Silicon의 효율성 덕분에 프로급 성능을 작업 내내 유지할 수 있는 MacBook Pro. 높은 CPU 및 GPU 성능을 필요로 하는 작업을 몇 시간 동안 계속 실행해도 거뜬하죠.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex_30">
-                        <h3 class="title">통합 메모리</h3>
-                        <div class="img_box">
-                            <img src="./assets/images/memory.png" alt="">
+                        <h2 class="title">통합 메모리</h2>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <div class="img_box">
+                                    <img src="./assets/images/memory.png" alt="">
+                                </div>
+                                <p class="desc">
+                                    더 빠른 속도의 메모리.<br>
+                                    여기에 용량까지 증가.<br>
+                                    <span class="desc_gray">M2 칩은 M1 칩보다 50% 증가한 초당 100GB의 메모리 대역폭을 선사합니다. 그리고 아주 매끄러운 멀티태스킹과 원활한 대용량 파일 처리를 위해 24GB의 통합 메모리를 지원하죠.</span>
+                                </p>
+                            </div>
                         </div>
-                        <p class="desc">
-                            더 빠른 속도의 메모리.<br>
-                            여기에 용량까지 증가.<br>
-                            <span class="desc_gray">M2 칩은 M1 칩보다 50% 증가한 초당 100GB의 메모리 대역폭을 선사합니다. 그리고 아주 매끄러운 멀티태스킹과 원활한 대용량 파일 처리를 위해 24GB의 통합 메모리를 지원하죠.</span>
-                        </p>
                     </div>
-                </div>
-                <div class="group_flex01 macOS">
-                    <h3 class="title">macOS</h3>
+                </section>
+                <section class="group_flex01 macOS">
+                    <h2 class="title">macOS</h2>
                     <div class="col_left">
                         <div class="img_box">
                             <img src="./assets/images/macos.png" alt="">
@@ -230,156 +408,206 @@
                         </div>
                     </div>
                     <div class="col_right">
-                        <p class="sub">
-                            두루두루 탁월한<br>호환성.
-                        </p>
-                        <span class="desc">
-                            macOS와 M2 칩이 만나 Microsoft 365 및 당신이 즐겨 쓰는 iOS 앱을 포함해 자주 사용하는 모든 앱의 속도와 반응성이 한층 빨라집니다. 이미 10,000개 이상의 앱과 플러그인이 Apple Silicon에 최적화되어 있죠. 게다가 Intel 프로세서용으로 설계된 앱을 MacBook Pro에서 사용할 수 있도록 Rosetta 2가 원활하게 변환해준답니다.
-                        </span>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <h3 class="sub">
+                                    두루두루 탁월한<br>호환성.
+                                </h3>
+                                <p class="desc sz_19">
+                                    macOS와 M2 칩이 만나 Microsoft 365 및 당신이 즐겨 쓰는 iOS 앱을 포함해 자주 사용하는 모든 앱의 속도와 반응성이 한층 빨라집니다. 이미 10,000개 이상의 앱과 플러그인이 Apple Silicon에 최적화되어 있죠. 게다가 Intel 프로세서용으로 설계된 앱을 MacBook Pro에서 사용할 수 있도록 Rosetta 2가 원활하게 변환해준답니다.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="group_flex02 battery">
+                </section>
+                <section class="group_flex02 battery">
                     <div class="flex_30">
-                        <h3 class="title">한나절은 너끈한 배터리</h3>
-                        <p class="sub">
-                            최대 20시간의<br>배터리 사용<br>시간으로<br>오래오래.1
-                        </p>
+                        <h2 class="title">한나절은 너끈한 배터리</h2>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <h3 class="sub">
+                                    최대 20시간의<br>배터리 사용<br>시간으로<br>오래오래.<sup><a href="#reference2">1</a></sup>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex_70">
-                        <h3 class="title">미디어 엔진</h3>
-                        <div class="text_box">
-                            <p class="sub">
-                                들고 다니는<br>편집실.
+                        <h2 class="title">미디어 엔진</h2>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <h3 class="sub">
+                                    들고 다니는<br>편집실.
+                                </h3>
+                                <p class="desc sz_19">
+                                    M2 칩의 고성능 미디어 엔진이 ProRes 인코딩과 디코딩을 지원합니다. 덕분에 최대 11개의 4K ProRes 동영상 스트림과 최대 2개의 8K ProRes 동영상 스트림을 재생하고, 편집할 수 있죠. 물론 iPhone 13 Pro에서 찍은 4K ProRes 동영상도 얼마든지 가져와 작업할 수 있습니다.<sup><a href="#reference13">12</a></sup> 게다가 프로젝트를 ProRes로 변환하는 작업도 전보다 최대 3배 더 빨라졌죠.<sup><a href="#reference14">13</a></sup>
+                                </p>
+                            </div>
+                            <div class="img_box">
+                                <span class="caption">
+                                    Final Cut Pro
+                                </span>
+                                <img src="./assets/images/battery.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="group_flex02 flex_bottom">
+                    <div class="flex_70 secu">
+                        <h2 class="title">보안</h2>
+                        <div class="cont_box">
+                            <div class="img_box">
+                            </div>
+                            <h3 class="sub">
+                                MacBook Pro.<br>
+                                <div class="char_wrap">
+                                    <span class="char"><i class="dot"></i><i class="text">개</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">인</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">정</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">보</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">는</i></span>
+                                    <span class="char"><i class="text">&nbsp;</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">철</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">저</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">하</i></span>
+                                    <span class="char"><i class="dot"></i><i class="text">게</i></span>
+                                </div>
+                            </h3>
+                            <p class="desc sz_19">
+                                M2 칩과 macOS가 타의 추종을 불허하는 보안 및 개인 정보 보호 기능들로 MacBook Pro를 안전하게 지켜줍니다. 악성 코드와 바이러스를 방지하는 보호 기능이 기본으로 탑재되어 있고, 무엇을 어떻게 공유할지 당신이 직접 결정할 수 있도록 선택권을 주죠. 그리고 Touch ID와 같은 칩 레벨의 기능까지 더해져 모든 단계에서 개인 정보와 데이터를 안전하게 보호하기 위한 만반의 경비 태세를 갖추고 있습니다.
                             </p>
-                            <span class="desc">
-                                M2 칩의 고성능 미디어 엔진이 ProRes 인코딩과 디코딩을 지원합니다. 덕분에 최대 11개의 4K ProRes 동영상 스트림과 최대 2개의 8K ProRes 동영상 스트림을 재생하고, 편집할 수 있죠. 물론 iPhone 13 Pro에서 찍은 4K ProRes 동영상도 얼마든지 가져와 작업할 수 있습니다.12 게다가 프로젝트를 ProRes로 변환하는 작업도 전보다 최대 3배 더 빨라졌죠.13
-                            </span>
                         </div>
-                        <div class="img_box">
-                            <span class="caption">
-                                Final Cut Pro
-                            </span>
-                            <img src="./assets/images/battery.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="group_flex02 flex_bottom">
-                    <div class="flex_70">
-                        <h3 class="title">보안</h3>
-                        <div class="img_box">
-                        </div>
-                        <p class="sub">
-                            MacBook Pro.<br>개인정보는 철저하게
-                        </p>
-                        <span class="desc">
-                            M2 칩과 macOS가 타의 추종을 불허하는 보안 및 개인 정보 보호 기능들로 MacBook Pro를 안전하게 지켜줍니다. 악성 코드와 바이러스를 방지하는 보호 기능이 기본으로 탑재되어 있고, 무엇을 어떻게 공유할지 당신이 직접 결정할 수 있도록 선택권을 주죠. 그리고 Touch ID와 같은 칩 레벨의 기능까지 더해져 모든 단계에서 개인 정보와 데이터를 안전하게 보호하기 위한 만반의 경비 태세를 갖추고 있습니다.
-                        </span>
                     </div>
                     <div class="flex_30">
-                        <h3 class="title">SSD 저장 장치</h3>
-                        <p class="desc">
-                            최대
-                        </p>
-                        <p class="sub">
-                            2TB
-                        </p>
-                        <span class="desc">
-                            초고속 SSD 저장 장치14
-사진, 영화, 음악, 문서를 넉넉히 넣어두고 필요할 때 바로 열어서 볼 수 있습니다.
-                        </span>
+                        <h2 class="title">SSD 저장 장치</h2>
+                        <div class="cont_box">
+                            <div class="cont_txt">
+                                <p class="desc">
+                                    최대
+                                </p>
+                                <h3 class="sub">
+                                    2TB
+                                </h3>
+                                <p class="desc">
+                                    초고속 SSD 저장 장치<sup><a href="#reference15">14</a></sup>
+                                </p>
+                                <span class="desc">
+                                    사진, 영화, 음악, 문서를 넉넉히 넣어두고 필요할 때 바로 열어서 볼 수 있습니다.
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
         <section class="sc_function">
             <div class="display_area">
                 <div class="inner01">
-                    <p class="sc_sub">
+                    <h3 class="sc_sub">
                         <span class="sub_gray">Retina 디스플레이</span><br>
                         모든 것을 아름답게.
-                    </p>
+                    </h3>
                     <p class="sc_desc">
                         선명한 Retina 디스플레이가 이미지에 놀라운 수준의 디테일과 사실감을 더합니다. 텍스트는 또렷하고 선명하게 보이죠. 밝은 LED 백라이트는 짙은 블랙과 밝은 화이트를 구현하고, P3의 넓은 색영역이 sRGB에서보다 강렬한 그린과 레드를 표현합니다. 게다가 모든 MacBook Pro에 탑재된 True Tone 기술이 주변 조명의 색온도에 맞게 자동으로 화이트 밸런스를 조절해 시각적으로 훨씬 자연스러운 화면을 구현해주죠.
                     </p>
                 </div>
                 <div class="img_box">
-                    <img class="monitor_bg" src="./assets/images/display_bg.jpg" alt="">
+                    <img class="monitor_bg" src="./assets/images/display_bg.jpg" alt="" data-fade>
                     <img class="monitor" src="./assets/images/display.jpg" alt="">
                     <span class="caption">
                         Affinity Photo
                     </span>
                 </div>
                 <div class="inner02">
-                    <div class="group_flex03">
+                    <div class="group_flex03 display_list">
                         <div class="flex_item">
-                            <p class="title">밝기</p>
-                            <div class="img_box">
-                                <img src="./assets/images/bright.png" alt="">
+                            <h2 class="title">밝기</h2>
+                            <div class="cont_box">
+                                <div class="img_box">
+                                    <img src="./assets/images/bright.png" alt="">
+                                </div>
+                                <div class="cont_txt">
+                                    <h3 class="sub">500</h3>
+                                    <p class="desc">니트 밝기</p>
+                                </div>
                             </div>
-                            <p class="sub">500</p>
-                            <p class="desc">니트 밝기</p>
                         </div>
                         <div class="flex_item">
-                            <p class="title">넓은 색영역(P3)</p>
-                            <div class="img_box">
-                                <img src="./assets/images/rgb.jpg" alt="">
+                            <h4 class="title">넓은 색영역(P3)</h4>
+                            <div class="cont_box">
+                                <div class="img_box">
+                                    <img src="./assets/images/rgb.jpg" alt="">
+                                </div>
+                                <div class="cont_txt">
+                                    <h2 class="sub">25%</h2>
+                                    <p class="desc">더 풍부한 색상(sRGB 대비)</p>
+                                </div>
                             </div>
-                            <p class="sub">25%</p>
-                            <p class="desc">더 풍부한 색상(sRGB 대비)</p>
                         </div>
                         <div class="flex_item">
-                            <p class="title">True Tone 기술</p>
-                            <div class="img_box">
-                                <img src="./assets/images/truetone.png" alt="">
+                            <h2 class="title">True Tone 기술</h2>
+                            <div class="cont_box">
+                                <div class="img_box">
+                                    <img src="./assets/images/truetone.png" alt="">
+                                </div>
+                                <div class="cont_txt">
+                                    <p class="desc">
+                                        주변 조명에 맞춰<br>자동 조정되는 화면 밝기
+                                    </p>
+                                </div>
                             </div>
-                            <p class="desc">
-                                주변 조명에 맞춰<br>자동 조정되는 화면 밝기
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="camera_area">
                 <div class="inner01">
-                    <p class="sc_sub">
+                    <h3 class="sc_sub">
                         <span class="sub_gray">카메라 및 마이크</span><br>
                         제대로 보여주고.<br>
                         제대로 들려주고.
-                    </p>
+                    </h3>
                     <p class="sc_desc">
                         M2 칩 덕분에 이제 FaceTime HD 카메라가 최신 이미지 신호 프로세서의 능력을 온전히 활용할 수 있게 되었습니다. 영상 통화에서 당신의 모습이 더 멋지게 보인다는 의미죠. 또한 온라인 회의를 할 때도, 팟캐스트 방송을 할 때도, 친구 및 가족들과 통화할 때도 스튜디오급 마이크가 모두에게 당신의 목소리를 더욱 크고 선명하게 전달합니다.
                     </p>
                 </div>
                 <div class="img_box">
-                    <img class="monitor_bg" src="./assets/images/camera_bg.png" alt="">
+                    <img class="monitor_bg" src="./assets/images/camera_bg.png" alt="" data-fade>
                     <img class="monitor" src="./assets/images/camera.jpg" alt="">
                 </div>
                 <div class="inner02">
                     <div class="group_flex04">
                         <div class="col_left">
-                            <p class="title">FaceTime HD 카메라</p>
-                            <p class="sub">
-                                M2 칩의 첨단 이미지 신호 프로세서가 영상 통화에서 당신의 모습을 더욱 멋지게 보여줍니다.
-                            </p>
-                            <div class="img_box">
-                                <img src="./assets/images/videotel.png" alt="">
+                            <h2 class="title">FaceTime HD 카메라</h2>
+                            <div class="cont_box">
+                                <div class="cont_txt">
+                                    <h3 class="sub">
+                                        M2 칩의 첨단 이미지 신호 프로세서가 영상 통화에서 당신의 모습을 더욱 멋지게 보여줍니다.
+                                    </h3>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/images/videotel.png" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col_right">
-                            <p class="title">
+                            <h2 class="title">
                                 3 마이크 어레이
-                            </p>
-                            <p class="sub">
-                                스튜디오 없이도 스튜디오급 퀄리티.<br>
-                                <span class="sub_gray">
-                                    프로급 마이크에 견줄 만큼 향상된<br>
-                                    신호 대 잡음비.
-                                </span>
-                            </p>
-                            <div class="video_box">
-                                <video autoplay="" muted="" class="video">
-                                    <source src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/microphones/large_2x.mp4" type="video/mp4">
-                                </video>
+                            </h2>
+                            <div class="cont_box">
+                                <div class="cont_txt">
+                                    <h3 class="sub">
+                                        스튜디오 없이도 스튜디오급 퀄리티.<br>
+                                        <span class="sub_gray">
+                                            프로급 마이크에 견줄 만큼 향상된<br>
+                                            신호 대 잡음비.
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="video_box">
+                                    <video autoplay="" muted="" class="video">
+                                        <source src="https://www.apple.com/105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/microphones/large_2x.mp4" type="video/mp4">
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,10 +615,10 @@
             </div>
             <div class="keyboard_area">
                 <div class="inner01">
-                    <p class="sc_sub">
+                    <h2 class="sc_sub">
                         <span class="sub_gray">Magic Keyboard</span><br>
                         글자 그대로 맘에 쏙.
-                    </p>
+                    </h2>
                     <p class="sc_desc">
                         Magic Keyboard가 빠른 반응 속도는 물론, 편안하고 조용한 타이핑 경험을 선사합니다. 필요한 순간 바로 쓸 수 있도록 자주 쓰는 명령이 Touch Bar에 배치되어 키를 입력하는 데 드는 시간과 수고를 덜어줍니다. 그리고 Touch ID 덕분에 빠르고 간편한 인증 과정을 통한 안전한 로그인도 가능합니다.
                     </p>
@@ -401,60 +629,70 @@
                 <div class="inner02">
                     <div class="group_flex04">
                         <div class="col_left">
-                            <p class="title">가위식 메커니즘</p>
-                            <p class="sub">
-                                한 자를 쳐도, 한 줄을 쳐도, 페이지를 넘어가도 언제나 딱 좋은 느낌.
-                            </p>
-                            <div class="img_box">
-                                <img src="./assets/images/mechanism.png" alt="">
+                            <h2 class="title">가위식 메커니즘</h2>
+                            <div class="cont_box">
+                                <div class="cont_txt">
+                                    <p class="sub">
+                                        한 자를 쳐도, 한 줄을 쳐도, 페이지를 넘어가도 언제나 딱 좋은 느낌.
+                                    </p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/images/mechanism.png" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col_right">
-                            <p class="title">
+                            <h2 class="title">
                                 Touch Bar
-                            </p>
-                            <span class="desc">
-                                필요한 지름길이 필요한 순간에. <span class="desc_gray">편리한 단축키와 기능을 활용해 모든 것을 더 신속하게 처리할 수 있습니다. 즐겨 쓰는 이모티콘, 선호하는 언어 선택은 물론 Siri 호출도 더욱 빠르게 할 수 있죠.</span>
-                            </span>
-                            <div class="img_box">
-                                <img src="./assets/images/touchbar.jpg" alt="">
+                            </h2>
+                            <div class="cont_box">
+                                <div class="cont_txt">
+                                    <p class="desc">
+                                        필요한 지름길이 필요한 순간에. <span class="desc_gray">편리한 단축키와 기능을 활용해 모든 것을 더 신속하게 처리할 수 있습니다. 즐겨 쓰는 이모티콘, 선호하는 언어 선택은 물론 Siri 호출도 더욱 빠르게 할 수 있죠.</span>
+                                    </p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="./assets/images/touchbar.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="group_flex05">
-                        <h3 class="title">Touch ID</h3>
-                        <div class="col_left">
-                            <p class="sub">
-                                센서를 터치하면 즉시 Mac이 잠금 해제되고, 살짝 누르면 잠깁니다. 영화를 대여할 때, 앱을 구입할 때, 암호화된 문서를 열 때, 시스템 설정에 접근할 때마다 매번 암호를 새로 입력할 필요 없이 지문으로 간단히 사용자 인증을 할 수 있죠.
-                            </p>
-                        </div>
-                        <div class="col_right">
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/touchid.png" alt="">
-                                </div>
-                                <p class="desc">Mac 잠금 해제</p>
+                        <h2 class="title">Touch ID</h2>
+                        <div class="cont_box">
+                            <div class="col_left">
+                                <h5 class="sub">
+                                    센서를 터치하면 즉시 Mac이 잠금 해제되고, 살짝 누르면 잠깁니다. 영화를 대여할 때, 앱을 구입할 때, 암호화된 문서를 열 때, 시스템 설정에 접근할 때마다 매번 암호를 새로 입력할 필요 없이 지문으로 간단히 사용자 인증을 할 수 있죠.
+                                </h5>
                             </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/appstore.png" alt="">
+                            <div class="col_right">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/touchid.png" alt="">
+                                    </div>
+                                    <p class="desc">Mac 잠금 해제</p>
                                 </div>
-                                <p class="desc">App Store에서
-                                    콘텐츠 구입</p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/protected.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/appstore.png" alt="">
+                                    </div>
+                                    <p class="desc">App Store에서
+                                        콘텐츠 구입</p>
                                 </div>
-                                <p class="desc">암호로 보호된<br>
-                                    문서 열기</p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/appletv.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/protected.png" alt="">
+                                    </div>
+                                    <p class="desc">암호로 보호된<br>
+                                        문서 열기</p>
                                 </div>
-                                <p class="desc">Apple TV 앱에서
-                                    콘텐츠 구입</p>
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/appletv.png" alt="">
+                                    </div>
+                                    <p class="desc">Apple TV 앱에서
+                                        콘텐츠 구입</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -462,59 +700,61 @@
             </div>
             <div class="connect_area">
                 <div class="inner01">
-                    <p class="sc_sub">
+                    <h2 class="sc_sub">
                         <span class="sub_gray">연결성</span><br>
                         그 어느 때보다<br>
                         빠르게 통하다.
-                    </p>
+                    </h2>
                 </div>
                 <div class="img_box">
                     <img src="./assets/images/connect.jpg" alt="">
                 </div>
                 <div class="inner02">
                     <div class="group_flex05">
-                        <div class="col_left">
-                            <p class="sub">
-                                초고대역폭과 엄청난 범용성의 만남. Thunderbolt 포트 하나로도 데이터 전송, 충전, 영상 출력까지 모두 해결할 수 있습니다. MacBook Pro는 이 Thunderbolt 포트를 두 개나 가지고 있죠. 그리고 Wi‑Fi 6는 동일한 네트워크에 접속하는 기기가 점점 많아져도 MacBook Pro의 성능을 그대로 누릴 수 있게 해줍니다. 게다가 하이 임피던스 헤드폰까지 지원하는 헤드폰 잭도 갖추고 있죠.
-                            </p>
-                        </div>
-                        <div class="col_right">
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/charging.png" alt="">
-                                </div>
-                                <p class="desc">충전</p>
+                        <div class="cont_box">
+                            <div class="col_left">
+                                <h5 class="sub">
+                                    초고대역폭과 엄청난 범용성의 만남. Thunderbolt 포트 하나로도 데이터 전송, 충전, 영상 출력까지 모두 해결할 수 있습니다. MacBook Pro는 이 Thunderbolt 포트를 두 개나 가지고 있죠. 그리고 Wi‑Fi 6는 동일한 네트워크에 접속하는 기기가 점점 많아져도 MacBook Pro의 성능을 그대로 누릴 수 있게 해줍니다. 게다가 하이 임피던스 헤드폰까지 지원하는 헤드폰 잭도 갖추고 있죠.
+                                </h5>
                             </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/6k.png" alt="">
+                            <div class="col_right">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/charging.png" alt="">
+                                    </div>
+                                    <p class="desc">충전</p>
                                 </div>
-                                <p class="desc">외장 디스플레이</p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/transfer.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/6k.png" alt="">
+                                    </div>
+                                    <p class="desc">외장 디스플레이</p>
                                 </div>
-                                <p class="desc">최대 40Gb/s로
-                                    데이터 전송<sup>15</sup></p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/deviceconnect.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/transfer.png" alt="">
+                                    </div>
+                                    <p class="desc">최대 40Gb/s로
+                                        데이터 전송<sup><a href="#reference16">15</a></sup></p>
                                 </div>
-                                <p class="desc">기기 연결</p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/wifi.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/deviceconnect.png" alt="">
+                                    </div>
+                                    <p class="desc">기기 연결</p>
                                 </div>
-                                <p class="desc">최대 1.2Gb/s 처리량의 Wi‑Fi 6<sup>15</sup></p>
-                            </div>
-                            <div class="right_item">
-                                <div class="img_box">
-                                    <img src="./assets/images/headphone.png" alt="">
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/wifi.png" alt="">
+                                    </div>
+                                    <p class="desc">최대 1.2Gb/s 처리량의 Wi‑Fi 6<sup><a href="#reference16">15</a></sup></p>
                                 </div>
-                                <p class="desc">3.5mm 헤드폰 잭</p>
+                                <div class="right_item">
+                                    <div class="img_box">
+                                        <img src="./assets/images/headphone.png" alt="">
+                                    </div>
+                                    <p class="desc">3.5mm 헤드폰 잭</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -525,39 +765,41 @@
             <div class="inner02">
                 <div class="ar_area">
                     <div class="group_flex05">
-                        <div class="col_left">
-                            <div class="img_box">
-                                <img src="./assets/images/ar.png" alt="">
-                            </div>
-                            <p class="sub">
-                                당신의 작업<br>공간에 놓인<br>MacBook Pro 13의<br>모습, AR로 보기.
-                            </p>
-                            <p class="desc">
-                                iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
-                            </p>
-                            <div class="color_box">
-                                <div class="select_color">
-                                    <div class="spacegray"></div>
-                                    <span class="name">스페이스그레이</span>
+                        <div class="cont_box">
+                            <div class="col_left">
+                                <div class="img_box">
+                                    <img src="./assets/images/ar.png" alt="">
                                 </div>
-                                <div class="select_color">
-                                    <div class="silver"></div>
-                                    <span class="name">실버</span>
+                                <h2 class="sub">
+                                    당신의 작업<br>공간에 놓인<br>MacBook Pro 13의<br>모습, AR로 보기.
+                                </h2>
+                                <p class="desc">
+                                    iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
+                                </p>
+                                <div class="color_box">
+                                    <div class="select_color active">
+                                        <button class="spacegray"></button>
+                                        <span class="name">스페이스그레이</span>
+                                    </div>
+                                    <div class="select_color">
+                                        <button class="silver"></button>
+                                        <span class="name">실버</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col_right">
-                            <div class="img_box">
-                                <img src="./assets/images/ar_spacegray.jpg" alt="">
+                            <div class="col_right">
+                                <div class="img_box">
+                                    <img src="./assets/images/ar_spacegray.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="compare_area">
-                    <p class="sub">
+                    <h5 class="sub">
                         당신에게 맞는<br>Mac 노트북은?
-                    </p>
-                    <a href="" class="link_compare">모든 Mac 모델 비교하기
+                    </h5>
+                    <a href="" class="btn_arrow link_compare">모든 Mac 모델 비교하기
                     </a>
                     <div class="inner01">
                         <table class="table">
@@ -590,17 +832,371 @@
                                         <img src="./assets/images/mbp_color.png" alt="">
                                     </td>
                                 </tr>
+                                <tr class="modelname">
+                                    <td>MacBook Air<br><span class="chip">M1 칩</span></td>
+                                    <td>MacBook Air<br><span class="chip">M2 칩</span></td>
+                                    <td>MacBook Pro 13</td>
+                                    <td>MacBook Pro 14 및 16</td>
+                                </tr>
+                                <tr class="price">
+                                    <td>₩1,390,000부터</td>
+                                    <td>₩1,690,000부터</td>
+                                    <td>₩1,790,000부터</td>
+                                    <td>₩2,690,000부터</td>
+                                </tr>
+                                <tr class="displaysize">
+                                    <td>33.7cm Retina 디스플레이<sup>16</sup></td>
+                                    <td>34.5cm Liquid Retina 디스플레이<sup><a href="#reference17">16</a></sup></td>
+                                    <td>33.7cm Retina 디스플레이<sup><a href="#reference17">16</a></sup></td>
+                                    <td>35.9cm 또는 41.0cm<br>
+                                        Liquid Retina XDR 디스플레이<sup><a href="#reference17">16</a></sup></td>
+                                </tr>
+                                <tr class="chip">
+                                    <td>Apple M1 칩</td>
+                                    <td>Apple M2 칩</td>
+                                    <td>Apple M2 칩</td>
+                                    <td>Apple M1 Pro 칩 또는<br>
+                                        Apple M1 Max 칩</td>
+                                </tr>
+                                <tr>
+                                    <td>최대 16GB 메모리</td>
+                                    <td>최대 24GB 메모리</td>
+                                    <td>최대 24GB 메모리</td>
+                                    <td>최대 64GB 메모리</td>
+                                </tr>
+                                <tr>
+                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
+                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
+                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
+                                    <td>최대 8TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
+                                </tr>
+                                <tr>
+                                    <td>최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
+                                    <td>최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
+                                    <td>최대 20시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
+                                    <td>최대 21시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Touch ID</td>
+                                    <td>Touch ID</td>
+                                    <td>Touch Bar 및 Touch ID</td>
+                                    <td>Touch ID</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
+                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                    </td>
+                                    <td>
+                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
+                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                    </td>
+                                    <td>
+                                        <button class="btn_blue"><a href="">구입하기</a></button>
+                                    </td>
+                                    <td>
+                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
+                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <div class="group_flex04">
+                    <div class="col_left monterey">
+                        <h2 class="title">macOS monterey</h2>
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                더욱 반가운 소통을<br>
+                                위한 반가운 기술.
+                            </h3>
+                            <a href="" class="link_more btn_arrow">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div class="col_right">
+                        <h2 class="title">액세서리</h2>
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                Mac 액세서리<br>
+                                살펴보기.
+                            </h3>
+                            <button><a href="">쇼핑하기</a></button>
+                            <div class="img_box">
+                                <img src="./assets/images/accessories.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group_flex04">
+                    <div class="col_left">
+                        <h2 class="title">
+                            연속성
+                        </h2>
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                당신의 모든 기기가<br>
+                                하나처럼 연결된 경험.
+                            </h3>
+                            <span class="desc">
+                                iPhone, iPad, Apple Watch 그리고 Mac은 모두 Apple에서 만들기 때문에 다른 기기에서는 결코 불가능한 방식으로 서로 매끄럽게 연결됩니다.
+                            </span>
+                            <a href="" class="btn_arrow link_more blue">더 알아보기</a>
+                            <div class="img_box">
+                                <img src="./assets/images/continuity.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_right">
+                        <h2 class="title">Apple Trade In</h2>
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                새 MacBook Pro 구매 시<br>
+                                사용할 수 있는 크레딧을 받는 법.
+                            </h3>
+                            <span class="desc">
+                                보상 판매 대상 컴퓨터를 크레딧으로 교환해드리거나, 무상으로 재활용해드립니다.<sup><a href="#reference21">20</a></sup>
+                            </span>
+                            <a href="" class="btn_arrow link_more blue">더 알아보기</a>
+                            <div class="img_box">
+                                <img src="./assets/images/macbook_pro.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group_flex04">
+                    <div class="col_left education">
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                Apple과 교육
+                            </h3>
+                            <span class="desc">
+                                더 나은 세상을 만들 수 있는 힘을 교육자와 학생들에게.
+                            </span>
+                            <a href="" class="link_more">더 알아보기</a>
+                        </div>
+                    </div>
+                    <div class="col_right business">
+                        <div class="cont_box">
+                            <h3 class="sub">
+                                Apple at Work
+                            </h3>
+                            <span class="desc">
+                                비즈니스를 한 단계 더 도약시키는 막강한 힘.
+                            </span>
+                            <a href="" class="link_more">Apple at Work에 대해 알아보기</a><br>
+                            <a href="" class="link_more">Mac이 진정한 업무용 컴퓨터인 이유 보기</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="inner01">
+            <div class="service_area">
+                <a href="" class="link_service">
+                    <div class="img_box">
+                        <img src="https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-buystrip/financing/krw/icon_dark_large.svg" alt="">
+                    </div>
+                    <h6 class="footer_title">금융 혜택</h6>
+                    <p class="desc">
+                        무이자 할부를 통해 Apple 제품을<br>부담 없이 구매하실 수 있습니다.
+                    </p>
+                    <span class="link_more">더 알아보기</span>
+                </a>
+                <a href="" class="link_service">
+                    <div class="img_box">
+                        <img src="https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-buystrip/shipping/icon_dark_large.svg" alt="">
+                    </div>
+                    <h6 class="footer_title">업무일 기준 무료 익일 배송</h6>
+                    <p class="desc">
+                        오후 3시 이전에 주문된<br>재고 보유 제품에 한합니다.
+                    </p>
+                    <span class="link_more">더 알아보기</span>
+                </a>
+                <a href="" class="link_service">
+                    <div class="img_box">
+                        <img src="https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-buystrip/help/icon_dark_large.svg" alt="">
+                    </div>
+                    <h6 class="footer_title">도움이 필요하다면</h6>
+                    <p class="desc">
+                        질문이 있으신가요? 전문가와 전화로<br>상담하거나 온라인으로 채팅하세요.<br>    
+                        080-330-8877로 전화 주세요.
+                    </p>
+                    <span class="link_more">문의하기</span>
+                </a>
+            </div>
+            <div class="reference_area">
+                <ul class="reference_list">
+                    <li class="reference_item" id="reference1">
+                        * 교육 할인 혜택은 대학교 재학생 및 입학 예정자, 그들을 대신하여 구매하는 학부모, 교직원에게 적용됩니다. 자세한 내용은 <a href="">apple.com/kr-edu/shop</a>을 참고하십시오.
+                    </li>
+                </ul>
+                <ol class="reference_list">
+                    <li class="reference_item" id="reference2">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Pro 13 시제품을 사용해 진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은 <a href="">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item" id="reference3">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. Final Cut Pro 10.6.2에서 4K ProRes 422 미디어로 이루어진 복잡한 2분 분량의 프로젝트를 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference4">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. 성능 테스트는 업계 표준의 특정 벤치마크를 사용해 실시했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference5">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 시제품을 사용해 진행했습니다. 성능 테스트는 업계 표준의 특정 벤치마크를 사용해 실시했습니다. 10코어 PC 노트북의 칩 성능 데이터는 Core i7‑1255U 및 16GB RAM을 탑재한 Samsung Galaxy Book2 360(NP730QED-KA1US) 모델의 테스트 결과입니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference6">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 시제품을 사용해 진행했습니다. 성능 테스트는 업계 표준의 특정 벤치마크를 사용해 실시했습니다. 10코어 PC 노트북의 칩 성능 데이터는 Core i7‑1255U 및 16GB RAM을 탑재한 Samsung Galaxy Book2 360(NP730QED‑KA1US) 모델의 테스트 결과입니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference7">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. Final Cut Pro 10.6.2에서 4096x2160 해상도 및 초당 59.94 프레임의 4K Apple ProRes RAW 미디어로 구성된 55초 분량의 영상을 Apple ProRes 422로 인코딩 변환하여 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference8">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. 배포 전 단계의 Adobe Premiere Pro 22.5.0에서 3840x2160 해상도 및 초당 30 프레임의 4K H.264 미디어로 구성된 3분 27초 분량의 프로젝트를 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference9">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. Adobe Lightroom Classic 5.3에서 50MP 이미지 15개를 스티칭하여 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference10">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. 배포 전 단계의 Affinity Photo 1.10.5에서 내장 벤치마크 버전 11021을 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference11">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. Baldur’s Gate 3 v1.0.0.9를 1440x900 해상도의 고급 설정으로 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference12">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성) 그리고 Intel Iris Plus Graphics 645, 16GB RAM 및 2TB SSD를 탑재한 1.7GHz 쿼드 코어 Intel Core i7 기반 MacBook Pro 13 판매용 제품을 사용해 진행했습니다. Pixelmator Pro 2.4.1에서 216KB 이미지를 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference13">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품을 사용해 진행했습니다. Final Cut Pro 10.6.2에서 Apple ProRes 422 동영상(8192x4320 해상도 및 초당 30 프레임) 스트림 4개가 있는 1분 분량의 ‘화면 속 화면’ 프로젝트, 그리고 Apple ProRes 422 동영상(3840x2160 해상도 및 초당 29.97 프레임) 스트림 20개가 있는 1분 분량의 ‘화면 속 화면’ 프로젝트를 사용해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference14">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 10코어 GPU 및 24GB RAM을 탑재한 MacBook Pro 13 시제품과 Apple M1, 8코어 CPU, 8코어 GPU 및 16GB RAM을 탑재한 MacBook Pro 13 판매용 제품(모두 2TB SSD로 구성)을 사용해 진행했습니다. Final Cut Pro 10.6.2에서 4096x2160 해상도 및 초당 59.94 프레임의 4K Apple ProRes RAW 미디어로 구성된 55초 분량의 영상을 Apple ProRes 422로 인코딩 변환하여 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 MacBook Pro의 대략적인 성능을 반영합니다.
+                    </li>
+                    <li class="reference_item" id="reference15">
+                        1TB = 1조 바이트입니다. 실제 포맷된 용량은 더 적습니다.
+                    </li>
+                    <li class="reference_item" id="reference16">
+                        속도는 이론적 처리량에 근거한 수치이며 실제 결과는 다를 수 있습니다.
+                    </li>
+                    <li class="reference_item" id="reference17">
+                        화면 크기는 대각선 길이입니다.
+                    </li>
+                    <li class="reference_item" id="reference18">
+                        테스트는 2020년 10월 Apple에서 Apple M1 칩 및 8코어 GPU를 탑재한 MacBook Air 시제품을 사용해 진행했으며, 해당 제품은 8GB RAM 및 512GB SSD로 구성되었습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은 <a href="">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item" id="reference19">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 8코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Air 시제품을 사용해 진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은 <a href="">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item" id="reference20">
+                        테스트는 2021년 9월 Apple에서 Apple M1 Pro, 10코어 CPU, 16코어 GPU, 16GB RAM 및 1TB SSD를 탑재한 MacBook Pro 16 시제품을 사용해 진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은 <a href="">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item" id="reference21">
+                        보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 컴퓨터 제품에 대해서는 매장 내 보상 판매를 제공하지 않습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다.
+                    </li>
+                </ol>
+            </div>
+            <div class="sitemap_area">
+                <nav>
+                    <div>
+                        <span class="blind">logo</span>
+                    </div>
+                    <div><a href="">Mac</a></div>
+                    <div><a href="">MacBook Pro</a></div>
+                    <div>MacBook Pro 13</div>
+                </nav>
+                <div class="group_flex06">
+                    <ul class="flex_col">
+                        <li><b>쇼핑 및 알아보기</b></li>
+                        <li><a href="">스토어</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">TV 및 홈</a></li>
+                        <li><a href="">AirTag</a></li>
+                        <li><a href="">액세서리</a></li>
+                    </ul>
+                    <ul class="flex_col">
+                        <li><b>서비스</b></li>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">Apple TV+</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">iCloud</a></li>
+                        <li><a href="">Apple Books</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">Apple Podcast</a></li>
+                        <li><a href="">App Store</a></li>
+                        <li><b>계정</b></li>
+                        <li><a href="">Apple ID 관리</a></li>
+                        <li><a href="">Apple Store 계정</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                    </ul>
+                    <ul class="flex_col">
+                        <li><b>Apple Store</b></li>
+                        <li><a href="">매장 찾기</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple 캠프</a></li>
+                        <li><a href="">리퍼 및 특가 제품</a></li>
+                        <li><a href="">금융 혜택</a></li>
+                        <li><a href="">Apple Trade In</a></li>
+                        <li><a href="">주문 상태</a></li>
+                        <li><a href="">쇼핑 도움말</a></li>
+                    </ul>
+                    <ul class="flex_col">
+                        <li><b>비즈니스</b></li>
+                        <li><a href="">Apple과 비즈니스</a></li>
+                        <li><a href="">비즈니스를 위한 제품 쇼핑하기</a></li>
+                        <li><b>교육</b></li>
+                        <li><a href="">Apple과 교육</a></li>
+                        <li><a href="">초중고용 제품 쇼핑하기</a></li>
+                        <li><a href="">대학 생활을 위한 제품 쇼핑하기</a></li>
+                    </ul>
+                    <ul class="flex_col">
+                        <li><b>Apple의 가치관</b></li>
+                        <li><a href="">손쉬운 사용</a></li>
+                        <li><a href="">환경</a></li>
+                        <li><a href="">개인정보 보호</a></li>
+                        <li><a href="">협력업체에 대한 책임</a></li>
+                        <li><b>Apple 정보</b></li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple 리더십</a></li>
+                        <li><a href="">채용 안내</a></li>
+                        <li><a href="">윤리 및 규정 준수</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">일자리 창출</a></li>
+                        <li><a href="">Apple 연락처</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_group">
+                <div class="top">
+                    다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나, <a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <div class="copy">Copyright © 2022 Apple Inc. 모든 권리 보유.</div>
+                        <ul class="policy">
+                            <li class="policy_item"><a href="">개인정보 처리방침</a></li>
+                            <li class="policy_item"><a href="">웹 사이트 이용 약관</a></li>
+                            <li class="policy_item"><a href="">판매 및 환불</a></li>
+                            <li class="policy_item"><a href="">법적 고지</a></li>
+                            <li class="policy_item"><a href="">사이트 맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <a href="">대한민국</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>

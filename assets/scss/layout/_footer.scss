@@ -1,0 +1,146 @@
+.footer{
+    margin-top: 25px;
+    background: #1d1d1f;
+    .inner01{
+        > div + div{
+            border-top: 1px solid #424245;
+        }
+    }
+}
+.service_area{
+    padding: 56px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .img_box{
+        img{
+            max-height: 56px;
+            margin: 0 auto;
+        }
+    }
+    .desc{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .link_service{
+        flex: 1;
+    }
+    .link_more{
+        font-size: 14px;
+        font-weight: 400;
+        color: #2997ff;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.reference_area{
+    padding: 17px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #86868b;
+    a{
+        font-weight: bold;
+        display: inline-block;
+        color: #d2d2d7;
+    }
+    ol{
+        padding: 0 17px;
+        .reference_item{
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+    }
+}
+.sitemap_area{
+    font-size: 12px;
+    color: #d2d2d7;
+    nav{
+        display: flex;
+        padding: 17px 0;
+        div{
+            padding-right: 20px;
+            position: relative;
+            &:first-child{
+                background: url('https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-footer/breadcrumbs/apple/icon_dark_large.svg') no-repeat;
+                width: 14px;
+                height: 18px;
+            }
+            &::after{
+                content: '';
+                position: absolute; 
+                top: 0; right: 8px; 
+                width: 8px;
+                background-size: 8px 36px;
+                background-repeat: no-repeat;
+                background-image: url('https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-footer/breadcrumbs/separator/icon_dark_large.svg');
+                display: inline-block;
+                vertical-align: middle;
+                height: 18px;
+                background-position-y: 100%;
+            }
+            &:last-child::after{
+                display: none;
+            }
+        }
+    }
+}
+.group_flex06{
+    display: flex;
+    .flex_col{
+        flex: 1;
+        margin-right: 20px;
+        li{
+            margin-bottom: 10px;
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer_group{
+    font-size: 12px;
+    padding: 34px 0;
+    a:hover{
+        text-decoration: underline;
+    }
+    .top{
+        border-bottom: 1px solid #424245;
+        color: #86868b;
+        margin-bottom: 7px;
+        padding-bottom: 8px;
+        a{
+            display: inline-block;
+            color:#2997ff;
+        }
+    }
+    .bottom{
+        overflow: hidden;
+        color: #d2d2d7;
+        &::after{
+            content: '';clear: both;display: block;
+        }
+        .left{
+            float: left;
+            display: flex;
+            .copy{
+                color: #86868b;
+                margin-right: 30px;
+            }
+            .policy{
+                display: flex;
+                .policy_item{
+                    &+.policy_item{
+                        padding-left: 10px;
+                        margin-left: 7px;
+                        border-left: 1px solid #424245;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+        }
+    }
+}

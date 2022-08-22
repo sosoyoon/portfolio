@@ -14,3 +14,38 @@
     -webkit-box-orient: vertical;
 }
 
+
+
+
+
+$header_sm: 833px;
+
+$tablet: 1068px;
+
+$mobile_lg: 734px;
+
+$mobile_sm: 374px;
+
+
+
+@mixin header_sm{
+    @media (min-width: $header_sm){
+      @content;
+    }
+  }
+@mixin tablet{
+    @media (min-width: $tablet){
+      @content;
+    }
+  }
+@mixin mobile_lg{
+    @media (min-width: $mobile_lg){
+      @content;
+    }
+  }
+@mixin mobile_sm{
+    @media (min-width: $mobile_sm){
+      @content;
+    }
+  }
+

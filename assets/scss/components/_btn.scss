@@ -1,0 +1,28 @@
+.btn_arrow{
+    &::after{
+        content: "";
+        font-family: "sf-pro-icons";
+        color: inherit;
+        display: inline-block;
+        font-style: normal;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+        position: relative !important;
+        top: -0.1em !important;
+        padding-left: 0.3em;
+    }
+}
+
+.btn_blue{
+    text-align: center;
+    background: #0071e3;
+    color: #fff;
+    border-radius: 22px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 2px 11px;
+    height: 24px;
+}

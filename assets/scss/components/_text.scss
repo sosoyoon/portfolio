@@ -14,9 +14,9 @@
 }
 .title{
     font-size: 21px;
-    width: 100%;
     margin-bottom: 20px;
     font-weight: 600;
+    width: 100%;
 }
 .sub{
     font-size: 32px;
@@ -26,14 +26,20 @@
 .desc{
     font-weight: 600;
     color: #f5f5f7;
+    font-size: 28px;
 }
-p.desc{
+.sz_32{
     font-size: 32px;
 }
-span.desc{
+.sz_19{
     font-size: 19px;
+    line-height: 1.5em;
 }
 .caption{
     font-size: 12px;
     color: #fff;
+}
+.footer_title{
+    font-size: 19px;
+    font-weight: 600;
 }

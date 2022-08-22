@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    
 }
 .nav_list{
     display: flex;
@@ -32,45 +33,53 @@
     background-size: 15px;
 }
 .header_center{
+    padding: 0 24px;
     background: #1d1d1fb8;
     line-height: 52px;
     overflow: hidden;
     border-bottom: 1px solid #FFFFFF3d;
+    &.show{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: #fff;
+        transform: translateY(0px);
+        background-color: rgba(29,29,31,0.72);
+        backdrop-filter: saturate(180%) blur(20px)
+    }
     &::after{content: '';clear: both;display: block;}
-    .inner01{
-        .nav_title{
+    .nav_inner{
+        .link_pro13{
             float: left;
             font-size: 21px;
             font-weight: 600;
         }
-        .nav_list{
+        .nav{
             float: right;
+            display: flex;
             align-items: center;
-            .nav_item{
-                vertical-align: top;
-                line-height: 52px;
-                &+.nav_item{
-                    margin-left: 24px;
-                    color: #fff;
-                }
-                .nav_link{
-                    &:hover{
-                        color: #2997ff;
+            .nav_list{
+                align-items: center;
+                .nav_item{
+                    vertical-align: top;
+                    line-height: 52px;
+                    &+.nav_item{
+                        margin-left: 24px;
+                        color: #fff;
+                    }
+                    .nav_link{
+                        &:hover{
+                            color: #2997ff;
+                        }
                     }
                 }
             }
-            button{
-                margin-left: 24px;
-                text-align: center;
-                background: #0071e3;
-                color: #fff;
-                border-radius: 22px;
-                font-size: 12px;
-                line-height: 24px;
-                padding: 2px 11px;
-                height: 24px;
-            }
         }
+    }
+    .btn_blue{
+        margin-left: 24px;
     }
 }
 .header_bottom{

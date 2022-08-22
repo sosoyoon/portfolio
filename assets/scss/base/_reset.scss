@@ -6,7 +6,7 @@ html, body {height:100%; line-height: 1;}
 img, picture, video, canvas, svg {display: block;max-width:100%;}
 button {background:none;border:0;cursor:pointer;}
 table {border-collapse:collapse;border-spacing:0}
-ul,ol{list-style: none;}
+ul, li{list-style: none;}
 
 /*
     @세팅구역
@@ -23,6 +23,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     background: #000;
+    // background: #fff;
     word-break: keep-all;
 }
 
