@@ -445,7 +445,6 @@ sup a:hover {
 }
 
 .footer {
-  margin-top: 25px;
   background: #1d1d1f;
 }
 .footer .inner01 > div + div {
@@ -494,6 +493,7 @@ sup a:hover {
   padding: 0 17px;
 }
 .reference_area ol .reference_item {
+  list-style: decimal;
   box-sizing: border-box;
   margin-top: 10px;
 }
@@ -984,26 +984,26 @@ sup a:hover {
   text-align: center;
   background: linear-gradient(to top, #4cd265 50%, #fff 50%);
   background-size: auto 200%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   padding-bottom: 5px;
   margin-bottom: -5px;
-  position: relative;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
-.battery .flex_30 .sub::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to top, #4cd265 50%, transparent 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.battery .flex_30 .sub.active {
+  -webkit-animation: battery-fillup 1.5s linear forwards;
+          animation: battery-fillup 1.5s linear forwards;
+}
+@-webkit-keyframes battery-fillup {
+  to {
+    background-position: center 100%;
+  }
+}
+@keyframes battery-fillup {
+  to {
+    background-position: center 100%;
+  }
 }
 .battery .flex_70 {
   background: linear-gradient(165deg, #2c4735 0%, #1d243e 60%, #101124 90%);
@@ -1152,6 +1152,12 @@ sup a:hover {
   margin: 60px 0;
 }
 
+.true_tone {
+  background: url("../images/truetone01.jpg") 0 0 no-repeat;
+  background-size: 100%;
+  transition: all 1.5s;
+}
+
 .camera_area .img_box {
   position: relative;
 }
@@ -1172,6 +1178,12 @@ sup a:hover {
   margin: 0 auto;
   position: relative;
 }
+.camera_area .cont_box {
+  align-items: stretch;
+}
+.camera_area .cont_box .img_box {
+  width: 100%;
+}
 
 .group_flex04 {
   display: flex;
@@ -1189,12 +1201,6 @@ sup a:hover {
   width: calc(50% - 12px);
   background-color: #151516;
   border-radius: 30px;
-}
-.group_flex04 .cont_box {
-  align-items: stretch;
-}
-.group_flex04 .cont_box .img_box {
-  width: 100%;
 }
 .group_flex04 .video_box {
   max-width: 362px;
@@ -1321,13 +1327,19 @@ sup a:hover {
 .sc_groupcol01 {
   background: #151516;
   margin-top: 145px;
+  padding-bottom: 25px;
 }
 .sc_groupcol01 .sub {
   font-size: 48px;
+  width: 100%;
 }
 .sc_groupcol01 .desc {
   font-size: 17px;
   font-weight: 400;
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  display: block;
 }
 .sc_groupcol01 .inner02 > div {
   border-radius: 30px;
@@ -1337,40 +1349,15 @@ sup a:hover {
   background: none;
   padding: 0;
 }
-.sc_groupcol01 .group_flex04 {
-  text-align: center;
-}
-.sc_groupcol01 .group_flex04 .col_left {
-  background: #1d1d1f;
-}
-.sc_groupcol01 .group_flex04 .col_right {
-  background: #1d1d1f;
-}
-.sc_groupcol01 .group_flex04 .col_right button {
-  background: #0077ED;
-  padding: 8px 16px;
-  border-radius: 980px;
-}
-.sc_groupcol01 .group_flex04 .col_right button:hover {
-  background: #2997ff;
-}
-.sc_groupcol01 .group_flex04 .col_right button a {
-  text-decoration: none;
-}
-.sc_groupcol01 .group_flex04 .desc {
-  width: 84%;
-  margin: 15px auto 0;
-  display: block;
-}
-.sc_groupcol01 .group_flex04 .link_more {
+.sc_groupcol01 .link_more {
   display: inline-block;
   margin-top: 10px;
   line-height: 20px;
 }
-.sc_groupcol01 .group_flex04 .link_more:hover {
+.sc_groupcol01 .link_more:hover {
   text-decoration: underline;
 }
-.sc_groupcol01 .group_flex04 .link_more.blue {
+.sc_groupcol01 .link_more.blue {
   color: #2997ff;
 }
 
@@ -1510,9 +1497,37 @@ sup a:hover {
   text-decoration: underline;
 }
 
+.more_area {
+  text-align: center;
+}
+.more_area .col_left {
+  background: #1d1d1f;
+  overflow: hidden;
+  padding: 0;
+}
+.more_area .col_right {
+  background: #1d1d1f;
+  overflow: hidden;
+  padding: 0;
+}
+.more_area .col_right button:hover {
+  background: #2997ff;
+}
+.more_area .col_right button a {
+  text-decoration: none;
+}
+.more_area .img_box {
+  width: 100%;
+}
+.more_area .desc {
+  margin-top: 10px;
+}
+
 .monterey {
   background: url("../images/monterey.jpg") no-repeat !important;
-  background-size: 1390px;
+  background-size: 1390px !important;
+  padding: 0 !important;
+  min-height: 600px;
 }
 .monterey .img_box {
   width: 188px;
@@ -1521,8 +1536,47 @@ sup a:hover {
   color: #FFF;
 }
 
+.accessory {
+  min-height: 600px;
+}
+.accessory .btn_blue {
+  font-size: 17px;
+  line-height: 36px;
+  height: 36px;
+}
+.accessory .title {
+  margin-top: 40px;
+}
+
+.continuity {
+  min-height: 700px;
+}
+.continuity .cont_box {
+  align-items: stretch;
+}
+.continuity .title {
+  margin-top: 40px;
+}
+.continuity .img_box {
+  max-width: 682px;
+}
+
+.trade {
+  min-height: 700px;
+}
+.trade .cont_box {
+  align-items: stretch;
+}
+.trade .title {
+  margin-top: 40px;
+}
+.trade .img_box {
+  max-width: 464px;
+  margin: auto;
+}
+
 .education {
-  height: 600px;
+  min-height: 600px;
   background: url("../images/education.jpg") no-repeat !important;
   background-size: 100% !important;
 }
@@ -1531,7 +1585,7 @@ sup a:hover {
 }
 
 .business {
-  height: 600px;
+  min-height: 600px;
   background: url("../images/business.jpg") no-repeat !important;
   background-size: 100% !important;
 }

@@ -89,7 +89,7 @@ $(function(){
             },
             opacity: 0.2,
             y:0,
-            markers:true,
+            // markers:true,
           })
       })
     
@@ -99,22 +99,21 @@ $(function(){
         $(this).parent().addClass('active').siblings().removeClass('active');
     })
     
-    // var fillup = gsap.timeline({})
-    // fillup.addLabel('a')
-    // // .from('.battery .flex_30 .sub',{top:'100%'},'a').to('.battery .flex_30 .sub',{top:'0%'},{background: '#4cd265'},'a')
-    // // .from('.battery .flex_30 .sub',{background: '#4cd265'},'a')
-    // ScrollTrigger.create({
-    //     trigger:".battery",
-    //     start:"top 20%",
-    //     end:"bottom 0",
-    //     markers:true,
-    //     animation:fillup,
-    // })
 
+    $(window).scroll(function(){
+        curScroll = $(this).scrollTop();
+        target = $('.macOS .desc').offset().top;
+        if(curScroll >= target){
+            $('.battery .flex_30 .sub').addClass('active')
+        }
+    })
 
-    // TweenLite.to(".battery .flex_30 .sub", 1, {background:"#4cd265", delay:0.5})
+    $(window).scroll(function(){
+        curScroll = $(this).scrollTop();
+        target = $('.display_area .caption').offset().top;
+        if(curScroll >= target){
+            $('.true_tone').css('background', 'url(../assets/images/truetone02.jpg').css('background-size', '100%')
+        }
+    })
 
-    // $('.battery .flex_30 .sub').css({background: "#4cd265", transition: "2.0s"});
-    
-    // each문 써서 페이드 쓰기
 })
