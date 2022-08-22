@@ -112,7 +112,7 @@ $(function(){
         curScroll = $(this).scrollTop();
         target = $('.display_area .caption').offset().top;
         if(curScroll >= target){
-            $('.true_tone').css('background', 'url(../assets/images/truetone02.jpg').css('background-size', '100%')
+            $('.true_tone').css('background', 'url(https://www.apple.com/v/macbook-pro-13/m/images/overview/truetone_warm_bg__gjhxib60wtua_large_2x.jpg').css('background-size', '100%')
         }
     })
 

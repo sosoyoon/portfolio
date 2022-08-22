@@ -1,10 +1,5 @@
 .footer{
     background: #1d1d1f;
-    .inner01{
-        > div + div{
-            border-top: 1px solid #424245;
-        }
-    }
 }
 .service_area{
     padding: 56px 0;
@@ -35,6 +30,7 @@
     }
 }
 .reference_area{
+    border-top: 1px solid #424245;
     padding: 17px 0;
     font-size: 12px;
     font-weight: 400;
@@ -54,6 +50,7 @@
     }
 }
 .sitemap_area{
+    border-top: 1px solid #424245;
     font-size: 12px;
     color: #d2d2d7;
     nav{

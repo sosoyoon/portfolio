@@ -447,9 +447,6 @@ sup a:hover {
 .footer {
   background: #1d1d1f;
 }
-.footer .inner01 > div + div {
-  border-top: 1px solid #424245;
-}
 
 .service_area {
   padding: 56px 0;
@@ -479,6 +476,7 @@ sup a:hover {
 }
 
 .reference_area {
+  border-top: 1px solid #424245;
   padding: 17px 0;
   font-size: 12px;
   font-weight: 400;
@@ -499,6 +497,7 @@ sup a:hover {
 }
 
 .sitemap_area {
+  border-top: 1px solid #424245;
   font-size: 12px;
   color: #d2d2d7;
 }
@@ -1153,7 +1152,7 @@ sup a:hover {
 }
 
 .true_tone {
-  background: url("../images/truetone01.jpg") 0 0 no-repeat;
+  background: url("https://www.apple.com/v/macbook-pro-13/m/images/overview/truetone_cold_bg__chsf1efvkyuu_large_2x.jpg") 0 0 no-repeat;
   background-size: 100%;
   transition: all 1.5s;
 }
