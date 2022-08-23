@@ -654,10 +654,6 @@
             border-radius: 30px;
             margin-top: 25px;
         }
-        .group_flex05{
-            background: none;
-            padding: 0;
-        }
     }
     .link_more{
         display: inline-block;
@@ -674,10 +670,13 @@
 .ar_area{
     background: #1d1d1f;
     .group_flex05{
+        display: flex;
         align-items: flex-end;
+        background: none;
     }
     .desc{
         margin-top: 14px;
+        padding: 0;
     }
     .col_left{
         padding: 90px 0 55px 8%;

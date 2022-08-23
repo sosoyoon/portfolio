@@ -23,20 +23,75 @@
                     <li class="nav_item"><a href="" class="nav_link">Apple 독점 제공</a></li>
                     <li class="nav_item"><a href="" class="nav_link">액세서리</a></li>
                     <li class="nav_item"><a href="" class="nav_link">고객지원</a></li>
-                    <li class="nav_item search_box">
+                    <li class="nav_item search_area">
                         <span class="blind">검색</span>
-                        <!-- 백그라운드처리하기 input 구현하기 -->
                         <a href="" class="btn_search">
-                            <fieldset>
-                                <input type="text">
-                            </fieldset>
                         </a>
                     </li>
-                    <li class="nav_item cart_box">
+                    <li class="nav_item cart_area">
                         <span class="blind">장바구니</span>
                         <a href="" class="btn_cart"></a>
                     </li>
                 </ul>
+                <div class="search_box">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                                <div class="link_box">
+                                    <input type="text" placeholder="apple.com 검색" class="text">
+                                    <button class="btn_search">
+                                        <span class="blind">검색</span>
+                                    </button>
+                                    <button class="close">
+                                        <span class="wrapper">
+                                            <span class="blind">닫기</span>
+                                            <span class="close_box close_left"></span>
+                                            <span class="close_box close_right"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                        </fieldset>
+                    </form>
+                    <div class="link_area">
+                        <h2 class="link_title">빠른 링크</h2>
+                        <ul class="link_list">
+                            <li class="link_item">
+                                <a href="">Apple Store 임시 휴무 관련 자주하는 질문</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="">Apple Store 임시 휴무 관련 자주하는 질문</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="">Apple Store Online에서 쇼핑하기</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="">액세서리</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="">Air Pods</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="">AirTag</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtain"></div>
+                <div class="cart_box">
+                    <h2 class="blind">장바구니</h2>
+                    <div class="cart_wrapper">
+                        <div class="cart_title">
+                            장바구니가 비어있습니다.
+                        </div>
+                        <ul class="cart_list">
+                            <li class="cart_item"><a href="link_cart">장바구니</a></li>
+                            <li class="cart_item"><a href="link_cart">저장된항목</a></li>
+                            <li class="cart_item"><a href="link_cart">주문</a></li>
+                            <li class="cart_item"><a href="link_cart">계정</a></li>
+                            <li class="cart_item"><a href="link_cart">로그인</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header_center">
@@ -129,7 +184,6 @@
                 </div>
             </div>
         </section>
-        <!-- section안에 section으로 구성해보기 -->
         <section class="sc_spec">
             <div class="inner02">
                 <section class="group_flex01 comparison">
@@ -763,33 +817,31 @@
         <section class="sc_groupcol01">
             <div class="inner02">
                 <div class="ar_area">
-                    <div class="group_flex05">
-                        <div class="cont_box">
-                            <div class="col_left">
-                                <div class="img_box">
-                                    <img src="./assets/images/ar.png" alt="">
+                    <div class="group_flex05 ar_box">
+                        <div class="col_left">
+                            <div class="img_box">
+                                <img src="./assets/images/ar.png" alt="">
+                            </div>
+                            <h2 class="sub">
+                                당신의 작업<br>공간에 놓인<br>MacBook Pro 13의<br>모습, AR로 보기.
+                            </h2>
+                            <p class="desc">
+                                iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
+                            </p>
+                            <div class="color_box">
+                                <div class="select_color active">
+                                    <button class="spacegray"></button>
+                                    <span class="name">스페이스그레이</span>
                                 </div>
-                                <h2 class="sub">
-                                    당신의 작업<br>공간에 놓인<br>MacBook Pro 13의<br>모습, AR로 보기.
-                                </h2>
-                                <p class="desc">
-                                    iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
-                                </p>
-                                <div class="color_box">
-                                    <div class="select_color active">
-                                        <button class="spacegray"></button>
-                                        <span class="name">스페이스그레이</span>
-                                    </div>
-                                    <div class="select_color">
-                                        <button class="silver"></button>
-                                        <span class="name">실버</span>
-                                    </div>
+                                <div class="select_color">
+                                    <button class="silver"></button>
+                                    <span class="name">실버</span>
                                 </div>
                             </div>
-                            <div class="col_right">
-                                <div class="img_box">
-                                    <img src="./assets/images/ar_spacegray.jpg" alt="">
-                                </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="img_box">
+                                <img src="./assets/images/ar_spacegray.jpg" alt="">
                             </div>
                         </div>
                     </div>

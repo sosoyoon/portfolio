@@ -9,8 +9,8 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
-    &::after{content: '';clear: both;display: block;}
+    // overflow: hidden;
+    // &::after{content: '';clear: both;display: block;}
     padding: 0 22px;
 }
 .inner01{

@@ -29,22 +29,22 @@ $mobile_sm: 374px;
 
 
 @mixin header_sm{
-    @media (min-width: $header_sm){
+    @media (max-width: $header_sm){
       @content;
     }
   }
 @mixin tablet{
-    @media (min-width: $tablet){
+    @media (max-width: $tablet){
       @content;
     }
   }
 @mixin mobile_lg{
-    @media (min-width: $mobile_lg){
+    @media (max-width: $mobile_lg){
       @content;
     }
   }
 @mixin mobile_sm{
-    @media (min-width: $mobile_sm){
+    @media (max-width: $mobile_sm){
       @content;
     }
   }

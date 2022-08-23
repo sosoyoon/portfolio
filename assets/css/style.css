@@ -247,13 +247,7 @@ textarea::-webkit-outer-spin-button {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   padding: 0 22px;
-}
-.nav_inner::after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .inner01 {
@@ -618,8 +612,137 @@ sup a:hover {
   background: url("https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg") 0 0 no-repeat;
   background-size: 15px 88px;
 }
-.btn_search fieldset {
+
+.search_box {
   display: none;
+  /* overflow: auto; */
+  /* overflow-x: hidden;*/
+}
+.search_box.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66.66667%;
+  height: calc(100vh - 16px);
+  z-index: 999;
+}
+.search_box fieldset {
+  border: none;
+  height: 44px;
+}
+.search_box fieldset .text {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 44px - 37px);
+  height: 44px;
+  background: transparent;
+  box-sizing: border-box;
+  font-size: 17px;
+  color: #fff;
+  outline: none;
+}
+.search_box .btn_search {
+  position: absolute;
+  left: 0;
+  background-position: 0 -44px;
+  width: 40px;
+  background-size: 40px 88px;
+}
+
+.link_box {
+  padding: 0 38px 0 40px;
+  height: 44px;
+  position: relative;
+}
+
+.close {
+  right: 0;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 4;
+  width: 37px;
+  height: 44px;
+  top: 0;
+  color: #86868b;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.close .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.close .close_box {
+  height: 17px;
+  width: 1px;
+  background: #86868b;
+  position: absolute;
+  display: block;
+  border-radius: 0.5px;
+  top: 11px;
+  z-index: 1;
+}
+.close .close_left {
+  right: 12px;
+  transform: rotate(-45deg);
+  transform-origin: 50% 100%;
+  height: 17px;
+  width: 1px;
+}
+.close .close_right {
+  left: 12px;
+  transform: rotate(45deg);
+  transform-origin: 50% 100%;
+  height: 17px;
+  width: 1px;
+}
+
+.link_area {
+  line-height: 2;
+  font-weight: 400;
+  background: #fff;
+  border-top: none;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  color: #86868b;
+  max-height: calc(100% - 44px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 23px 40px 18px;
+}
+.link_area .link_title {
+  color: #6e6e73;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+}
+.link_area .link_item {
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #1d1d1f;
+}
+.link_area .link_item:hover {
+  color: #06c;
+}
+
+.curtain {
+  display: none;
+}
+.curtain:active {
+  display: block;
+  background: rgba(0, 0, 0, 0.48);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
 }
 
 .btn_cart {
@@ -627,6 +750,92 @@ sup a:hover {
   height: 44px;
   background: url("https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg") 0 50% no-repeat;
   background-size: 15px;
+}
+
+.cart_box {
+  display: none;
+}
+.cart_box.active {
+  display: block;
+  right: 0%;
+  transform: translateX(35%);
+  position: absolute;
+  top: 48px;
+  background: #fff;
+  margin: 0 auto;
+  width: 286px;
+  min-height: 90px;
+  padding: 0 20px;
+  z-index: 2;
+  border-radius: 18px;
+}
+
+.cart_wrapper {
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.cart_wrapper::before {
+  content: "";
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg) skew(4deg, 4deg);
+  transform-origin: 0% 0;
+  background: #fff;
+}
+.cart_wrapper .cart_title {
+  color: #6e6e73;
+  padding: 35px 0 23px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: -0.016em;
+}
+.cart_wrapper .cart_item {
+  color: #06c;
+  display: block;
+  line-height: 44px;
+  padding: 0 28px;
+  border-top: 1px solid #d2d2d7;
+}
+.cart_wrapper .cart_item a:hover {
+  text-decoration: underline;
+}
+.cart_wrapper .cart_item:nth-child(1) {
+  background: url("https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/bag.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 11px;
+  background-size: 21px 21px;
+}
+.cart_wrapper .cart_item:nth-child(2) {
+  background: url("https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/savedbyyou.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 11px;
+  background-size: 21px 21px;
+}
+.cart_wrapper .cart_item:nth-child(3) {
+  background: url("https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/orders.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 11px;
+  background-size: 21px 21px;
+}
+.cart_wrapper .cart_item:nth-child(4) {
+  background: url("https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/account.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 11px;
+  background-size: 21px 21px;
+}
+.cart_wrapper .cart_item:nth-child(5) {
+  background: url("https://www.apple.com/ac/globalnav/7/ko_KR/assets/ac-store/signIn.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 11px;
+  background-size: 21px 21px;
 }
 
 .header_center {
@@ -1344,10 +1553,6 @@ sup a:hover {
   border-radius: 30px;
   margin-top: 25px;
 }
-.sc_groupcol01 .inner02 .group_flex05 {
-  background: none;
-  padding: 0;
-}
 .sc_groupcol01 .link_more {
   display: inline-block;
   margin-top: 10px;
@@ -1364,10 +1569,13 @@ sup a:hover {
   background: #1d1d1f;
 }
 .ar_area .group_flex05 {
+  display: flex;
   align-items: flex-end;
+  background: none;
 }
 .ar_area .desc {
   margin-top: 14px;
+  padding: 0;
 }
 .ar_area .col_left {
   padding: 90px 0 55px 8%;
