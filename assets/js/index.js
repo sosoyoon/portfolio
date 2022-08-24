@@ -13,6 +13,19 @@ visualTl.addLabel('label1')
   
   
 $(function(){
+// 모바일메뉴
+$('.m_menu').click(function(e){
+    e.preventDefault();
+    if(
+        $('.menu_list').css('display') == 'none')
+        {
+        $('.menu_list').stop().slideDown().css('display', 'block');
+    }
+    else{
+        $('.menu_list').stop().slideUp().css('display', 'none')
+    }
+})
+    
 // 검색버튼
     $('.btn_search').click(function(e){
         e.preventDefault();
@@ -22,8 +35,7 @@ $(function(){
             display: 0,
             duration: 0.3
           });
-        $('.search_box').addClass('active');
-        $('.curtain').addClass('active');
+        $('.search_box, .curtain').addClass('active');
     })
     $('.close').click(function(e){
         e.preventDefault();
@@ -33,18 +45,22 @@ $(function(){
             display: 0,
             duration: 0.3
           });
-        $('.search_box').removeClass('active');
-        $('.curtain').removeClass('active');
+        $('.search_box, .curtain').removeClass('active');
     })
+
+
 // 장바구니
 $('.cart_area').click(function(e){
     e.preventDefault();
     if($('.cart_box').css('display') == 'none'){
-        $('.cart_box').addClass('active');
+        $('.cart_box, .tri').addClass('active');
     }else{
-        $('.cart_box').removeClass('active');
+        $('.cart_box, .tri').removeClass('active');
     }
 })
+// $('.container').click(function(e){
+//     if( !$('.cart_box, .tri').has(e.target).length ) $('.cart_box, .tri').hide();
+// });
 
 // 헤더고정
       let lastScroll = 0;
@@ -149,7 +165,7 @@ $('.cart_area').click(function(e){
         curScroll = $(this).scrollTop();
         target = $('.display_area .caption').offset().top;
         if(curScroll >= target){
-            $('.true_tone').css('background', 'url(https://www.apple.com/v/macbook-pro-13/m/images/overview/truetone_warm_bg__gjhxib60wtua_large_2x.jpg').css('background-size', '100%')
+            $('.true_tone').css('background', 'url(https://www.apple.com/v/macbook-pro-13/m/images/overview/truetone_warm_bg__gjhxib60wtua_large_2x.jpg').css({'background-size': '100%', 'background-repeat':'no-repeat', 'background-position':'bottom','background-color': '#151516'})
         }
     })
 

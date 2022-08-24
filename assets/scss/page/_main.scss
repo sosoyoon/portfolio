@@ -1,9 +1,11 @@
 .pro_area{
     margin-top: 50px; 
     margin-bottom: 270px;
+    @include mobile_lg {
+        margin-bottom: 120px;
+    }
     .inner01{
-        margin-top: -152px;
-    .text_box{
+        .text_box{
             text-align: center;
             .desc{
                 padding: 0 40px;
@@ -16,10 +18,24 @@
                 background-position: 50% 100%;
                 color: transparent;
                 -webkit-background-clip: text;
+                @include tablet {
+                    font-size: 80px;
+                }
+                @include mobile_lg {
+                    font-size: 48px;
+                }
             }
             .sc_desc{
+                max-width: 780px;
+                margin: 0 auto;
                 font-size: 32px;
                 color: #d2d2d7;
+                @include tablet {
+                    font-size: 28px;
+                }
+                @include mobile_lg {
+                    font-size: 24px;
+                }
             }
         }      
     }
@@ -29,8 +45,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablet {
+            margin-top: 46px;
+        }
+        @include mobile_lg {
+            margin-top: 34px;
+        }
         .sc_desc{
             font-size: 40px;
+            @include tablet {
+                font-size: 32px;
+            }
+            @include mobile_lg {
+                font-size: 28px;
+            }
         }
         img{
             width: 94px;
@@ -42,10 +70,23 @@
         display: flex;
         justify-content: center;
         margin-top: 50px;
+        @include tablet {
+            font-size: 24px;
+            margin-top: 42px;
+        }
+        @include mobile_lg {
+            display: block;
+            text-align: center;
+            font-size: 21px;
+            line-height: 2;
+        }
         .price{
             &::after{
                 content: "|";
                 margin: 0 30px;
+                @include mobile_lg {
+                    display: none;
+                }
             }
         }
         .link_event{
@@ -55,11 +96,15 @@
         }
     }
 }
-
 .memory_area{
     text-align: center;
     .sc_sub{
         color: #fff;
+    }
+    .inner01{
+        @include mobile_lg {
+            max-width: calc(280px + 60px);
+        }
     }
 }
 .group_row01{
@@ -69,17 +114,28 @@
     .sc_desc{
         margin: 38px 0;
         color: #fff;
+        @include tablet {
+            font-size: 24px;
+        }
+        @include mobile_lg {
+            font-size: 21px;
+        }
     }
     .img_box{
         img{
-            max-width: 434px;height: 434px;
+            max-width: 434px;
             margin: 0 auto;
+            width: 100%;
         }
     }
 }
 .chip_box{
     display: flex;
     justify-content: center;
+    @include mobile_lg {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     .text_box{
         margin: 0 24px;
         text-align: left;
@@ -90,6 +146,12 @@
             font-size: 14px;
             color: #fff;
         }
+        @include mobile_lg {
+            margin: 0;
+            width: 50%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
     }
 }
 .btn_box{
@@ -97,6 +159,12 @@
     background: linear-gradient(135deg, #bead47, #922b28, #8e089b);
     width: fit-content;
     border-radius: 980px;
+    @include tablet {
+        margin: 62px auto 180px;
+    }
+    @include mobile_lg {
+        margin: 20px auto 158px;
+    }
     .btn_more{
         border-radius: 50px;
         line-height: 48px;
@@ -125,6 +193,9 @@
     .cont_box{
         justify-content: space-between;
         align-items: flex-start;
+        @include mobile_lg {
+            display: block;
+        }
     }
     .btn_graph{
         display: inline-block;
@@ -134,13 +205,19 @@
     }
     .col_left{
         width: 25%;
+        @include mobile_lg {
+            width: 100%;
+        }
     }
     .col_right{
         margin-left: 10%;
         width: 65%;
         padding-right: 60px;
         box-sizing: border-box;
-        
+        @include mobile_lg {
+            width: 100%;
+            margin: 60px 0 0;padding: 0;
+        }
     }
 }
 .graph_area{
@@ -148,11 +225,25 @@
         margin-top: 96px;
         border-top: solid 2px #2C2C2D;
         padding: 91px 0;
+        @include tablet {
+            margin-top: 86px;
+            padding: 80px 0;
+        }
+        @include mobile_lg {
+            margin-top: 53px;
+            padding: 56px 0;
+        }
     }
     .desc{
         font-size: 32px;
         &+.desc{
             color: #86868b;
+        }
+        @include tablet {
+            font-size: 28px;
+        }
+        @include mobile_lg {
+            font-size: 24px;
         }
     }
 }
@@ -163,6 +254,9 @@
         box-sizing: border-box;
         .desc{
             font-size: 28px;
+            @include mobile_lg {
+                font-size: 21px;
+            }
         }
         .graph{
             display: flex;
@@ -184,15 +278,21 @@
             }
             .graph_left{
                 width: 72%;
+                padding-right: 20px;
+                box-sizing: border-box;
             }
             .graph_right{
                 width: 28%;
                 font-size: 56px;
                 font-weight: 600;
                 color: #CC18C6;
-                padding-left: 20px;
-                box-sizing: border-box;
                 line-height: 0.5;
+                @include tablet {
+                    font-size: 32px;
+                }
+                @include mobile_lg {
+                    font-size: 28px;
+                }
             }
             span.desc{
                 font-size: 17px;
@@ -209,6 +309,16 @@
     padding: 40px 0 0 40px;
     box-sizing: border-box;
     overflow: hidden;
+    @include tablet {
+        width: calc(50% - 12px);
+    }
+    @include mobile_lg {
+        width: 100%;
+        padding: 30px;
+    }
+    @include mobile_sm {
+        border-radius: 0;
+    }
 }
 .flex_30{
     background: url('../images/bg01.jpg');
@@ -221,11 +331,31 @@
         height: 52px;
         margin-bottom: 20px;
     }
+    @include tablet {
+        width: calc(50% - 12px);
+    }
+    @include mobile_lg {
+        width: 100%;
+        padding: 30px;
+        margin-top: 24px;
+    }
+    @include mobile_sm {
+        border-radius: 0;
+    }
 }
 .capacity{
+    @include mobile_lg {
+        position: relative;
+    }
     .flex_70{
         position: relative;
         min-height: 700px;
+        @include tablet {
+            min-height: 680px;
+        }
+        @include mobile_lg {
+            min-height: 546px;
+        }
         .title{
             position: absolute;
             z-index: 10;
@@ -233,19 +363,73 @@
         .cooling{
             position: absolute;
             top: 0;
-            left: 0;
+            right: -200%;
+            bottom: 0;
+            left: -200%;
             max-width: 918px;
-            height: 720px;
+            .video{
+                width: 100%;
+            }
+            .large{
+                @include tablet {
+                    display: none;
+                }
+            }
+            .medium{
+                display: none;
+                @include tablet {
+                    display: block;
+                    top: unset;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 436px;
+                }
+                @include mobile_lg {
+                    display: none;
+                }
+            }
+            .small{
+                display: none;
+                @include mobile_lg {
+                    display: block;
+                    height: -webkit-fill-available;
+
+                }
+            }
+            @include tablet {
+                max-width: 542px;
+            }
+            @include mobile_lg {
+                max-width: 436px;
+            }
         }
         .cont_box{
             position: relative;
+            @include tablet {
+                display: block;
+            }
             .cont_txt{
                 position: absolute; 
                 top: 50%; left: 0%; transform: translateY(-50%);
                 max-width: 420px;
                 padding-right: 35px;
-                box-sizing: border-box;
+                box-sizing: unset;
                 z-index: 10;
+                @include tablet {
+                    width: 100%;
+                    max-width: 100%;
+                    padding-right: 40px;
+                    box-sizing: border-box;
+                    margin: 40px 0;
+                    position: static;
+                    top: unset;
+                    transform: translateY(0);
+                }
+                @include mobile_lg {
+                    position: static;
+                    top: 0%; left: 0%; transform: translateY(0%);
+                }
             }
         }
     }
@@ -258,14 +442,24 @@
     background-image: radial-gradient(at 100% 100%, rgba(111,88,116,0.7) 0px, transparent 50%),radial-gradient(at 90% 0%, #0a2961 0px, transparent 50%),radial-gradient(at 18% 16%, rgba(58,3,130,0.79) 0px, transparent 50%),radial-gradient(at 100% 40%, rgba(76,21,147,0.22) 0px, transparent 50%),radial-gradient(at 0% 100%, #74517b 0px, transparent 50%);
     .col_left{
         width: 58%;
+        @include mobile_lg {
+            width: 100%;
+        }
         .img_box{
             margin: -80px 0 0 -40px;
             position: relative;
+            @include mobile_lg {
+                margin: 50px 0 30px -30px;
+            }
         }
         .caption{
             position: absolute;
             bottom: -20px;
             right: 35%;
+            @include mobile_sm {
+                right: unset;
+                margin-left: 30px;
+            }
         }
     }
     .col_right{
@@ -275,15 +469,32 @@
         box-sizing: border-box;
         .sub{
             font-size: 56px;
+            @include tablet {
+                font-size: 40px;
+            }
+        }
+        @include tablet {
+            padding: 0;
+        }
+        @include mobile_lg {
+            width: 100%;
+        }
+    }
+    .cont_box{
+        @include mobile_lg {
+            flex-direction: column-reverse;
         }
     }
 }
 // macOS끝
 .battery{
+    @include tablet {
+        display: block;
+    }
     .flex_30{
         background: linear-gradient(to bottom, #203025 0%, #151516 100%);
-        .cont_txt{
-
+        @include tablet {
+            width: 100%;
         }
         .sub{
             text-align: center;
@@ -300,22 +511,57 @@
         background: linear-gradient(165deg, #2c4735 0%, #1d243e 60%, #101124 90%);
         overflow: hidden;
         &::after{content: '';clear: both;display: block;}
+        @include tablet {
+            width: 100%;
+            margin-top: 24px;
+        }
+        .cont_box{
+            @include mobile_lg {
+                display: block;
+            }
+        }
         .cont_txt{
             width: 42%;
+            @include mobile_lg {
+                width: 100%;
+            }
         }
         .img_box{
             width: 58%;
             position: relative;
+            @include mobile_lg {
+                width: 100%;
+                bottom: -30px;
+                right: -30px;
+                margin-top: 20px;
+            }
             .caption{
                 position: absolute;
                 top: -5%;right: 5%;
+                @include mobile_lg {
+                    top: unset;
+                    bottom: 30px;
+                    left: -30px;
+                    right: unset;
+                }
+            }
+        }
+        .sub{
+            @include tablet {
+                font-size: 40px;
             }
         }
     }
 }
 // battery끝
 .flex_bottom{
+    @include tablet {
+        display: block;
+    }
     .secu{
+        @include tablet {
+            width: 100%;
+        }
         .img_box{
             width: 100px;
             height: 128px;
@@ -326,9 +572,16 @@
             width: 100%;
             text-align: center;
             font-size: 48px;
+            @include tablet {
+                font-size: 64px;
+            }
+            @include mobile_lg {
+                font-size: 48px;
+            }
         }
         .char_wrap{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             .char{
                 display: flex;
@@ -363,6 +616,10 @@
         }
     }
     .flex_30{
+        @include tablet {
+            width: 100%;
+            margin-top: 24px;
+        }
         background: linear-gradient(to right bottom, #1f224b 0%, #2d5d85 100%);
         p.desc{
             font-size: 24px;
@@ -371,6 +628,7 @@
         span.desc{
             max-width: 450px;
             display: block;
+            margin: 0 auto;
         }
         .desc, .sub, .desc{
             text-align: center;
@@ -381,35 +639,58 @@
 .sc_function{
     > div{
         margin-top: 170px;
+        @include tablet {
+            margin-top: 100px;
+        }
     }
     .sc_sub{
         margin-bottom: 20px;
+        @include tablet {
+            font-size: 64px;
+        }
+        @include mobile_lg {
+            font-size: 48px;
+        }
     }
     .sc_desc{
         width: 74%;
         margin-bottom: 70px;
+        @include tablet {
+            font-size: 24px;
+            width: 91%;
+        }
+        @include mobile_lg {
+            font-size: 21px;
+            width: 100%;
+        }
     }
 }
 .display_area{
+    .inner01{
+        @include mobile_lg {
+            width: 340px;
+        }
+    }
     .img_box{
         position: relative;
         text-align: right;
     }
     .monitor_bg{
         display: block;
-        max-width: 927px;
-        width: 100%;
+        width: 60%;
         position: absolute;
         top: 4.5%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
+        @include tablet {
+            max-width: 655px;
+        }
     }
     .monitor{
         display: block;
         max-width: 1215px;
         width: 100%;
-        // height: 705px;
         position: relative;
         margin: 0 auto;
     }
@@ -420,12 +701,18 @@
 .group_flex03{
     margin-top: 130px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mobile_lg {
+        display: block;
+    }
     .flex_item{
-        width: calc((100% - 48px) / 3);
         background-color: #151516;
         border-radius: 30px;
         padding: 40px;
+        @include mobile_sm {
+            border-radius: 0;
+        }
         img{
             max-width: 245px;
         }
@@ -447,10 +734,38 @@
         margin: 60px 0;
     }
 }
+.bright{
+    width: calc((100% - 48px) / 3);
+    @include tablet {
+        width: calc(50% - 12px);
+        order: 2;
+    }
+    @include mobile_lg {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+.rgb_color{
+    width: calc((100% - 48px) / 3);
+    @include tablet {
+        width: 100%;
+        margin-bottom: 24px;
+        order: 1;
+    }
+}
 .true_tone{
+    width: calc((100% - 48px) / 3);
     background: url('https://www.apple.com/v/macbook-pro-13/m/images/overview/truetone_cold_bg__chsf1efvkyuu_large_2x.jpg') 0 0 no-repeat;
+    background-position: bottom;
     background-size: 100%;
     transition: all 1.5s;
+    @include tablet {
+        width: calc(50% - 12px);
+        order: 3;
+    }
+    @include mobile_lg {
+        width: 100%;
+    }
 }
 // display끝
 .camera_area{

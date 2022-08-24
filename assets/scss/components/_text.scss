@@ -2,10 +2,22 @@
     font-size: 40px;
     color: #fff;
     font-weight: 600;
+    @include tablet {
+        font-size: 32px;
+    }
+    @include mobile_lg {
+        font-size: 28px;
+    }
 }
 .sc_sub{
     font-size: 80px;
     font-weight: 700;
+    @include tablet {
+        font-size: 64px;
+    }
+    @include mobile_lg {
+        font-size: 48px;
+    }
 }
 .sc_desc{
     color: #A1A1A6;
@@ -17,16 +29,31 @@
     margin-bottom: 20px;
     font-weight: 600;
     width: 100%;
+    @include mobile_lg {
+        font-size: 19px;
+    }
 }
 .sub{
     font-size: 32px;
     color: #fff;
     font-weight: 600;
+    @include tablet {
+        font-size: 28px;
+    }
+    @include mobile_lg {
+        font-size: 24px;
+    }
 }
 .desc{
     font-weight: 600;
     color: #f5f5f7;
     font-size: 28px;
+    @include tablet {
+        font-size: 24px;
+    }
+    @include mobile_lg {
+        font-size: 21px;
+    }
 }
 .sz_32{
     font-size: 32px;

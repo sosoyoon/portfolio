@@ -2,12 +2,125 @@
     width: 100%;
     
 }
+.m_header_top{
+    display: none;
+    height: 48px;
+    position: relative;
+    @include header_sm {
+        display: block;
+    }
+    .cart_area{
+        float: right;
+        .btn_cart{
+            padding: 0 16px;
+            height: 48px;
+        }
+    }
+    .link_main{
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+}
+.m_menu{
+    float: left;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    position: relative;
+    .menu_box{
+        position: absolute;
+        z-index: 3;
+        top: 9px;
+        left: 9px;
+        width: 30px;
+        height: 30px;
+        transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        .wrap{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .menu_line{
+        display: block;
+        opacity: .8;
+        width: 17px;
+        height: 1px;
+        background: #fff;
+        border-radius: 0.5px;
+        position: absolute;
+        left: 7px;
+        z-index: 1;
+        &.top{
+            top: 11px;
+            .cros_top{
+                display: block;
+                transform: translateY(-3px) scaleX(.88235);
+                transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+            }
+        }
+        &.bottom{
+            bottom: 11px;
+            .cros_bottom{
+                display: block;
+                transform: translateY(3px) scaleX(.88235);
+                transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s, -webkit-transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+            }
+        }
+    }
+}
+.menu_list{
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px 8px;
+    background: #000;
+    position: absolute;
+    top: 100%;left: 0;
+    z-index: 10;
+    .inner{
+        max-width: 664px;
+        margin: 0 auto;
+    }
+    .search_box{
+        display: block;
+        max-width: 664px;
+        margin: 0 auto;
+        .link_area{
+            display: none;
+        }
+    }
+    .nav_list{
+        display: block;
+        .nav_item{
+            display: block;
+            font-size: 1em;
+            text-align: left;
+            opacity: 0.8;
+            &:hover{
+                opacity: 1;
+            }
+            &+.nav_item{
+                border-top: 1px solid rgba(255, 255, 255, 0.2392156863);
+            }
+        }
+    }
+}
 .nav_list{
     display: flex;
     justify-content: space-between;
     line-height: 44px;
     text-align: center;
+    .link_main{
+        @include header_sm {
+            display: none;
+        }
+    }
     .nav_item{
+        @include header_sm {
+            display: none;
+        }
         font-size: 12px;
         .nav_link{
             opacity: .8;
@@ -16,6 +129,7 @@
             }        
         }
     }
+    
 }
 .btn_search{
     width: 15px;
@@ -156,50 +270,79 @@
         z-index: 9998;
     }
 }
+.cart_area{
+    position: relative;
+}
 .btn_cart{
     width: 15px;
     height: 44px;
     background: url('https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg') 0 50% no-repeat;
     background-size: 15px;
+    position: relative;
+}
+.tri{
+    display: none;
+    &.active{
+        display: block;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        height: 8px;
+        z-index: 1;
+        &::after{
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            z-index: 1;
+            width: 12px;
+            height: 12px;
+            -webkit-transform: rotate(45deg) skew(4deg, 4deg);
+            transform: rotate(45deg) skew(4deg, 4deg);
+            -webkit-transform-origin: 0% 0;
+            transform-origin: 0% 0;
+            background: #fff;
+        }
+    }
 }
 .cart_box{
     display: none;
     &.active{
         display: block;
-        right: 0%;
-        transform: translateX(35%);
+        margin-right: -115px;
+        right: 0;
         position: absolute;
         top: 48px;
+        z-index: 1;
         background: #fff;
-        margin: 0 auto;
         width: 286px;
         min-height: 90px;
         padding: 0 20px;
         z-index: 2;
         border-radius: 18px;
+        @include cart {
+            margin-right: calc(512px - 50vw);
+            right: calc(max(4px, calc(env(safe-area-inset-right) - 16px)));
+        }
+        @include header_sm {
+            border-radius: 0;
+            border-width: 0 0 1px 0;
+            top: 0px;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
     }
 }
 .cart_wrapper{
     font-size: 14px;
     position: relative;
     padding-bottom: 10px;
-    &::before{
-        content: '';
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        width: 100%;
-        height: 8px;
-        z-index: 1;
-        width: 12px;
-        height: 12px;
-        -webkit-transform: rotate(45deg) skew(4deg, 4deg);
-        transform: rotate(45deg) skew(4deg, 4deg);
-        -webkit-transform-origin: 0% 0;
-        transform-origin: 0% 0;
-        background: #fff;
-    }
+    
     .cart_title{
         color: #6e6e73;
         padding: 35px 0 23px;
@@ -267,6 +410,7 @@
     }
     &::after{content: '';clear: both;display: block;}
     .nav_inner{
+        overflow: hidden;
         .link_pro13{
             float: left;
             font-size: 21px;
@@ -296,6 +440,14 @@
     }
     .btn_blue{
         margin-left: 24px;
+        @include header_sm {
+            margin-top: 9px;
+            margin-bottom: 9px;
+        }
+    }
+    @include header_sm {
+        padding: 10px 0;
+        line-height: 2;
     }
 }
 .header_bottom{
@@ -305,6 +457,9 @@
     .nav_desc{
         font-size: 14px;
         font-weight: 400;
+        @include mobile_lg {
+            line-height: 2;
+        }
     }
     .btn_shopping{
         color: #2997ff;

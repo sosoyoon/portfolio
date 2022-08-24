@@ -17,6 +17,9 @@
 
 
 
+$cart : 1266px;
+
+$min_size : 1044px;
 
 $header_sm: 833px;
 
@@ -28,6 +31,16 @@ $mobile_sm: 374px;
 
 
 
+@mixin cart{
+    @media (max-width: $cart){
+      @content;
+    }
+  }
+@mixin min_size{
+    @media (max-width: $min_size){
+      @content;
+    }
+  }
 @mixin header_sm{
     @media (max-width: $header_sm){
       @content;
