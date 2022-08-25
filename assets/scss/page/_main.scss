@@ -1,0 +1,104 @@
+// careers 시작
+.careers{
+    width: 100%;
+    .img_box{
+        svg{
+            &+svg{
+                margin-top: 4px;
+            }
+        }
+    }
+}
+.careers_txt{
+    .sc_title{
+        font-size: 110px; 
+        line-height: 0.9;  
+        font-weight: 500;
+    }
+}
+.careers_box{
+    display: none;
+    .desc{
+        font-family: $font-a;
+    }
+}
+// careers 끝
+// about 시작
+.about_txt{
+    .sc_title{
+        font-size: 16px;
+        font-family: $font-a;
+        font-weight: 300;
+        max-width: 260px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+}
+.video_area{
+    video{
+        border-radius: 20px;
+    }
+}
+// about 끝
+// work 시작
+.work{
+    .sc_title{
+        display: inline-block;
+    }
+    .button_box{
+        display: inline-block;
+    }
+    
+}
+.work_list{
+    .work_item{
+        width: calc(50% - 20px);
+        &:nth-child(2n){
+            margin-top: 154px;
+        }
+    }
+    .img_box{
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .txt_box{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+// work 끝
+// moving 시작
+.moving{
+    margin-top: 100px;
+}
+// moving 끝
+// journal 시작
+.journal{
+    .title_area{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.journal_item{
+    width: calc((100% - 80px) / 3);
+    .img_box{
+        width: 420px;
+        height: 427px;
+        border-radius: 20px;
+        overflow: hidden;
+        img{
+            height: 100%;
+        }
+    }
+    .title{
+        margin-top: 20px;
+    }
+    .desc{
+        display: block;
+        width: 196px;
+        margin-right: 20px;
+    }
+}
+// journal 끝

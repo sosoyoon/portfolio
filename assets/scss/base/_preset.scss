@@ -1,0 +1,39 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.inner{
+    width: 1380px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    &::after{content: '';clear: both;display: block;}
+}
+section{
+    margin-top: 100px;
+}
+.left{
+    width: 34%;
+}
+.right{
+    width: 66%;
+}
+.title_area{
+    margin-left: 43%;
+    margin-bottom: 120px;
+}
+.content_area{
+    width: 100%;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }   
+}

@@ -1,0 +1,33 @@
+.sidebar{
+    position: fixed;
+    top: 50%; right: 0%; transform: translateY(-50%);
+}
+.link_more{
+    display: flex;
+    align-items: center;
+    button{
+        font-weight: 600;
+        font-size: 14px;
+        border: 2px solid #16161D;
+        border-radius: 30px;
+        padding: 4px 9px 1px;
+        margin-right: 4px;
+    }
+}
+.arrow{
+    width: 23px;height: 23px;
+    border-radius: 50%;
+    border: 2px solid #16161D;
+    box-sizing: border-box;
+    position: relative;
+    transition-duration: .3s;
+    overflow: hidden;
+    svg{
+        &.first{
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        &.second{
+            position: absolute; bottom: -50%; left: -50%; transform: translate(-50%, 50%);
+        }
+    }
+}
