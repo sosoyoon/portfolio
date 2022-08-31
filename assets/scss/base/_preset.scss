@@ -9,14 +9,13 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-    // overflow: hidden;
-    // &::after{content: '';clear: both;display: block;}
     padding: 0 22px;
     padding-left: max(22px,env(safe-area-inset-left));
     padding-right: max(22px,env(safe-area-inset-right));
     @include min_size {
         min-width: 320px;
     }
+    
 }
 .inner01{
     max-width: 980px;

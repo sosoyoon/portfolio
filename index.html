@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="dimmed"></div>
     <header class="header">
         <div class="nav_area">
             <div class="m_header_top">
@@ -157,7 +158,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="curtain"></div>
                 <div class="cart_box">
                     <h2 class="blind">장바구니</h2>
                     <div class="cart_wrapper">
@@ -180,6 +180,9 @@
                 <h1><a href="" class="link_pro13">MacBook Pro 13</a></h1>
                 <nav class="nav">
                     <ul class="nav_list">
+                        <div class="m_arrow">
+                            <span class="arrow_box"></span>
+                        </div>
                         <li class="nav_item">개요</li>
                         <li class="nav_item"><a href="" class="nav_link">Mac을 선택하는 이유</a></li>
                         <li class="nav_item"><a href="" class="nav_link">제품사양</a></li>
@@ -187,6 +190,11 @@
                     <button class="btn_blue"><a href="" class="link_buy">구입하기</a></button>
                 </nav>
             </div>
+        </div>
+        <div class="m_wrap">
+            <li class="m_nav_item">개요</li>
+            <li class="m_nav_item"><a href="" class="nav_link">Mac을 선택하는 이유</a></li>
+            <li class="m_nav_item"><a href="" class="nav_link">제품사양</a></li>
         </div>
         <div class="header_bottom">
             <p class="nav_desc">MacBook Pro 13을 Apple 교육 할인 스토어에서 최저 1,655,000원에 구입할 수 있습니다.<a href="#reference1" class="btn_reference">*</a><a href="" class="btn_shopping btn_arrow">쇼핑하기</a></p>
@@ -598,17 +606,21 @@
                             </div>
                             <h3 class="sub">
                                 MacBook Pro.<br>
-                                <div class="char_wrap">
-                                    <span class="char"><i class="dot"></i><i class="text">개</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">인</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">정</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">보</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">는</i></span>
-                                    <span class="char"><i class="text">&nbsp;</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">철</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">저</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">하</i></span>
-                                    <span class="char"><i class="dot"></i><i class="text">게</i></span>
+                                <div class="secu_wrap">
+                                    <div class="change_wrap">
+                                        <span class="change"><i class="dot"></i><i class="text">개</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">인</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">정</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">보</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">는</i></span>
+                                        <span class="change" id="blank"><i class="text">&nbsp;</i></span>
+                                    </div>
+                                    <div class="change_wrap">
+                                        <span class="change"><i class="dot"></i><i class="text">철</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">저</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">하</i></span>
+                                        <span class="change"><i class="dot"></i><i class="text">게</i></span>
+                                    </div>
                                 </div>
                             </h3>
                             <p class="desc sz_19">
@@ -939,105 +951,153 @@
                     <a href="" class="btn_arrow link_compare">모든 Mac 모델 비교하기
                     </a>
                     <div class="inner01">
-                        <table class="table">
-                            <tbody>
-                                <tr class="mac_img">
-                                    <th>
-                                        <img src="./assets/images/mba_m1.png" alt="">
-                                    </th>
-                                    <th>
-                                        <img src="./assets/images/mba_m2.png" alt="">
-                                    </th>
-                                    <th>
-                                        <img src="./assets/images/mbp_13.png" alt="">
-                                    </th>
-                                    <th>
-                                        <img src="./assets/images/mbp.png" alt="">
-                                    </th>
-                                </tr>
-                                <tr class="color">
-                                    <td>
-                                        <img src="./assets/images/mba_m1_color.png" alt="">
-                                    </td>
-                                    <td>
-                                        <img src="./assets/images/mba_m2_color.png" alt="">
-                                    </td>
-                                    <td>
-                                        <img src="./assets/images/mbp_color.png" alt="">
-                                    </td>
-                                    <td>
-                                        <img src="./assets/images/mbp_color.png" alt="">
-                                    </td>
-                                </tr>
-                                <tr class="modelname">
-                                    <td>MacBook Air<br><span class="chip">M1 칩</span></td>
-                                    <td>MacBook Air<br><span class="chip">M2 칩</span></td>
-                                    <td>MacBook Pro 13</td>
-                                    <td>MacBook Pro 14 및 16</td>
-                                </tr>
-                                <tr class="price">
-                                    <td>₩1,390,000부터</td>
-                                    <td>₩1,690,000부터</td>
-                                    <td>₩1,790,000부터</td>
-                                    <td>₩2,690,000부터</td>
-                                </tr>
-                                <tr class="displaysize">
-                                    <td>33.7cm Retina 디스플레이<sup>16</sup></td>
-                                    <td>34.5cm Liquid Retina 디스플레이<sup><a href="#reference17">16</a></sup></td>
-                                    <td>33.7cm Retina 디스플레이<sup><a href="#reference17">16</a></sup></td>
-                                    <td>35.9cm 또는 41.0cm<br>
-                                        Liquid Retina XDR 디스플레이<sup><a href="#reference17">16</a></sup></td>
-                                </tr>
-                                <tr class="chip">
-                                    <td>Apple M1 칩</td>
-                                    <td>Apple M2 칩</td>
-                                    <td>Apple M2 칩</td>
-                                    <td>Apple M1 Pro 칩 또는<br>
-                                        Apple M1 Max 칩</td>
-                                </tr>
-                                <tr>
-                                    <td>최대 16GB 메모리</td>
-                                    <td>최대 24GB 메모리</td>
-                                    <td>최대 24GB 메모리</td>
-                                    <td>최대 64GB 메모리</td>
-                                </tr>
-                                <tr>
-                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
-                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
-                                    <td>최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
-                                    <td>최대 8TB 저장 장치<sup><a href="#reference15">14</a></sup></td>
-                                </tr>
-                                <tr>
-                                    <td>최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
-                                    <td>최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
-                                    <td>최대 20시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
-                                    <td>최대 21시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup></td>
-                                </tr>
-                                <tr>
-                                    <td>Touch ID</td>
-                                    <td>Touch ID</td>
-                                    <td>Touch Bar 및 Touch ID</td>
-                                    <td>Touch ID</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
-                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
-                                    </td>
-                                    <td>
-                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
-                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
-                                    </td>
-                                    <td>
-                                        <button class="btn_blue"><a href="">구입하기</a></button>
-                                    </td>
-                                    <td>
-                                        <button class="btn_blue"><a href="">구입하기</a></button><br>
-                                        <span class="btn_arrow more"><a href="">더 알아보기</a></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="compare_box">
+                            <div class="air_m1">
+                                <div class="img_box">
+                                    <img src="./assets/images/mba_m1.png" alt="">
+                                </div>
+                                <div class="color">
+                                    <img src="./assets/images/mba_m1_color.png" alt="">
+                                </div>
+                                <div class="modelname">
+                                    MacBook Air<br><span class="small">M1 칩</span>
+                                </div>
+                                <div class="price">
+                                    ₩1,390,000부터
+                                </div>
+                                <div class="displaysize">
+                                    33.7cm Retina 디스플레이<sup>16</sup>
+                                </div>
+                                <div class="chip">
+                                    Apple M1 칩
+                                </div>
+                                <div class="max_memory">
+                                    최대 16GB 메모리
+                                </div>
+                                <div class="max_save">
+                                    최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup>
+                                </div>
+                                <div class="max_battery">
+                                    최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup>
+                                </div>
+                                <div class="touchid">
+                                    Touch ID
+                                </div>
+                                <div class="more_box">
+                                    <button class="btn_blue"><a href="">구입하기</a></button><br>
+                <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                </div>
+                            </div>
+                            <div class="air_m2">
+                                <div class="img_box">
+                                    <img src="./assets/images/mba_m2.png" alt="">
+                                </div>
+                                <div class="color">
+                                    <img src="./assets/images/mba_m2_color.png" alt="">
+                                </div>
+                                <div class="modelname new">
+                                    MacBook Air<br><span class="small">M2 칩</span>
+                                </div>
+                                <div class="price">
+                                    ₩1,690,000부터
+                                </div>
+                                <div class="displaysize">
+                                    34.5cm Liquid Retina 디스플레이<sup><a href="#reference17">16</a></sup>
+                                </div>
+                                <div class="chip">
+                                    Apple M2 칩
+                                </div>
+                                <div class="max_memory">
+                                    최대 24GB 메모리
+                                </div>
+                                <div class="max_save">  
+                                    최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup>
+                                </div>
+                                <div class="max_battery">
+                                    최대 18시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup>
+                                </div>
+                                <div class="touchid">
+                                    Touch ID
+                                </div>
+                                <div class="more_box">  
+                                    <button class="btn_blue"><a href="">구입하기</a></button><br>
+                <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                </div>
+                            </div>
+                            <div class="pro13">
+                                <div class="img_box">
+                                    <img src="./assets/images/mbp_13.png" alt="">
+                                </div>
+                                <div class="color">
+                                    <img src="./assets/images/mbp_color.png" alt="">
+                                </div>
+                                <div class="modelname new">
+                                    MacBook Pro 13
+                                </div>
+                                <div class="price">
+                                    ₩1,790,000부터
+                                </div>
+                                <div class="displaysize">
+                                    33.7cm Retina 디스플레이<sup><a href="#reference17">16</a></sup>
+                                </div>
+                                <div class="chip">
+                                    Apple M2 칩
+                                </div>
+                                <div class="max_memory">
+                                    최대 24GB 메모리
+                                </div>
+                                <div class="max_save">
+                                    최대 2TB 저장 장치<sup><a href="#reference15">14</a></sup>
+                                </div>
+                                <div class="max_battery">
+                                    최대 20시간의 배터리 사용 시간<sup><a href="#reference18">17</a></sup>
+                                </div>
+                                <div class="touchid">
+                                    Touch Bar 및 Touch ID
+                                </div>
+                                <div class="more_box">
+                                    <button class="btn_blue"><a href="">구입하기</a></button>
+                                </div>
+                            </div>
+                            <div class="pro14">
+                                <div class="img_box">
+                                    <img src="./assets/images/mbp.png" alt="">
+                                </div>
+                                <div class="color">
+                                    <img src="./assets/images/mbp_color.png" alt="">
+                                </div>
+                                <div class="modelname">
+                                    MacBook Pro 14 및 16
+                                </div>
+                                <div class="price">
+                                    ₩2,690,000부터
+                                </div>
+                                <div class="displaysize">
+                                    35.9cm 또는 41.0cm<br>
+                Liquid Retina XDR 디스플레이<sup><a href="#reference17">16</a></sup>
+                                </div>
+                                <div class="chip">
+                                    Apple M1 Pro 칩 또는<br>
+                Apple M1 Max 칩
+                                </div>
+                                <div class="max_memory">
+                                    최대 64GB 메모리
+                                </div>
+                                <div class="max_save">
+                                    최대 8TB 저장 장치<sup><a href="#reference15">14</a></sup>
+                                </div>
+                                <div class="max_battery">
+                                    최대 21시간의 배터리 사용 시간<sup><a href="#reference18">17</a>
+                                </div>
+                                <div class="touchid">
+                                    Touch ID
+                                </div>
+                                <div class="more_box">
+                                    <button class="btn_blue"><a href="">구입하기</a></button><br>
+                <span class="btn_arrow more"><a href="">더 알아보기</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="group_flex04 more_area">
@@ -1256,67 +1316,83 @@
                 </nav>
                 <div class="group_flex06">
                     <ul class="flex_col">
-                        <li><b>쇼핑 및 알아보기</b></li>
-                        <li><a href="">스토어</a></li>
-                        <li><a href="">Mac</a></li>
-                        <li><a href="">iPad</a></li>
-                        <li><a href="">iPhone</a></li>
-                        <li><a href="">Watch</a></li>
-                        <li><a href="">AirPods</a></li>
-                        <li><a href="">TV 및 홈</a></li>
-                        <li><a href="">AirTag</a></li>
-                        <li><a href="">액세서리</a></li>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">쇼핑 및 알아보기</div>
+                            <li><a href="">스토어</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">iPad</a></li>
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">Watch</a></li>
+                            <li><a href="">AirPods</a></li>
+                            <li><a href="">TV 및 홈</a></li>
+                            <li><a href="">AirTag</a></li>
+                            <li><a href="">액세서리</a></li>
+                        </div>
                     </ul>
                     <ul class="flex_col">
-                        <li><b>서비스</b></li>
-                        <li><a href="">Apple Music</a></li>
-                        <li><a href="">Apple TV+</a></li>
-                        <li><a href="">Apple Arcade</a></li>
-                        <li><a href="">iCloud</a></li>
-                        <li><a href="">Apple Books</a></li>
-                        <li><a href="">AirPods</a></li>
-                        <li><a href="">Apple Podcast</a></li>
-                        <li><a href="">App Store</a></li>
-                        <li><b>계정</b></li>
-                        <li><a href="">Apple ID 관리</a></li>
-                        <li><a href="">Apple Store 계정</a></li>
-                        <li><a href="">iCloud.com</a></li>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">서비스</div>
+                            <li><a href="">Apple Music</a></li>
+                            <li><a href="">Apple TV+</a></li>
+                            <li><a href="">Apple Arcade</a></li>
+                            <li><a href="">iCloud</a></li>
+                            <li><a href="">Apple Books</a></li>
+                            <li><a href="">AirPods</a></li>
+                            <li><a href="">Apple Podcast</a></li>
+                            <li><a href="">App Store</a></li>
+                        </div>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">계정</div>
+                            <li><a href="">Apple ID 관리</a></li>
+                            <li><a href="">Apple Store 계정</a></li>
+                            <li><a href="">iCloud.com</a></li>
+                        </div>
                     </ul>
                     <ul class="flex_col">
-                        <li><b>Apple Store</b></li>
-                        <li><a href="">매장 찾기</a></li>
-                        <li><a href="">Genius Bar</a></li>
-                        <li><a href="">Today at Apple</a></li>
-                        <li><a href="">Apple 캠프</a></li>
-                        <li><a href="">리퍼 및 특가 제품</a></li>
-                        <li><a href="">금융 혜택</a></li>
-                        <li><a href="">Apple Trade In</a></li>
-                        <li><a href="">주문 상태</a></li>
-                        <li><a href="">쇼핑 도움말</a></li>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">Apple Store</div>
+                            <li><a href="">매장 찾기</a></li>
+                            <li><a href="">Genius Bar</a></li>
+                            <li><a href="">Today at Apple</a></li>
+                            <li><a href="">Apple 캠프</a></li>
+                            <li><a href="">리퍼 및 특가 제품</a></li>
+                            <li><a href="">금융 혜택</a></li>
+                            <li><a href="">Apple Trade In</a></li>
+                            <li><a href="">주문 상태</a></li>
+                            <li><a href="">쇼핑 도움말</a></li>
+                        </div>
                     </ul>
                     <ul class="flex_col">
-                        <li><b>비즈니스</b></li>
-                        <li><a href="">Apple과 비즈니스</a></li>
-                        <li><a href="">비즈니스를 위한 제품 쇼핑하기</a></li>
-                        <li><b>교육</b></li>
-                        <li><a href="">Apple과 교육</a></li>
-                        <li><a href="">초중고용 제품 쇼핑하기</a></li>
-                        <li><a href="">대학 생활을 위한 제품 쇼핑하기</a></li>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">비즈니스</div>
+                            <li><a href="">Apple과 비즈니스</a></li>
+                            <li><a href="">비즈니스를 위한 제품 쇼핑하기</a></li>
+                        </div>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">교육</div>
+                            <li><a href="">Apple과 교육</a></li>
+                            <li><a href="">초중고용 제품 쇼핑하기</a></li>
+                            <li><a href="">대학 생활을 위한 제품 쇼핑하기</a></li>
+                        </div>
                     </ul>
                     <ul class="flex_col">
-                        <li><b>Apple의 가치관</b></li>
-                        <li><a href="">손쉬운 사용</a></li>
-                        <li><a href="">환경</a></li>
-                        <li><a href="">개인정보 보호</a></li>
-                        <li><a href="">협력업체에 대한 책임</a></li>
-                        <li><b>Apple 정보</b></li>
-                        <li><a href="">Newsroom</a></li>
-                        <li><a href="">Apple 리더십</a></li>
-                        <li><a href="">채용 안내</a></li>
-                        <li><a href="">윤리 및 규정 준수</a></li>
-                        <li><a href="">이벤트</a></li>
-                        <li><a href="">일자리 창출</a></li>
-                        <li><a href="">Apple 연락처</a></li>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">Apple의 가치관</div>
+                            <li><a href="">손쉬운 사용</a></li>
+                            <li><a href="">환경</a></li>
+                            <li><a href="">개인정보 보호</a></li>
+                            <li><a href="">협력업체에 대한 책임</a></li>
+                        </div>
+                        <div class="footer_wrap">
+                            <div class="footer_menu">Apple 정보</div>
+                            <li><a href="">Newsroom</a></li>
+                            <li><a href="">Apple 리더십</a></li>
+                            <li><a href="">채용 안내</a></li>
+                            <li><a href="">윤리 및 규정 준수</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">일자리 창출</a></li>
+                            <li><a href="">Apple 연락처</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -1325,6 +1401,9 @@
                     다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나, <a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
                 </div>
                 <div class="bottom">
+                    <div class="right">
+                        <a href="">대한민국</a>
+                    </div>
                     <div class="left">
                         <div class="copy">Copyright © 2022 Apple Inc. 모든 권리 보유.</div>
                         <ul class="policy">
@@ -1334,9 +1413,6 @@
                             <li class="policy_item"><a href="">법적 고지</a></li>
                             <li class="policy_item"><a href="">사이트 맵</a></li>
                         </ul>
-                    </div>
-                    <div class="right">
-                        <a href="">대한민국</a>
                     </div>
                 </div>
             </div>

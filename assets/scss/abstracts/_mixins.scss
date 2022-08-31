@@ -25,9 +25,13 @@ $header_sm: 833px;
 
 $tablet: 1068px;
 
+$service: 1023px;
+
 $mobile_lg: 734px;
 
 $mobile_sm: 374px;
+
+$footer: 480px;
 
 
 
@@ -51,6 +55,11 @@ $mobile_sm: 374px;
       @content;
     }
   }
+@mixin service{
+    @media (max-width: $service){
+      @content;
+    }
+  }
 @mixin mobile_lg{
     @media (max-width: $mobile_lg){
       @content;
@@ -58,6 +67,11 @@ $mobile_sm: 374px;
   }
 @mixin mobile_sm{
     @media (max-width: $mobile_sm){
+      @content;
+    }
+  }
+@mixin footer{
+    @media (max-width: $footer){
       @content;
     }
   }

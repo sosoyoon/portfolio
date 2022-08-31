@@ -2,10 +2,24 @@
     width: 100%;
     
 }
+.dimmed{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 9;
+    display: none;
+    &.active{
+        display: block;
+    }
+}
 .m_header_top{
     display: none;
     height: 48px;
     position: relative;
+    z-index: 10;
     @include header_sm {
         display: block;
     }
@@ -25,7 +39,6 @@
     color: #fff;
     width: 48px;
     height: 48px;
-    z-index: 10;
     position: relative;
     .menu_box{
         position: absolute;
@@ -149,9 +162,6 @@
         height: calc(100vh - 16px);
         z-index: 999;
     }
-    // display: none;
-    /* overflow: auto; */
-    /* overflow-x: hidden;*/
     fieldset{
         border:none;
         height: 44px;
@@ -279,6 +289,7 @@
     background: url('https://www.apple.com/ac/globalnav/7/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg') 0 50% no-repeat;
     background-size: 15px;
     position: relative;
+    
 }
 .tri{
     display: none;
@@ -322,7 +333,7 @@
         width: 286px;
         min-height: 90px;
         padding: 0 20px;
-        z-index: 2;
+        z-index: 10;
         border-radius: 18px;
         @include cart {
             margin-right: calc(512px - 50vw);
@@ -342,7 +353,6 @@
     font-size: 14px;
     position: relative;
     padding-bottom: 10px;
-    
     .cart_title{
         color: #6e6e73;
         padding: 35px 0 23px;
@@ -422,9 +432,68 @@
             align-items: center;
             .nav_list{
                 align-items: center;
+                .m_arrow{
+                    display: none;
+                    overflow: hidden;
+                    width: 40px;
+                    height: 30px;
+                    -webkit-tap-highlight-color: transparent;
+                    @include header_sm {
+                        display: block;
+                    }
+                    .arrow_box{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+                        transform: translateY(0);
+                        opacity: 0.8;
+                        &::before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 14px;
+                            right: 34%;
+                            width: 11px;
+                            height: 1px;
+                            z-index: 1;
+                            transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+                            transform-origin: 100% 100%;
+                            transform: rotate(-40deg) scaleY(1.1);
+                            background: #fff;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 14px;
+                            right: 50%;
+                            width: 11px;
+                            height: 1px;
+                            z-index: 1;
+                            transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+                            transform-origin: 0% 100%;
+                            transform: rotate(40deg) scaleY(1.1);
+                            background: #fff;
+                        }
+                        &.active{
+                            &::before{
+                                transform: rotate(40deg) scaleY(1.1);
+                            }
+                            &::after{
+                                transform: rotate(-40deg) scaleY(1.1);
+                            }
+                        }
+                    }
+                }
                 .nav_item{
                     vertical-align: top;
                     line-height: 52px;
+                    @include header_sm {
+                        display: none;
+                    }
                     &+.nav_item{
                         margin-left: 24px;
                         color: #fff;
@@ -443,6 +512,7 @@
         @include header_sm {
             margin-top: 9px;
             margin-bottom: 9px;
+            margin-left: 0;
         }
     }
     @include header_sm {
@@ -450,10 +520,31 @@
         line-height: 2;
     }
 }
+.m_wrap{
+    display: none;
+    position: absolute;
+    top:111px;left: 0;
+    width: 100%;
+    padding: 4px 40px;
+    background: rgba(21, 21, 22);
+    z-index: 10;
+    color: #FFF;
+    font-size: 14px;
+    .m_nav_item{
+        line-height: 44px;
+        &+.m_nav_item{
+            border-top: 1px solid #FFFFFF3d;
+        }
+        &:first-child{
+            opacity: 0.56;
+        }
+    }
+}
 .header_bottom{
     background: #1d1d1f;
     line-height: 54px;
     text-align: center;
+    padding: 0 24px;
     .nav_desc{
         font-size: 14px;
         font-weight: 400;

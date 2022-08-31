@@ -20,11 +20,18 @@ $('.m_menu').click(function(e){
         $('.menu_list').css('display') == 'none')
         {
         $('.menu_list').stop().slideDown().css('display', 'block');
+        $('.dimmed').addClass('active').css('opacity', '1');
+        $('body').css('overflow', 'hidden')
+        $('.cart_area').css('display', 'none')
     }
     else{
+        $('.dimmed').removeClass('active')
+        $('body').css('overflow', 'unset')
+        $('.cart_area').css('display', 'block')
         $('.menu_list').stop().slideUp().css('display', 'none')
     }
 })
+
     
 // 검색버튼
     $('.btn_search').click(function(e){
@@ -35,7 +42,6 @@ $('.m_menu').click(function(e){
             display: 0,
             duration: 0.3
           });
-        $('.search_box, .curtain').addClass('active');
     })
     $('.close').click(function(e){
         e.preventDefault();
@@ -45,7 +51,6 @@ $('.m_menu').click(function(e){
             display: 0,
             duration: 0.3
           });
-        $('.search_box, .curtain').removeClass('active');
     })
 
 
@@ -54,13 +59,35 @@ $('.cart_area').click(function(e){
     e.preventDefault();
     if($('.cart_box').css('display') == 'none'){
         $('.cart_box, .tri').addClass('active');
+        $('.dimmed').addClass('active');
     }else{
         $('.cart_box, .tri').removeClass('active');
+        $('.dimmed').removeClass('active');
     }
 })
-// $('.container').click(function(e){
-//     if( !$('.cart_box, .tri').has(e.target).length ) $('.cart_box, .tri').hide();
-// });
+
+
+// 모바일개요
+$('.m_arrow').click(function(e){
+    e.preventDefault();
+    if($('.m_wrap').css('display') == 'none'){
+        $(this).children('.arrow_box').addClass('active');
+        $('.m_wrap').css('display', 'block').stop().slideDown()
+    }else{
+        $('.m_wrap').css('display', 'none').stop().slideUp()
+        $(this).children('.arrow_box').removeClass('active');
+    }
+})
+
+// 모바일메뉴bg
+$('.dimmed').click(function(e){
+    e.preventDefault();
+        $(this).removeClass('active')
+        $('.cart_box').removeClass('active')
+        $('.menu_list').stop().slideUp().css('display', 'none')
+        $('.m_header_top .cart_area').css('display', 'block')
+        $('.m_header_top .cart_area').css('display', 'block')
+})
 
 // 헤더고정
       let lastScroll = 0;
@@ -127,8 +154,8 @@ $('.cart_area').click(function(e){
         }
     })
     textAni.addLabel('a')
-    .to('.flex_bottom .flex_70 .dot',{ display:'none', stagger:3 },'a')
-    .to('.flex_bottom .flex_70 .text',{ display:'block', stagger:3 },'a+=0.5')
+    .to('.flex_bottom .secu .dot',{ display:'none', stagger:3 },'a')
+    .to('.flex_bottom .secu .text',{ display:'block', stagger:3 },'a+=0.5')
 
 // 이미지 페이드
     $('[data-fade]').each(function(i,e){ 
@@ -169,4 +196,24 @@ $('.cart_area').click(function(e){
         }
     })
 
+// footer 메뉴
+    $('.footer_wrap').click(function(e){
+        e.preventDefault();
+        if(
+            $(this).children('li').css('display') == 'none')
+            {
+            $(this).children('li').stop().slideDown().css('display', 'block');
+            $(this).children('.footer_menu').addClass('active').css('color', '#FFF');
+        }
+        // else if(
+        //     $(this).children('li').css('display') == 'block')
+        // {
+        //     $(this).children('.footer_menu').css('color', '#86868b')
+        //     $(this).children('li').stop().slideUp().css('display', 'none')
+        // }
+        else{
+            $(this).children('.footer_menu').removeClass('active').css('color', '#86868b')
+            $(this).children('li').stop().slideUp().css('display', 'none')
+        }
+    })
 })
