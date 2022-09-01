@@ -93,6 +93,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  word-break: keep-all;
 }
 
 .hidden,
@@ -384,6 +385,9 @@ textarea::-webkit-outer-spin-button {
   text-align: left;
 }
 
+.sc_intro {
+  overflow: hidden;
+}
 .sc_intro .group_visual {
   position: relative;
 }
@@ -422,6 +426,9 @@ textarea::-webkit-outer-spin-button {
   font-weight: 600;
 }
 
+.sc_architectuur {
+  overflow: hidden;
+}
 .sc_architectuur .group_intro {
   display: flex;
   position: relative;
@@ -493,6 +500,7 @@ textarea::-webkit-outer-spin-button {
 }
 .sc_interieur .interieur_box {
   display: flex;
+  overflow: hidden;
 }
 .sc_interieur .interieur_box .interieur_img {
   width: 33.3333333333%;
@@ -564,7 +572,7 @@ textarea::-webkit-outer-spin-button {
   justify-content: center;
 }
 .sc_locatie .content .group_box4 .title_box .bg_txt {
-  width: 600px;
+  width: 900px;
   background-image: url(../images/locatie_bg.jpg);
   background-position: 50% 50%;
   background-size: cover;

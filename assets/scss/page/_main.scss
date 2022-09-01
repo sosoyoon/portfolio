@@ -1,4 +1,5 @@
 .sc_intro {
+    overflow: hidden;
     .group_visual{
         position: relative;
         .title{
@@ -38,6 +39,7 @@
 }
 
 .sc_architectuur{
+    overflow: hidden;
     .group_intro {
         display: flex;
         position: relative;
@@ -111,6 +113,7 @@
     }
     .interieur_box{
         display: flex;
+        overflow: hidden;
         .interieur_img{
             width: calc(100% / 3);
             margin-bottom: 60px;
@@ -185,7 +188,7 @@
                 display: flex;
                 justify-content: center;
                 .bg_txt{
-                    width: 600px;
+                    width:900px;
                     background-image: url(../images/locatie_bg.jpg);
                     background-position: 50% 50%;
                     background-size: cover;
@@ -326,34 +329,3 @@
     }
 }
  
-
-
-// @media screen and (max-width: 991px){
-//     .sc_intro {
-//         .intro_main{
-//             .main_title{
-//                 font-size: 13.7em;
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 767px){
-//     .header{
-//         .nav{
-//             display: none;
-//         }
-//     }
-//     .sc_intro {
-//         .intro_main{
-//             .main_title{
-//                 font-size: 10.2em;
-//             }
-//         }
-//         .intro_txt{
-//             padding-right: 25px;
-//             padding-left: 25px;
-//             font-size: 2.3em;
-//         }
-//     }
-
-// }

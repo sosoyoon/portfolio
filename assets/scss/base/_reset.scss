@@ -21,6 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+    word-break: keep-all;
 }
 
 .hidden,
