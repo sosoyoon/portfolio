@@ -22,12 +22,12 @@ $('.m_menu').click(function(e){
         $('.menu_list').stop().slideDown().css('display', 'block');
         $('.dimmed').addClass('active').css('opacity', '1');
         $('body').css('overflow', 'hidden')
-        $('.cart_area').css('display', 'none')
+        $('.m_header_top .cart_area').css('display', 'none')
     }
     else{
         $('.dimmed').removeClass('active')
         $('body').css('overflow', 'unset')
-        $('.cart_area').css('display', 'block')
+        $('.m_header_top .cart_area').css('display', 'block')
         $('.menu_list').stop().slideUp().css('display', 'none')
     }
 })
