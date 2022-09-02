@@ -1,6 +1,5 @@
 .header{
     width: 100%;
-    padding-top: 30px;
     .inner{
         display: block;
     }
@@ -8,32 +7,15 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .button_box{
         float: right;
         .arrow{
-            background: #F4FD6B;
             border: none;
         }
     }
 }
-.logo{
-    float: left;
-    width: 14%;
-    display: flex;
-    align-items: center;
-    .link_main{
-        width: 176px;
-        height: 14px;
-    }
-}
-.nav_list{
-    position: absolute; top: 50%; left: 44%; transform: translate(-50%, -44%);
-    display: flex;
-    .nav_item{
-        font-family: $font-a;
-        &+.nav_item{
-            margin-left: 30px;
-        }
-    }
+.link_main{
+    font-size: 40px;
 }
