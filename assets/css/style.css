@@ -712,16 +712,16 @@ sup a:hover {
   transition: transform 0.3s ease;
   transform: rotate(45deg) scale(1.08);
 }
-.group_flex06 .flex_col .footer_wrap li {
+.group_flex06 .flex_col .footer_wrap .footer_item {
   margin-bottom: 10px;
 }
 @media (max-width: 833px) {
-  .group_flex06 .flex_col .footer_wrap li {
+  .group_flex06 .flex_col .footer_wrap .footer_item {
     display: none;
     padding-left: 10px;
   }
 }
-.group_flex06 .flex_col .footer_wrap li a:hover {
+.group_flex06 .flex_col .footer_wrap .footer_item a:hover {
   text-decoration: underline;
 }
 @media (max-width: 833px) {
