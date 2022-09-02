@@ -629,6 +629,12 @@ textarea::-webkit-outer-spin-button {
   background-color: #d8cbbc;
   color: #2b201a;
 }
+.sc_appartementen .desc {
+  margin-top: 10px;
+  color: #8d8d8d;
+  font-style: normal;
+  text-align: center;
+}
 
 .floor_table {
   width: 100%;
@@ -689,15 +695,4 @@ textarea::-webkit-outer-spin-button {
   width: 15px;
   height: 18px;
   margin: 0 auto;
-}
-.floor_table caption {
-  caption-side: bottom;
-  margin-top: 10px;
-  color: #8d8d8d;
-  font-style: normal;
-  text-align: center;
-}
-.floor_table caption span {
-  display: inline-block;
-  padding: 2px 8px;
 }
