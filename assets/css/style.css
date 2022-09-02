@@ -813,6 +813,19 @@ textarea::-webkit-outer-spin-button {
   position: relative;
 }
 
+.sc_new .content .group_cont {
+  width: 100%;
+}
+.sc_new .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sc_new .content ul li {
+  width: calc((100% - 50px) / 6);
+  box-sizing: border-box;
+}
+
 .sc_event {
   margin: 50px 0;
   position: relative;
