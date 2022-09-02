@@ -1,0 +1,88 @@
+/* 공통css */
+.blind{position: absolute; width: 1px;height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
+
+.header .logo-area a::after,
+.header .search-area .btn-submit::after,
+.header .service-area .link-start::after,
+.header .service-area .link-junior::after,
+.header .service-area .link-junior:hover::after,
+.header .service-area .link-happy::after,
+.header .service-area .link-happy:hover::after,
+.sc-news .group-issue .issue-area .link-media::after,
+.sc-news .group-title .link-newsstand::after,
+.sc-news .group-title .set-area .btn-set::after,
+.btn-nav,
+.sc-theme .theme-header .info-area .btn-set::before,
+.colum-right .sc-login .link-login::before,
+.colum-right .sc-login .sub-area .link-id::before,
+.colum-right .sc-login .sub-area .link-join::before,
+.colum-right .btn-box .btn-arrow::before,
+.sc-shop .shop-title .link-shop::after,
+.footer .footer-inner .service-area .link-all::after{
+    background-image: url(../images/sp-bg.png);
+    background-size: 457px 434px;
+    background-repeat: no-repeat;
+}
+
+.thumb-bd{
+    position: relative;
+    display: block;
+}
+.thumb-bd::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+
+.btn-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    vertical-align: top;
+    z-index: 10;
+}
+.btn-nav.prev {
+    left: -27px;
+    background-position: 0 -299px;
+}
+.btn-nav.next {
+    right: -13px;
+    background-position: -224px -158px;
+}
+.btn-box{
+    float: right;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+.btn-box a+a {
+    margin-left: -1px;
+}
+.btn-box .btn-arrow{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e4e8eb;
+}
+.btn-box .prev::before{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -408px -74px;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+}
+.btn-box .next::before{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -451px -392px;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+}
