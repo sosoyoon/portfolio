@@ -8,18 +8,8 @@ canvas{
     max-width: 100vw;
 }
 // canvas 끝
-// careers 시작
-.careers{
-    width: 100%;
-    .img_box{
-        svg{
-            &+svg{
-                margin-top: 4px;
-            }
-        }
-    }
-}
-.careers_txt{
+// introduce 시작
+.introduce_txt{
     .sc_title{
         font-size: 110px; 
         line-height: 0.9;  
@@ -33,38 +23,33 @@ canvas{
         }
     }
 }
-.careers_box{
-    display: none;
-    .desc{
-        font-family: $font-a;
-    }
-}
-// careers 끝
+// introduce 끝
 // about 시작
 .about_txt{
     .sc_title{
-        font-size: 16px;
+        font-size: 32px;
         font-family: $font-a;
-        font-weight: 300;
-        max-width: 260px;
-        line-height: 22px;
-        margin-bottom: 25px;
+        line-height: 1.5;
+        .keyword{
+            color: #d2b4db;
+        }
     }
     margin-bottom: 120px;
 }
 // about 끝
-// work 시작
-.work{
+// project 시작
+.project{
     .sc_title{
+        text-align: right;
         display: inline-block;
     }
-    .button_box{
-        display: inline-block;
+    .link_review{
+        display: flex;
     }
     
 }
-.work_list{
-    .work_item{
+.project_list{
+    .project_item{
         width: calc(50% - 20px);
         &:nth-child(2n){
             margin-top: 154px;
@@ -75,36 +60,29 @@ canvas{
         overflow: hidden;
         position: relative;
     }
-    .txt_box{
+    .explain{
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-    }
-}
-// work 끝
-// journal 시작
-.journal{
-    .title_area{
-        display: flex;
         align-items: flex-end;
-        position: relative;
-        width: 57%;
-        justify-content: space-between;
-        .img_box{
-            position: absolute;
-            top: 0;
-            left: -10%;
-        }
-        .button_box{
-            margin-bottom: 10px;
+        .text{
+            margin: 10px 0; 
         }
     }
 }
-.journal_item{
+// project 끝
+// goal 시작
+.goal{
+    .title_area{
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    padding-bottom: 100px;
+}
+.goal_item{
     width: calc((100% - 80px) / 3);
     position: relative;
-    &+.journal_item{
+    &+.goal_item{
         &::before{
             content: '';
             position: absolute;
@@ -125,12 +103,6 @@ canvas{
         overflow: hidden;
         position: relative;
         margin-bottom: 20px;
-        .link_journal{
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: inherit;
-        }
         img{
             object-fit: cover;
             height: 100%;
@@ -149,16 +121,10 @@ canvas{
             border-width: 1px;
         }
     }
-    .txt_box{
-        display: flex;
-        justify-content: end;
-    }
     .desc{
         display: block;
-        width: 196px;
-        margin-top: 40px;
-        margin-right: 20px;
+        margin-top: 20px;
         line-height: 22px;
     }
 }
-// journal 끝
+// goal 끝

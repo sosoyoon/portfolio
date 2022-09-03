@@ -70,7 +70,7 @@ ul, li {
 */
 body {
   width: 100%;
-  min-width: 500px;
+  min-width: 320px;
   font-size: 14px;
   font-family: "Italian", "Helvetica", "Arial", "sans-serif";
   color: #EEEAEA;
@@ -79,7 +79,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   background: #02101d;
-  margin: 30px auto;
   word-break: keep-all;
 }
 
@@ -228,17 +227,9 @@ section {
   margin-top: 100px;
 }
 
-.left {
-  width: 34%;
-}
-
-.right {
-  width: 66%;
-}
-
 .title_area {
-  margin-left: 43%;
-  margin-bottom: 120px;
+  text-align: right;
+  width: 100%;
 }
 
 .content_area {
@@ -257,9 +248,18 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
+  overflow: hidden;
+}
+.img_hover .txt_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .img_bg {
+  float: left;
   width: 100%;
   height: 100%;
   background: #000;
@@ -267,34 +267,48 @@ section {
 }
 
 .slide_txt {
-  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 82px;
+}
+.slide_txt .slide_wrap {
+  display: block;
+  width: 200%;
+  height: 82px;
   position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
+  overflow: hidden;
+  -webkit-animation: marquee 5s linear infinite;
+          animation: marquee 5s linear infinite;
+}
+.slide_txt .slide_wrap .txt {
+  float: left;
+  width: 50%;
   font-size: 82px;
   font-weight: 400;
   color: #eeeaea;
-  opacity: 1;
-  z-index: 10;
-  display: flex;
-  -webkit-animation: textLoop 10000ms linear infinite;
-          animation: textLoop 10000ms linear infinite;
+  position: relative;
 }
-@-webkit-keyframes textLoop {
+.slide_txt .slide_wrap .txt::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  transform: translateY(-50%);
+}
+@-webkit-keyframes marquee {
   0% {
-    transform: translate3d(0, 0, 0);
+    left: 0;
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    left: -100%;
   }
 }
-@keyframes textLoop {
+@keyframes marquee {
   0% {
-    transform: translate3d(0, 0, 0);
+    left: 0;
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    left: -100%;
   }
 }
 
@@ -308,21 +322,15 @@ strong.title {
   font-size: 32px;
 }
 
-.sidebar {
-  position: fixed;
-  top: 50%;
-  right: 0%;
-  transform: translateY(-50%);
-}
-
 .link_more {
   display: flex;
   align-items: center;
 }
-.link_more button {
+
+button {
   font-weight: 600;
   font-size: 14px;
-  border: 2px solid #16161D;
+  border: 2px solid #FFF;
   border-radius: 30px;
   padding: 4px 9px 1px;
   margin-right: 4px;
@@ -444,6 +452,7 @@ strong.title {
 
 .header {
   width: 100%;
+  margin-top: 30px;
 }
 .header .inner {
   display: block;
@@ -456,9 +465,6 @@ strong.title {
 }
 .header .button_box {
   float: right;
-}
-.header .button_box .arrow {
-  border: none;
 }
 
 .link_main {
@@ -474,91 +480,73 @@ canvas {
   max-width: 100vw;
 }
 
-.careers {
-  width: 100%;
-}
-.careers .img_box svg + svg {
-  margin-top: 4px;
-}
-
-.careers_txt .sc_title {
+.introduce_txt .sc_title {
   font-size: 110px;
   line-height: 0.9;
   font-weight: 500;
 }
-.careers_txt .sc_title .wrap {
+.introduce_txt .sc_title .wrap {
   overflow: hidden;
   display: block;
 }
-.careers_txt .sc_title .wrap .txt {
+.introduce_txt .sc_title .wrap .txt {
   display: inline-block;
-}
-
-.careers_box {
-  display: none;
-}
-.careers_box .desc {
-  font-family: "AktivGrotesk", "Helvetica", "Arial,sans-serif";
 }
 
 .about_txt {
   margin-bottom: 120px;
 }
 .about_txt .sc_title {
-  font-size: 16px;
+  font-size: 32px;
   font-family: "AktivGrotesk", "Helvetica", "Arial,sans-serif";
-  font-weight: 300;
-  max-width: 260px;
-  line-height: 22px;
-  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.about_txt .sc_title .keyword {
+  color: #d2b4db;
 }
 
-.work .sc_title {
+.project .sc_title {
+  text-align: right;
   display: inline-block;
 }
-.work .button_box {
-  display: inline-block;
+.project .link_review {
+  display: flex;
 }
 
-.work_list .work_item {
+.project_list .project_item {
   width: calc(50% - 20px);
 }
-.work_list .work_item:nth-child(2n) {
+.project_list .project_item:nth-child(2n) {
   margin-top: 154px;
 }
-.work_list .img_box {
+.project_list .img_box {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
-.work_list .txt_box {
+.project_list .explain {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.journal .title_area {
-  display: flex;
   align-items: flex-end;
-  position: relative;
-  width: 57%;
-  justify-content: space-between;
 }
-.journal .title_area .img_box {
-  position: absolute;
-  top: 0;
-  left: -10%;
-}
-.journal .title_area .button_box {
-  margin-bottom: 10px;
+.project_list .explain .text {
+  margin: 10px 0;
 }
 
-.journal_item {
+.goal {
+  padding-bottom: 100px;
+}
+.goal .title_area {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.goal_item {
   width: calc((100% - 80px) / 3);
   position: relative;
 }
-.journal_item + .journal_item::before {
+.goal_item + .goal_item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -567,10 +555,10 @@ canvas {
   height: 100%;
   background: #eeeaea;
 }
-.journal_item + .journal_item .title {
+.goal_item + .goal_item .title {
   max-width: 80%;
 }
-.journal_item .img_box {
+.goal_item .img_box {
   width: 420px;
   height: 427px;
   border-radius: 20px;
@@ -578,36 +566,24 @@ canvas {
   position: relative;
   margin-bottom: 20px;
 }
-.journal_item .img_box .link_journal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: inherit;
-}
-.journal_item .img_box img {
+.goal_item .img_box img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   transition-duration: 1s;
 }
-.journal_item .img_box:hover img {
+.goal_item .img_box:hover img {
   transform: scale(1.1);
 }
-.journal_item .title {
+.goal_item .title {
   display: inline-block;
 }
-.journal_item .title .arrow {
+.goal_item .title .arrow {
   display: inline-block;
   border-width: 1px;
 }
-.journal_item .txt_box {
-  display: flex;
-  justify-content: end;
-}
-.journal_item .desc {
+.goal_item .desc {
   display: block;
-  width: 196px;
-  margin-top: 40px;
-  margin-right: 20px;
+  margin-top: 20px;
   line-height: 22px;
 }

@@ -1,18 +1,14 @@
-.sidebar{
-    position: fixed;
-    top: 50%; right: 0%; transform: translateY(-50%);
-}
 .link_more{
     display: flex;
     align-items: center;
-    button{
-        font-weight: 600;
-        font-size: 14px;
-        border: 2px solid #16161D;
-        border-radius: 30px;
-        padding: 4px 9px 1px;
-        margin-right: 4px;
-    }
+}
+button{
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid #FFF;
+    border-radius: 30px;
+    padding: 4px 9px 1px;
+    margin-right: 4px;
 }
 .arrow{
     width: 23px;height: 23px;

@@ -1,5 +1,6 @@
 .header{
     width: 100%;
+    margin-top: 30px;
     .inner{
         display: block;
     }
@@ -11,9 +12,6 @@
     }
     .button_box{
         float: right;
-        .arrow{
-            border: none;
-        }
     }
 }
 .link_main{

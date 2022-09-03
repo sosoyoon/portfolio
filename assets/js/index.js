@@ -1,3 +1,4 @@
+// 배경
 const canvas = document.querySelector('canvas');
 	const ctx = canvas.getContext('2d');
 	canvas.width = 1600;
@@ -45,7 +46,7 @@ visualTl = gsap.timeline({
 
 
 
-  
+// 버튼
 $(function(){
         arrow = gsap.timeline({
             paused:true,
@@ -54,22 +55,23 @@ $(function(){
         arrow.addLabel('a')
         .to('.arrow .first', {left: "100%", top: "-50%"}, 'a')
         .to('.arrow .second', {left: "50%", bottom: "50%"}, 'a')
-        .to('.arrow', {border: "none", background: "#F4FD6B"}, 'a')
+        .to('.arrow', {background: "#d2b4db"}, 'a')
+        .to('.contact', {border: "2px solid #d2b4db", color: "#d2b4db"}, 'a')
 
-        $('.button_box, .link_journal').mouseenter(function(){
+        $('.button_box').mouseenter(function(){
             arrow.play()
         })
-        $('.button_box, .link_journal').mouseleave(function(){
+        $('.button_box').mouseleave(function(){
             arrow.reverse()
         })
-        
-    // work img
-    $('.work_item .img_box').mouseenter(function(){
+
+    // project img
+    $('.project .img_box').mouseenter(function(){
         $(this).find('.img_hover').css('display', 'block')
     })
-    $('.work_item .img_box').mouseleave(function(){
+    $('.project .img_box').mouseleave(function(){
         $(this).find('.img_hover').css('display', 'none')
     })
-    
 })
+
     

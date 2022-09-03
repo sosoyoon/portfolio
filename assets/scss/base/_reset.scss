@@ -13,7 +13,7 @@ ul, li{list-style: none;}
 */
 body {
     width: 100%;
-    min-width: 500px;
+    min-width: 320px;
     font-size: 14px;
     font-family: $font-i;
     color: $color;
@@ -22,7 +22,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     background: #02101d;
-    margin: 30px auto;
     word-break: keep-all;
 }
 
