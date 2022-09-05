@@ -83,16 +83,6 @@ var swiper = new Swiper(".group03.swiper", {
     });
 
 $(function(){
-    // $('.link_edit').click(function(e){
-    //     e.preventDefault();
-
-    //     target = $(this).find('img').attr('src');
-
-    //     $(this).parent('.edit_img').sibilings('edit_big').find('img').attr('src',target)
-    //     $(this).addClass('active').sibilings().removeClass('active')
-    //     $(this).addClass('active').sibilings().removeClass('active')
-
-    // })
     $('.tab_box a').click(function(e){
         e.preventDefault();
 
@@ -126,5 +116,17 @@ $(function(){
             $('.menu_area').addClass('hide').removeClass('show')
         }
     })
+    $('.menu_list , .category_box, .category_title > .link_category, .category_list').mouseenter(function(){ 
+        $('.category_box').show()
+    });
+    $('.menu_list, .category_box, .category_title > .link_category, .category_list').mouseleave(function(){ 
+        $('.category_box').hide()
+    });
+    $('.category_title').mouseenter(function(){ 
+        $(this).children('.category_list').addClass('active')
+    });
+    $('.category_title').mouseleave(function(){ 
+        $(this).children('.category_list').removeClass('active')
+    });
     
 })

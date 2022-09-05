@@ -617,6 +617,7 @@ textarea::-webkit-outer-spin-button {
 }
 .header .menu_area .inner {
   display: flex;
+  overflow: unset;
 }
 .header .menu_area .inner .menu_list {
   margin-right: 36px;
@@ -671,6 +672,73 @@ textarea::-webkit-outer-spin-button {
 }
 .header .menu_area .inner .nav .nav_list .list_item .link_nav:hover {
   color: rgb(31, 31, 31);
+}
+.header .category_box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  color: #898989;
+  width: 100%;
+  padding-left: 48px;
+  transition: all 0.2s ease 0s;
+}
+.header .category_box .category_title {
+  font-size: 18px;
+  line-height: 50px;
+  height: 50px;
+}
+.header .category_box .category_title > .link_category {
+  width: 200px;
+  position: relative;
+  z-index: 10;
+}
+.header .category_box .category_title > .link_category:hover {
+  font-weight: bold;
+  color: #1F1F1F;
+}
+.header .category_box .category_title > .link_category::after {
+  content: "";
+  background: url("../images/arrow.png") 0% 0%/10px 8px no-repeat;
+  background-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: 100;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 8px;
+}
+
+.category_list {
+  display: none;
+  width: 100%;
+  font-size: 15px;
+}
+.category_list.active {
+  display: block;
+}
+.category_list .category_menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 600px;
+  padding-left: 200px;
+  background: #fff;
+}
+.category_list .menu_item {
+  max-width: 200px;
+  padding: 0 30px;
+  border-left: 1px solid rgb(227, 227, 227);
+}
+.category_list .menu_title {
+  color: #1F1F1F;
+}
+.category_list .category_item:hover {
+  color: #1F1F1F;
 }
 
 .footer {
