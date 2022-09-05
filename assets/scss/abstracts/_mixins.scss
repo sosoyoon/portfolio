@@ -13,3 +13,30 @@
     -webkit-line-clamp: $line;
     -webkit-box-orient: vertical;
 }
+
+
+$pc: 1440px;
+$tablet: 1024px;
+$mo: 768px;
+$mo_s: 640px;
+
+@mixin pc{
+    @media (max-width: $pc){
+      @content;
+    }
+  }
+@mixin tablet_l{
+    @media (max-width: $tablet){
+      @content;
+    }
+  }
+@mixin tablet_s{
+    @media (max-width: $mo){
+      @content;
+    }
+  }
+@mixin mo_s{
+    @media (max-width: $mo_s){
+      @content;
+    }
+  }

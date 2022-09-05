@@ -46,13 +46,19 @@ canvas{
     .link_review{
         display: flex;
     }
-    
 }
 .project_list{
     .project_item{
         width: calc(50% - 20px);
         &:nth-child(2n){
             margin-top: 154px;
+            @include tablet_l {
+                margin-top: 50px;
+            }
+        }
+        @include tablet_1 {
+            width: 100%;
+            margin-top: 50px;
         }
     }
     .img_box{
@@ -65,8 +71,34 @@ canvas{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        @include pc {
+            justify-content: unset;
+        }
+        @include tablet_l {
+            justify-content: space-between;
+        }
+        @include mo_s {
+            display: block;
+        }
         .text{
             margin: 10px 0; 
+            line-height: 1.5;
+        }
+        .txt_box{
+            @include pc {
+                width: 75%;
+            }
+        }
+        .button_box{
+            @include pc {
+                width: 25%;
+            }
+            @include tablet_l {
+                width: unset;
+            }
+            @include mo_s {
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -82,6 +114,10 @@ canvas{
 .goal_item{
     width: calc((100% - 80px) / 3);
     position: relative;
+    @include mo {
+        width: 100%;
+        margin-top: 50px;
+    }
     &+.goal_item{
         &::before{
             content: '';
@@ -91,6 +127,9 @@ canvas{
             width: 1px;
             height: 100%;
             background: #eeeaea;
+            @include mo {
+                display: none;
+            }
         }
         .title{
             max-width: 80%;
@@ -103,6 +142,9 @@ canvas{
         overflow: hidden;
         position: relative;
         margin-bottom: 20px;
+        @include tablet_l {
+            width: 100%;
+        }
         img{
             object-fit: cover;
             height: 100%;

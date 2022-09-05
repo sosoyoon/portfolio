@@ -6,7 +6,7 @@
     clip: rect(0 0 0 0);
 }
 .inner{
-    width: 1380px;
+    max-width: 1380px;
     margin: 0 auto;
     padding: 0 30px;
     position: relative;
@@ -15,6 +15,15 @@
     flex-wrap: wrap;
     overflow: hidden;
     &::after{content: '';clear: both;display: block;}
+    @include pc {
+        max-width: 1024px;
+    }
+    @include tablet {
+        max-width: 768px;
+    }
+    @include mo {
+        max-width: 640px;
+    }
 }
 section{
     margin-top: 100px;

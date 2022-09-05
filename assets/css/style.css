@@ -208,7 +208,7 @@ textarea::-webkit-outer-spin-button {
 }
 
 .inner {
-  width: 1380px;
+  max-width: 1380px;
   margin: 0 auto;
   padding: 0 30px;
   position: relative;
@@ -221,6 +221,21 @@ textarea::-webkit-outer-spin-button {
   content: "";
   clear: both;
   display: block;
+}
+@media (max-width: 1440px) {
+  .inner {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .inner {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    max-width: 640px;
+  }
 }
 
 section {
@@ -519,6 +534,17 @@ canvas {
 .project_list .project_item:nth-child(2n) {
   margin-top: 154px;
 }
+@media (max-width: 1024px) {
+  .project_list .project_item:nth-child(2n) {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .project_list .project_item {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
 .project_list .img_box {
   border-radius: 20px;
   overflow: hidden;
@@ -530,8 +556,44 @@ canvas {
   justify-content: space-between;
   align-items: flex-end;
 }
+@media (max-width: 1440px) {
+  .project_list .explain {
+    justify-content: unset;
+  }
+}
+@media (max-width: 1024px) {
+  .project_list .explain {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  .project_list .explain {
+    display: block;
+  }
+}
 .project_list .explain .text {
   margin: 10px 0;
+  line-height: 1.5;
+}
+@media (max-width: 1440px) {
+  .project_list .explain .txt_box {
+    width: 75%;
+  }
+}
+@media (max-width: 1440px) {
+  .project_list .explain .button_box {
+    width: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  .project_list .explain .button_box {
+    width: unset;
+  }
+}
+@media (max-width: 640px) {
+  .project_list .explain .button_box {
+    margin-top: 20px;
+  }
 }
 
 .goal {
@@ -546,6 +608,12 @@ canvas {
   width: calc((100% - 80px) / 3);
   position: relative;
 }
+@media (max-width: 768px) {
+  .goal_item {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
 .goal_item + .goal_item::before {
   content: "";
   position: absolute;
@@ -554,6 +622,11 @@ canvas {
   width: 1px;
   height: 100%;
   background: #eeeaea;
+}
+@media (max-width: 768px) {
+  .goal_item + .goal_item::before {
+    display: none;
+  }
 }
 .goal_item + .goal_item .title {
   max-width: 80%;
@@ -565,6 +638,11 @@ canvas {
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .goal_item .img_box {
+    width: 100%;
+  }
 }
 .goal_item .img_box img {
   -o-object-fit: cover;
