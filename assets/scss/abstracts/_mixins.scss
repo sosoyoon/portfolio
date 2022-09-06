@@ -16,9 +16,10 @@
 
 
 $pc: 1440px;
-$tablet: 1024px;
-$mo: 768px;
-$mo_s: 640px;
+$tablet_l: 1024px;
+$tablet_s: 768px;
+$mo_l: 640px;
+$mo_s: 380px;
 
 @mixin pc{
     @media (max-width: $pc){
@@ -26,12 +27,17 @@ $mo_s: 640px;
     }
   }
 @mixin tablet_l{
-    @media (max-width: $tablet){
+    @media (max-width: $tablet_l){
       @content;
     }
   }
 @mixin tablet_s{
-    @media (max-width: $mo){
+    @media (max-width: $tablet_s){
+      @content;
+    }
+  }
+@mixin mo_l{
+    @media (max-width: $mo_l){
       @content;
     }
   }

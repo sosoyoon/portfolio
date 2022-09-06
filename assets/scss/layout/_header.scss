@@ -3,6 +3,9 @@
     margin-top: 30px;
     .inner{
         display: block;
+        @include mo_l {
+            padding: 0 10px;
+        }
     }
     .wrap{
         width: 100%;
@@ -16,4 +19,10 @@
 }
 .link_main{
     font-size: 40px;
+    @include mo_l {
+        font-size: 28px;
+    }
+    @include mo_s {
+        font-size: 26px;
+    }
 }

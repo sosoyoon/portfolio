@@ -216,6 +216,7 @@ textarea::-webkit-outer-spin-button {
   justify-content: space-between;
   flex-wrap: wrap;
   overflow: hidden;
+  word-break: keep-all;
 }
 .inner::after {
   content: "";
@@ -237,14 +238,40 @@ textarea::-webkit-outer-spin-button {
     max-width: 640px;
   }
 }
+@media (max-width: 640px) {
+  .inner {
+    max-width: 340px;
+    padding: 0 10px;
+  }
+}
 
 section {
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  section {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 640px) {
+  section {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 380px) {
+  section {
+    margin-top: 50px;
+  }
 }
 
 .title_area {
   text-align: right;
   width: 100%;
+}
+@media (max-width: 640px) {
+  .title_area {
+    text-align: center;
+  }
 }
 
 .content_area {
@@ -332,9 +359,24 @@ section {
   font-weight: 600;
   letter-spacing: -0.04em;
 }
+@media (max-width: 1024px) {
+  .sc_title {
+    font-size: 62px;
+  }
+}
+@media (max-width: 380px) {
+  .sc_title {
+    font-size: 52px;
+  }
+}
 
 strong.title {
   font-size: 32px;
+}
+@media (max-width: 380px) {
+  strong.title {
+    font-size: 28px;
+  }
 }
 
 .link_more {
@@ -350,6 +392,13 @@ button {
   padding: 4px 9px 1px;
   margin-right: 4px;
 }
+@media (max-width: 640px) {
+  button {
+    font-size: 12px;
+    padding: 3px 4px 1px;
+    font-weight: 400;
+  }
+}
 
 .arrow {
   width: 23px;
@@ -360,9 +409,21 @@ button {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 640px) {
+  .arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
 .arrow img {
   max-width: 18px;
   min-height: 18px;
+}
+@media (max-width: 640px) {
+  .arrow img {
+    width: 14px;
+    height: 14px;
+  }
 }
 .arrow img.first {
   position: absolute;
@@ -472,6 +533,11 @@ button {
 .header .inner {
   display: block;
 }
+@media (max-width: 640px) {
+  .header .inner {
+    padding: 0 10px;
+  }
+}
 .header .wrap {
   width: 100%;
   display: flex;
@@ -484,6 +550,16 @@ button {
 
 .link_main {
   font-size: 40px;
+}
+@media (max-width: 640px) {
+  .link_main {
+    font-size: 28px;
+  }
+}
+@media (max-width: 380px) {
+  .link_main {
+    font-size: 26px;
+  }
 }
 
 canvas {
@@ -500,6 +576,16 @@ canvas {
   line-height: 0.9;
   font-weight: 500;
 }
+@media (max-width: 640px) {
+  .introduce_txt .sc_title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 380px) {
+  .introduce_txt .sc_title {
+    font-size: 60px;
+  }
+}
 .introduce_txt .sc_title .wrap {
   overflow: hidden;
   display: block;
@@ -509,6 +595,7 @@ canvas {
 }
 
 .about_txt {
+  width: 100%;
   margin-bottom: 120px;
 }
 .about_txt .sc_title {
@@ -516,12 +603,16 @@ canvas {
   font-family: "AktivGrotesk", "Helvetica", "Arial,sans-serif";
   line-height: 1.5;
 }
+@media (max-width: 640px) {
+  .about_txt .sc_title {
+    font-size: 28px;
+  }
+}
 .about_txt .sc_title .keyword {
   color: #d2b4db;
 }
 
 .project .sc_title {
-  text-align: right;
   display: inline-block;
 }
 .project .link_review {
@@ -531,17 +622,17 @@ canvas {
 .project_list .project_item {
   width: calc(50% - 20px);
 }
+@media (max-width: 1024px) {
+  .project_list .project_item {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
 .project_list .project_item:nth-child(2n) {
   margin-top: 154px;
 }
 @media (max-width: 1024px) {
   .project_list .project_item:nth-child(2n) {
-    margin-top: 50px;
-  }
-}
-@media (max-width: 1024px) {
-  .project_list .project_item {
-    width: 100%;
     margin-top: 50px;
   }
 }
@@ -580,6 +671,11 @@ canvas {
     width: 75%;
   }
 }
+@media (max-width: 640px) {
+  .project_list .explain .txt_box {
+    width: 100%;
+  }
+}
 @media (max-width: 1440px) {
   .project_list .explain .button_box {
     width: 25%;
@@ -603,12 +699,22 @@ canvas {
   margin-bottom: 50px;
   text-align: left;
 }
+@media (max-width: 1024px) {
+  .goal .title_area {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 640px) {
+  .goal .title_area {
+    text-align: center;
+  }
+}
 
 .goal_item {
   width: calc((100% - 80px) / 3);
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .goal_item {
     width: 100%;
     margin-top: 50px;
@@ -623,7 +729,7 @@ canvas {
   height: 100%;
   background: #eeeaea;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .goal_item + .goal_item::before {
     display: none;
   }
@@ -632,7 +738,7 @@ canvas {
   max-width: 80%;
 }
 .goal_item .img_box {
-  width: 420px;
+  max-width: 420px;
   height: 427px;
   border-radius: 20px;
   overflow: hidden;
@@ -641,7 +747,9 @@ canvas {
 }
 @media (max-width: 1024px) {
   .goal_item .img_box {
-    width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    height: unset;
   }
 }
 .goal_item .img_box img {

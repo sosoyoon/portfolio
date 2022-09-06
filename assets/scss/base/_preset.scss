@@ -14,23 +14,40 @@
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;
+    word-break: keep-all;
     &::after{content: '';clear: both;display: block;}
     @include pc {
         max-width: 1024px;
     }
-    @include tablet {
+    @include tablet_l {
         max-width: 768px;
     }
-    @include mo {
+    @include tablet_s {
         max-width: 640px;
+    }
+    @include mo_l {
+        max-width: 340px;
+        padding: 0 10px;
     }
 }
 section{
     margin-top: 100px;
+    @include tablet_s {
+        margin-top: 80px;;
+    }
+    @include mo_l {
+        margin-top: 60px;
+    }
+    @include mo_s {
+        margin-top: 50px;
+    }
 }
 .title_area{
     text-align: right;
     width: 100%;
+    @include mo_l {
+        text-align: center;
+    }
 }
 .content_area{
     width: 100%;

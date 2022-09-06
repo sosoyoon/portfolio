@@ -2,7 +2,16 @@
     font-size: 82px;
     font-weight: 600;
     letter-spacing: -.04em;
+    @include tablet_l {
+        font-size: 62px;
+    }
+    @include mo_s {
+        font-size: 52px;
+    }
 }
 strong.title{
     font-size: 32px;
+    @include mo_s {
+        font-size: 28px;
+    }
 }
