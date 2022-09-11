@@ -98,13 +98,13 @@
 }
 .tab_box{
     display: flex;
+    color: rgb(170, 170, 170);
     .btn_cate{
         display: inline-block;
         line-height: 18px;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: -1px;
-        color: rgb(170, 170, 170);
         margin-bottom: 30px;
         & + .btn_cate{
             margin-left: 36px;

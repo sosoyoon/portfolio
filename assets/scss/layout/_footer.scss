@@ -46,7 +46,8 @@
             }
             ul{
                 margin-top: 40px;
-                li{
+                word-break: break-all;
+                li+li{
                     display: inline-block;
                     position: relative;
                     &::after{
@@ -57,9 +58,14 @@
                         height: 8px;
                         background: rgb(225, 225, 225);
                     }
-                    &:nth-child(3)::after,&:nth-child(7)::after{
+                    &:nth-child(3)::after,&:nth-child(6)::after{
                         display: none;
                     }
+                }
+            }
+            .familysite_list{
+                li:nth-child(3){
+                    margin-right: 40%;
                 }
             }
             .sns_list{

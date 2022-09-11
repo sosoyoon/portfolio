@@ -303,6 +303,7 @@ textarea::-webkit-outer-spin-button {
 
 .tab_box {
   display: flex;
+  color: rgb(170, 170, 170);
 }
 .tab_box .btn_cate {
   display: inline-block;
@@ -310,7 +311,6 @@ textarea::-webkit-outer-spin-button {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: -1px;
-  color: rgb(170, 170, 170);
   margin-bottom: 30px;
 }
 .tab_box .btn_cate + .btn_cate {
@@ -487,7 +487,7 @@ textarea::-webkit-outer-spin-button {
   height: 28px;
   margin-bottom: 27px;
 }
-.event_text button {
+.event_text .link_direct {
   text-align: center;
   border: 1px solid #333;
   width: 100px;
@@ -790,12 +790,13 @@ textarea::-webkit-outer-spin-button {
 }
 .footer .column_right .group_contact ul {
   margin-top: 40px;
+  word-break: break-all;
 }
-.footer .column_right .group_contact ul li {
+.footer .column_right .group_contact ul li + li {
   display: inline-block;
   position: relative;
 }
-.footer .column_right .group_contact ul li::after {
+.footer .column_right .group_contact ul li + li::after {
   content: "";
   margin: 0px 8px;
   display: inline-block;
@@ -803,8 +804,11 @@ textarea::-webkit-outer-spin-button {
   height: 8px;
   background: rgb(225, 225, 225);
 }
-.footer .column_right .group_contact ul li:nth-child(3)::after, .footer .column_right .group_contact ul li:nth-child(7)::after {
+.footer .column_right .group_contact ul li + li:nth-child(3)::after, .footer .column_right .group_contact ul li + li:nth-child(6)::after {
   display: none;
+}
+.footer .column_right .group_contact .familysite_list li:nth-child(3) {
+  margin-right: 40%;
 }
 .footer .column_right .group_contact .sns_list {
   margin-top: auto;
@@ -925,7 +929,7 @@ textarea::-webkit-outer-spin-button {
   left: 15%;
   transform: translateY(-50%);
 }
-.sc_event.event02 .link_event .event_text button {
+.sc_event.event02 .link_event .event_text .link_direct {
   border: 1px solid #FFF;
 }
 
