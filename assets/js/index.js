@@ -56,7 +56,7 @@ $(function(){
         .to('.arrow .first', {left: "100%", top: "-50%"}, 'a')
         .to('.arrow .second', {left: "50%", bottom: "50%"}, 'a')
         .to('.arrow', {background: "#d2b4db"}, 'a')
-        .to('.contact', {border: "2px solid #d2b4db", color: "#d2b4db"}, 'a')
+        .to('.btn_txt', {border: "2px solid #d2b4db", color: "#d2b4db"}, 'a')
 
         $('.button_box').mouseenter(function(){
             arrow.play()

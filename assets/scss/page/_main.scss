@@ -130,7 +130,7 @@ canvas{
     padding-bottom: 100px;
 }
 .goal_item{
-    width: calc((100% - 80px) / 3);
+    width: calc((100% - 40px) / 2);
     position: relative;
     @include tablet_l {
         width: 100%;
@@ -154,8 +154,6 @@ canvas{
         }
     }
     .img_box{
-        max-width: 420px;
-        height: 427px;
         border-radius: 20px;
         overflow: hidden;
         position: relative;

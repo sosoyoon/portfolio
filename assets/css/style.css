@@ -384,7 +384,7 @@ strong.title {
   align-items: center;
 }
 
-button {
+.btn_txt {
   font-weight: 600;
   font-size: 14px;
   border: 2px solid #FFF;
@@ -393,7 +393,7 @@ button {
   margin-right: 4px;
 }
 @media (max-width: 640px) {
-  button {
+  .btn_txt {
     font-size: 12px;
     padding: 3px 4px 1px;
     font-weight: 400;
@@ -711,7 +711,7 @@ canvas {
 }
 
 .goal_item {
-  width: calc((100% - 80px) / 3);
+  width: calc((100% - 40px) / 2);
   position: relative;
 }
 @media (max-width: 1024px) {
@@ -738,8 +738,6 @@ canvas {
   max-width: 80%;
 }
 .goal_item .img_box {
-  max-width: 420px;
-  height: 427px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
