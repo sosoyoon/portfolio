@@ -1075,7 +1075,7 @@
         > div{
             border-radius: 30px;
             margin-top: 25px;
-            @include mobile_lg {
+            @include mobile_sm {
                 border-radius: 0;
             }
         }
@@ -1111,6 +1111,9 @@
         @include tablet {
             padding: 0px 0 35px 8%;
         }
+        @include mobile_lg {
+            padding: 0px 0 35px 0;
+        }
         .img_box{
             max-width: 54px;
             height: 62px;
@@ -1131,13 +1134,11 @@
             margin-bottom: -40px;
             @include tablet {
                 max-width: 309px;
+                width: 100%;
                 height: auto;
             }
             @include mobile_lg {
                 margin-bottom: -30px;
-            }
-            @include mobile_sm {
-                margin-left: -20px;
             }
         }
     }
@@ -1156,7 +1157,7 @@
         button{
             width: 26px;height: 26px;
             border-radius: 50%;
-            margin: 0 auto;
+            margin: 0 auto 5px;
             text-align: center;
             display: block;
             position: relative;
