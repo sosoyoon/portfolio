@@ -747,7 +747,6 @@ canvas {
   .goal_item .img_box {
     max-width: 100%;
     min-height: 200px;
-    height: unset;
   }
 }
 .goal_item .img_box img {

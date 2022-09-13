@@ -161,7 +161,6 @@ canvas{
         @include tablet_l {
             max-width: 100%;
             min-height: 200px;
-            height: unset;
         }
         img{
             object-fit: cover;
