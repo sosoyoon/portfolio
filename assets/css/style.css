@@ -753,7 +753,6 @@ canvas {
 .goal_item .img_box img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
   transition-duration: 1s;
 }
 .goal_item .img_box:hover img {
