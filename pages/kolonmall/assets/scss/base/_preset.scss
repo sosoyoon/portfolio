@@ -1,0 +1,136 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.inner{
+    width: 100%;
+    padding: 0 48px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    &::after{content: '';clear: both;display: block;}
+}
+.swiper-pagination{
+    width: auto;
+    display: inline-block;
+    bottom: 20px;
+    height: 19px;
+    padding: 0px 8px;
+    border-radius: 10px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 21px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #FFF;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.text_box{
+    color: rgb(31, 31, 31);
+    padding: 22px 18px 25px 6px;
+}
+.goods{
+    padding: 0px 8px 54px;
+}
+.link_profile{
+    display: flex;
+    align-items: center;
+    .thumb{
+        width: 35px;height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
+}
+.swiper-button-prev{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-left-arrow-2.4b080a8fad7384efe5cdc80316ff1bcd.png) 50% 50% no-repeat;
+    left: 6px;
+    top: 30%;
+}
+.swiper-button-next{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-right-arrow-2.2cd54fd32bc25a5ac8a2d2a59db99f91.png) 50% 50% no-repeat;
+    right: 6px;
+    top: 30%;
+}
+.banner_prev{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-left-arrow-1-black.5a9b25d839b7f905b527ce83d721b3b8.svg) 50% 50% no-repeat;
+    left: 10px;
+    top: 50%;
+}
+.banner_next{
+    display: none;
+    background: url(https://www.kolonmall.com/_next/static/public/static/images/bt-right-arrow-1-black.fadfeef5e0ad10c98ef39aff091efda1.svg) 50% 50% no-repeat;
+    right: 10px;
+    top: 50%;
+}
+.issue_prev{
+    left: -34px;
+}
+.issue_next{
+    right: -34px;
+}
+.swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev, .swiper:hover .issue_prev, .swiper:hover .issue_next {
+    display: block;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    margin: 0px 8px;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    
+}
+.tab_box{
+    display: flex;
+    color: rgb(170, 170, 170);
+    .btn_cate{
+        display: inline-block;
+        line-height: 18px;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+        & + .btn_cate{
+            margin-left: 36px;
+        }
+        &.active{
+            color: #1f1f1f;
+        }
+    }
+}
+
+.group_cont{
+    display: none;
+    position: relative;
+    letter-spacing: -0.2px;
+    padding: 0 6px;
+    box-sizing: border-box;
+    &.active{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+

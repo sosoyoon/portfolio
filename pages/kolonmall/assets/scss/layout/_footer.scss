@@ -1,0 +1,92 @@
+.footer{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 44px;
+    text-align: left;
+    box-sizing: border-box;
+    background: rgb(245, 245, 245);
+    font-weight: 300;
+    color: rgb(137, 137, 137);
+    font-size: 11px;
+    line-height: 18px;
+    a{
+        display: inline-block;
+    }
+    .column_left{
+        .info_list{
+            margin: 20px 0;
+        }
+        .link_checkjoin{
+            border-bottom: 0.1em solid rgb(137, 137, 137);
+        }
+        .footer_desc + .footer_desc{
+            margin-bottom: 20px;
+        }
+    }
+    .column_right{
+        display: flex;
+        width: 600px;
+        b{
+            color: #1f1f1f;
+        }
+        .group_policy{
+            margin-left: 60px;
+        }
+        .group_contact{
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            .tel{
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            ul{
+                margin-top: 40px;
+                word-break: break-all;
+                li+li{
+                    display: inline-block;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        margin: 0px 8px;
+                        display: inline-block;
+                        width: 1px;
+                        height: 8px;
+                        background: rgb(225, 225, 225);
+                    }
+                    &:nth-child(3)::after,&:nth-child(6)::after{
+                        display: none;
+                    }
+                }
+            }
+            .familysite_list{
+                li:nth-child(3){
+                    margin-right: 40%;
+                }
+            }
+            .sns_list{
+                margin-top: auto;
+                display: flex;
+                flex-wrap: wrap;
+                .sns_item{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        margin: 0px 8px;
+                        display: inline-block;
+                        width: 1px;
+                        height: 8px;
+                        background: rgb(225, 225, 225);
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
