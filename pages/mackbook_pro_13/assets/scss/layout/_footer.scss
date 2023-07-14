@@ -1,0 +1,256 @@
+.footer{
+    background: #1d1d1f;
+}
+.service_area{
+    padding: 56px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    @include footer {
+        padding: 30px 0;
+    }
+    .img_box{
+        img{
+            max-height: 56px;
+            margin: 0 auto;
+        }
+    }
+    .desc{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .link_service{
+        width: calc(100% / 3);
+        @include service {
+            width: 50%;
+        }
+        @include footer {
+            width: 100%;
+        }
+        &:nth-child(2){
+            @include footer {
+                margin-top: 30px;
+            }    
+        }
+        &:last-child{
+            @include service {
+                margin-top: 30px;
+            }    
+        }
+    }
+    .link_more{
+        font-size: 14px;
+        font-weight: 400;
+        color: #2997ff;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.reference_area{
+    border-top: 1px solid #424245;
+    padding: 17px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #86868b;
+    a{
+        font-weight: bold;
+        display: inline-block;
+        color: #d2d2d7;
+    }
+    ol{
+        padding: 0 17px;
+        .reference_item{
+            list-style:decimal;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+    }
+}
+.sitemap_area{
+    border-top: 1px solid #424245;
+    font-size: 12px;
+    color: #d2d2d7;
+    nav{
+        display: flex;
+        padding: 17px 0;
+        div{
+            padding-right: 20px;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute; 
+                top: 0; right: 8px; 
+                width: 8px;
+                background-size: 8px 36px;
+                background-repeat: no-repeat;
+                background-image: url('https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-footer/breadcrumbs/separator/icon_dark_large.svg');
+                display: inline-block;
+                vertical-align: middle;
+                height: 18px;
+                background-position-y: 100%;
+            }
+            &:first-child{
+                background: url('https://www.apple.com/ac/globalfooter/7/ko_KR/assets/ac-footer/breadcrumbs/apple/icon_dark_large.svg') no-repeat;
+                width: 30px;
+                height: 18px;
+                &::after{
+                    top: 0; right: 5px;
+                }
+            }
+            &:last-child::after{
+                display: none;
+            }
+        }
+    }
+}
+.group_flex06{
+    display: flex;
+    @include header_sm {
+        display: block;
+    }  
+    .flex_col{
+        flex: 1;
+        margin-right: 20px;
+        .footer_wrap{
+            @include header_sm {
+                border-top: 1px solid #86868b;
+            }
+            .footer_menu{
+                color: #f5f5f7;
+                font-weight: bold;
+                margin-bottom: 10px;
+                @include header_sm {
+                    color: #86868b;
+                    font-weight: normal;
+                    padding: 10px 0;
+                    margin-bottom: 0;
+                }
+                &::after{
+                    @include header_sm{
+                        content: '+';
+                        float: right;
+                        font-size: 14px;
+                        font-weight: normal;
+                        margin-top: -2px;
+                        margin-right: 8px;
+                        -webkit-transition: -webkit-transform .3s ease;
+                        transition: -webkit-transform .3s ease;
+                        transition: transform .3s ease;
+                        transition: transform .3s ease, -webkit-transform .3s ease;
+                    }
+                }
+                &.active{
+                    &::after{
+                        content: '+';
+                        float: right;
+                        font-size: 14px;
+                        font-weight: normal;
+                        margin-top: -2px;
+                        margin-right: 8px;
+                        -webkit-transition: -webkit-transform .3s ease;
+                        transition: -webkit-transform .3s ease;
+                        transition: transform .3s ease;
+                        transition: transform .3s ease, -webkit-transform .3s ease;
+                        transform: rotate(45deg) scale(1.08);
+                    }
+                }
+            }
+            .footer_item{
+                margin-bottom: 10px;
+                @include header_sm {
+                    display: none;
+                    padding-left: 10px;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        &:last-child{
+            .footer_wrap{
+                &:last-child{
+                    @include header_sm {
+                        border-bottom: 1px solid #86868b;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_group{
+    font-size: 12px;
+    padding: 34px 0;
+    @include header_sm {
+        padding: 17px 0;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .top{
+        border-bottom: 1px solid #424245;
+        color: #86868b;
+        margin-bottom: 7px;
+        padding-bottom: 8px;
+        @include header_sm{
+            border-bottom: none;
+        }
+        a{
+            display: inline-block;
+            color:#2997ff;
+        }
+    }
+    .bottom{
+        overflow: hidden;
+        color: #d2d2d7;
+        &::after{
+            content: '';clear: both;display: block;
+        }
+        .left{
+            float: left;
+            display: flex;
+            @include header_sm{
+                float: none;
+                display: block;
+            }
+            .copy{
+                color: #86868b;
+                margin-right: 30px;
+                @include header_sm{
+                    margin-bottom: 10px;
+                }
+            }
+            .policy{
+                display: flex;
+                flex-wrap: wrap;
+                .policy_item{
+                    display: inline-block;
+                    position: relative;
+                    padding-right: 10px;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        top: 50%;right: 5px;
+                        transform: translateY(-50%);
+                        width: 1px;height: 14px;
+                        background: #424245;
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            @include header_sm{
+                float: none;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

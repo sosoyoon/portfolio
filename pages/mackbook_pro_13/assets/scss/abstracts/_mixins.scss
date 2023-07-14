@@ -1,0 +1,78 @@
+@mixin elips {
+    overflow: hidden;
+    word-spacing: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin elipsMulti($line, $lineHegiht) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: $lineHegiht+px;
+    max-height: $line*$lineHegiht+px;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+$cart : 1266px;
+
+$min_size : 1044px;
+
+$header_sm: 833px;
+
+$tablet: 1068px;
+
+$service: 1023px;
+
+$mobile_lg: 734px;
+
+$mobile_sm: 374px;
+
+$footer: 480px;
+
+
+
+@mixin cart{
+    @media (max-width: $cart){
+      @content;
+    }
+  }
+@mixin min_size{
+    @media (max-width: $min_size){
+      @content;
+    }
+  }
+@mixin header_sm{
+    @media (max-width: $header_sm){
+      @content;
+    }
+  }
+@mixin tablet{
+    @media (max-width: $tablet){
+      @content;
+    }
+  }
+@mixin service{
+    @media (max-width: $service){
+      @content;
+    }
+  }
+@mixin mobile_lg{
+    @media (max-width: $mobile_lg){
+      @content;
+    }
+  }
+@mixin mobile_sm{
+    @media (max-width: $mobile_sm){
+      @content;
+    }
+  }
+@mixin footer{
+    @media (max-width: $footer){
+      @content;
+    }
+  }
+
