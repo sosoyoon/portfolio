@@ -1,0 +1,326 @@
+.sc_intro {
+    overflow: hidden;
+    .group_visual{
+        position: relative;
+        .title{
+            font-family: $font-en;
+            position: absolute; 
+            top: 0%; left: 0%;
+            font-size: 10vw;
+            font-weight: 500;
+            letter-spacing: 30px;
+            color: #fff;
+            display: flex;
+            align-items: center; 
+            justify-content: center;           
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            z-index: 10;
+        }
+        .img_area{
+            display: flex;
+            overflow: hidden;
+            .img_box{
+                width: calc(100% / 3);
+                img{
+                    max-width: 101%;
+                }
+            }
+        }
+    }
+    .desc_box{
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 70px;
+        padding: 80px 0;
+        font-weight: 600;
+    }
+}
+
+.sc_architectuur{
+    overflow: hidden;
+    .group_intro {
+        display: flex;
+        position: relative;
+        height: 600px;
+        .text_area{
+            width: 50%;
+            margin-top: 60px;
+            padding: 40px 110px 40px 80px;
+            background-color: #2b201a;
+            .sc_title{
+                color: #fff;
+                font-size: 2em;
+                line-height: 1.6em;
+                font-weight: 500;
+                letter-spacing: 3px;
+                margin: 20px auto 25px auto;
+                text-align: left;
+            }
+            .desc{
+                font-size: 18px;
+                margin-bottom: 30px;
+                color: #d8d8d8;
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+        .slide-area{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 100%;height: 100%;
+                object-fit: cover;
+            }
+            .swiper-pagination-bullet{
+                background: #fff;
+            }
+        }
+    }
+    .group_info{
+        .info_area{
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            .info_wrap{
+                width: 50%;
+                .architect_img_box{
+                    width: 50%;
+                    .img_box{
+                        margin: 0 auto;
+                        img{
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+            .desc_wrap{
+                width: 50%;
+                padding: 0 20px;
+                .desc{
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+
+.sc_interieur{
+    .desc{
+        text-align: center;
+    }
+    .interieur_box{
+        display: flex;
+        overflow: hidden;
+        .interieur_img{
+            width: calc(100% / 3);
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.sc_locatie {
+    .group_title{
+        width: 940px;
+        margin: 0 auto 50px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .sc_title{
+            width: 63.7%;
+            text-align: right;
+        }
+        .desc{
+            width: 36.3%;
+        }
+    }
+    .content{
+        .group_box + .group_box{
+            width: 940px;
+            margin: 0 auto;
+        }
+        .desc{
+            width: 450px;
+            font-size: 17px;
+            line-height: 27px;
+        }
+        .group_box1{
+            img{
+                width: 100%;
+            }
+            .title_box{
+                width: 940px;
+                margin: 0 auto;
+            }
+        }
+        .group_box2{
+            display: flex;
+            .colum_left{
+                width: 58%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .colum_right{
+                width: 42%;
+                padding-left: 20px;
+                box-sizing: border-box;
+                .title_box{
+                    text-align: right;
+                    .title{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .group_box3{
+            padding: 50px 0;
+        }
+        .group_box4{
+            display: flex;
+            flex-direction: row;
+            margin: 80px auto;
+            align-items: center;
+            .title_box{ 
+                width: 41.7%;
+                display: flex;
+                justify-content: center;
+                .bg_txt{
+                    width:900px;
+                    background-image: url(../images/locatie_bg.jpg);
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: scroll;
+                    font-size: 10em;
+                    font-family: $font-en;
+                    line-height: 1.6em;
+                    font-weight: 500;
+                    letter-spacing: .1em;
+                    text-transform: uppercase;
+                    white-space: normal;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                }
+            }
+            .front_view{
+                width: 58.3%
+            }
+        }
+    }
+}
+
+.sc_appartementen{
+    margin-top: 150px;
+    .floor_plan{
+        display: flex;
+        margin: 130px 0;
+        .floor_imgbox{
+            width: 83.4%;
+            .floor_img{
+                width: 700px;
+                height: 240px;
+                +.floor_img{
+                    margin-top: -150px;
+                }
+            }
+        }
+    }
+    .floor_txtbox{
+        width: 16.6%;
+        text-align: center;
+        .link-floor{
+            color: #d8cbbc;
+            background-color: #2b201a;
+            font-size: .9em;
+            font-weight: 700;
+            letter-spacing: .2em;
+            line-height: 2.74em;
+            margin-bottom: 55px;
+            transition: background-color 750ms cubic-bezier(.075, .82, .165, 1);
+            &:hover{
+                background-color: #d8cbbc;
+                color: #2b201a;
+            }
+        }
+    }
+    .desc{
+        margin-top: 10px;
+        color: #8d8d8d;
+        font-style: normal;
+        text-align: center;
+    }
+}
+
+.floor_table{
+    width: 100%;
+    text-align: left;
+    span{
+        color: #fff;
+        background: #1f24ca;
+        padding: 5px 4px;
+        margin-left: 7px;
+    }
+    th{
+        padding: 0 10px;
+    }
+    .table_header{
+        color: #8d8d8d;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #2b201a;
+        th{
+            padding-bottom: 10px;
+        }
+    }
+    td{
+        padding: 0 10px 25px 10px;
+        
+    }
+    .floor_0{
+        td{
+            padding: 10px 10px 25px 10px;
+        }
+    }
+    .niveau{
+        width: 8.3%;
+    }
+    .type{
+        width: 25%;
+    }
+    .oppervlakte, 
+    .terras, 
+    .slpk, 
+    .plan {
+        width: 16.7%;
+    }
+    .niveau, .type{
+        font-weight: 700;
+    }
+    .plan{
+        .btn-download{
+            width: 50px;
+            text-align: center;
+            background-color: #2b201a;
+            &:hover{
+                background: #1f24ca;
+            }
+            .download_img{
+                padding: 4px 0; 
+                img{
+                    width: 15px;
+                    height: 18px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }   
+}
+ 

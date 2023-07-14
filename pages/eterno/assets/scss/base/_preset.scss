@@ -1,0 +1,16 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.inner{
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.group_title{
+    margin: 50px auto;
+}
